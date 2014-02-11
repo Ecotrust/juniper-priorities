@@ -37,7 +37,7 @@ def all():
 
 
 def _install_requirements():
-    run('cd %(app_dir)s && %(venv)s/bin/pip install -r ../requirements.txt' % vars)
+    run('cd %(app_dir)s && %(venv)s/bin/pip install -r %(app_dir)s/../requirements.txt' % vars)
 
 
 def _install_django():
