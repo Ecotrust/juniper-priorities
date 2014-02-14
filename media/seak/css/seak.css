@@ -330,7 +330,7 @@ tbody.pu-show {
 
 .old_ie_wrapper tbody { 
     height: auto; 
-
+}
 .collapse.in {
     overflow: visible !important;
 }
@@ -339,4 +339,27 @@ tbody.pu-show {
 }
 .layer-manager-legend-item {
     padding-bottom: 2px;
+}
+.gobutton {
+    color: #FFFFFF;
+    background-color: #015B4E;
+    width: 30% !important;
+    background-image: linear-gradient(to bottom, #015B4E, #555555);
+    margin: 20px;
+}
+
+.gobutton:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+  background-color: #015B4E;
+  *background-color: #d9d9d9;
+  /* Buttons in IE7 don't get borders, so darken on hover */
+
+  background-position: 0 0;
+  background-image: linear-gradient(to top, #015B4E, #888888);
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -ms-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
 }
