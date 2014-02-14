@@ -1,470 +1,506 @@
 [
   {
-    "pk": 47, 
-    "model": "flatblocks.flatblock", 
+    "pk": 47,
+    "model": "flatblocks.flatblock",
     "fields": {
-      "content": "Planning Unit", 
-      "header": "", 
+      "content": "Planning Unit",
+      "header": "",
       "slug": "planning-unit-popup-header"
     }
-  }, 
+  },
   {
-    "pk": 28, 
-    "model": "flatblocks.flatblock", 
+    "pk": 28,
+    "model": "flatblocks.flatblock",
     "fields": {
-      "content": "Included in current scenario", 
-      "header": "", 
+      "content": "Included in current scenario",
+      "header": "",
       "slug": "legend-included"
     }
-  }, 
+  },
   {
-    "pk": 31, 
-    "model": "flatblocks.flatblock", 
+    "pk": 31,
+    "model": "flatblocks.flatblock",
     "fields": {
-      "content": "Relative Value", 
-      "header": "", 
+      "content": "Relative Value",
+      "header": "",
       "slug": "legend-relative-value"
     }
-  }, 
+  },
   {
-    "pk": 29, 
-    "model": "flatblocks.flatblock", 
+    "pk": 29,
+    "model": "flatblocks.flatblock",
     "fields": {
-      "content": "Priority geography", 
-      "header": "", 
+      "content": "Priority geography",
+      "header": "",
       "slug": "legend-potential"
     }
-  }, 
+  },
   {
-    "pk": 32, 
-    "model": "flatblocks.flatblock", 
+    "pk": 32,
+    "model": "flatblocks.flatblock",
     "fields": {
-      "content": "<em>* Note: some datasets are not available for your selected geography and were excluded from this analysis.</em>", 
-      "header": "", 
+      "content": "<em>* Note: some datasets are not available for your selected geography and were excluded from this analysis.</em>",
+      "header": "",
       "slug": "form-geography-note"
     }
-  }, 
+  },
   {
-    "pk": 4, 
-    "model": "flatblocks.flatblock", 
+    "pk": 4,
+    "model": "flatblocks.flatblock",
     "fields": {
-      "content": "Welcome to the BLM Juniper Management Tool", 
-      "header": "", 
+      "content": "Welcome to the BLM Juniper Management Tool",
+      "header": "",
       "slug": "about-header"
     }
-  }, 
+  },
   {
-    "pk": 5, 
-    "model": "flatblocks.flatblock", 
+    "pk": 5,
+    "model": "flatblocks.flatblock",
     "fields": {
-      "content": "A juniper management prioritization support tool for Eastern Oregon. ", 
-      "header": "", 
+      "content": "A juniper management prioritization support tool for Eastern Oregon. ",
+      "header": "",
       "slug": "about-intro"
     }
-  }, 
+  },
   {
-    "pk": 2, 
-    "model": "flatblocks.flatblock", 
+    "pk": 2,
+    "model": "flatblocks.flatblock",
     "fields": {
-      "content": "Ecotrust and the BLM have partnered to develop a conservation decision support system for Juniper management in Oregon.\r\n\r\nThis system will enable stakeholders to engage in strategic landscape-scale planning for Juniper management and sage grouse habitat conservation priorities for Oregon BLM lands.", 
-      "header": "", 
+      "content": "Ecotrust and the BLM have partnered to develop a conservation decision support system for Juniper management in Oregon.\r\n\r\nThis system will enable stakeholders to engage in strategic landscape-scale planning for Juniper management and sage grouse habitat conservation priorities for Oregon BLM lands.",
+      "header": "",
       "slug": "home_text"
     }
-  }, 
+  },
   {
-    "pk": 30, 
-    "model": "flatblocks.flatblock", 
+    "pk": 30,
+    "model": "flatblocks.flatblock",
     "fields": {
-      "content": "All planning units", 
-      "header": "", 
+      "content": "All planning units",
+      "header": "",
       "slug": "legend-allpus"
     }
-  }, 
+  },
   {
-    "pk": 7, 
-    "model": "flatblocks.flatblock", 
+    "pk": 7,
+    "model": "flatblocks.flatblock",
     "fields": {
-      "content": ".spruce", 
-      "header": "", 
+      "content": ".spruce",
+      "header": "",
       "slug": "theme"
     }
-  }, 
+  },
   {
-    "pk": 1, 
-    "model": "flatblocks.flatblock", 
+    "pk": 1,
+    "model": "flatblocks.flatblock",
     "fields": {
-      "content": "Oregon Juniper Management Tool", 
-      "header": "", 
+      "content": "Oregon Juniper Management Tool",
+      "header": "",
       "slug": "title"
     }
-  }, 
+  },
   {
-    "pk": 33, 
-    "model": "flatblocks.flatblock", 
+    "pk": 33,
+    "model": "flatblocks.flatblock",
     "fields": {
-      "content": "Target", 
-      "header": "", 
+      "content": "Target",
+      "header": "",
       "slug": "target"
     }
-  }, 
+  },
   {
-    "pk": 34, 
-    "model": "flatblocks.flatblock", 
+    "pk": 34,
+    "model": "flatblocks.flatblock",
     "fields": {
-      "content": "Penalty", 
-      "header": "", 
+      "content": "Penalty",
+      "header": "",
       "slug": "penalty"
     }
-  }, 
+  },
   {
-    "pk": 36, 
-    "model": "flatblocks.flatblock", 
+    "pk": 36,
+    "model": "flatblocks.flatblock",
     "fields": {
-      "content": "high", 
-      "header": "", 
+      "content": "high",
+      "header": "",
       "slug": "target-high"
     }
-  }, 
+  },
   {
-    "pk": 37, 
-    "model": "flatblocks.flatblock", 
+    "pk": 37,
+    "model": "flatblocks.flatblock",
     "fields": {
-      "content": "low", 
-      "header": "", 
+      "content": "low",
+      "header": "",
       "slug": "penalty-low"
     }
-  }, 
+  },
   {
-    "pk": 38, 
-    "model": "flatblocks.flatblock", 
+    "pk": 38,
+    "model": "flatblocks.flatblock",
     "fields": {
-      "content": "high", 
-      "header": "", 
+      "content": "high",
+      "header": "",
       "slug": "penalty-high"
     }
-  }, 
+  },
   {
-    "pk": 24, 
-    "model": "flatblocks.flatblock", 
+    "pk": 24,
+    "model": "flatblocks.flatblock",
     "fields": {
-      "content": "Target Acreage", 
-      "header": "", 
+      "content": "Target Acreage",
+      "header": "",
       "slug": "relative-importance"
     }
-  }, 
+  },
   {
-    "pk": 10, 
-    "model": "flatblocks.flatblock", 
+    "pk": 10,
+    "model": "flatblocks.flatblock",
     "fields": {
-      "content": "Management Objectives", 
-      "header": "", 
+      "content": "Management Objectives",
+      "header": "",
       "slug": "show-conservation-features"
     }
-  }, 
+  },
   {
-    "pk": 12, 
-    "model": "flatblocks.flatblock", 
+    "pk": 12,
+    "model": "flatblocks.flatblock",
     "fields": {
-      "content": "Set Targets", 
-      "header": "", 
+      "content": "Set Targets",
+      "header": "",
       "slug": "form-conservationfeature-header"
     }
-  }, 
+  },
   {
-    "pk": 39, 
-    "model": "flatblocks.flatblock", 
+    "pk": 39,
+    "model": "flatblocks.flatblock",
     "fields": {
-      "content": "acres", 
-      "header": "", 
+      "content": "acres",
+      "header": "",
       "slug": "area-units"
     }
-  }, 
+  },
   {
-    "pk": 42, 
-    "model": "flatblocks.flatblock", 
+    "pk": 42,
+    "model": "flatblocks.flatblock",
     "fields": {
-      "content": "Or, if you need to fine-tune the geography, you can use the map draw a box around additional watersheds. To navigate, use the keyboard controls (+/- to zoom, arrow keys to pan). If you need to undo the selection, click on the map away from the study region.", 
-      "header": "", 
+      "content": "Or, if you need to fine-tune the geography, you can use the map draw a box around additional watersheds. To navigate, use the keyboard controls (+/- to zoom, arrow keys to pan). If you need to undo the selection, click on the map away from the study region.",
+      "header": "",
       "slug": "geography-fine-tune"
     }
-  }, 
+  },
   {
-    "pk": 13, 
-    "model": "flatblocks.flatblock", 
+    "pk": 13,
+    "model": "flatblocks.flatblock",
     "fields": {
-      "content": "For each management objective, specify the acreage targeted for treatment.", 
-      "header": "", 
+      "content": "For each management objective, specify the acreage targeted for treatment.",
+      "header": "",
       "slug": "form-conservationfeature-description"
     }
-  }, 
+  },
   {
-    "pk": 44, 
-    "model": "flatblocks.flatblock", 
+    "pk": 44,
+    "model": "flatblocks.flatblock",
     "fields": {
-      "content": "Select Data to Map", 
-      "header": "", 
+      "content": "Select Data to Map",
+      "header": "",
       "slug": "tab-title-data"
     }
-  }, 
+  },
   {
-    "pk": 46, 
-    "model": "flatblocks.flatblock", 
+    "pk": 46,
+    "model": "flatblocks.flatblock",
     "fields": {
-      "content": "View Map Legend", 
-      "header": "", 
+      "content": "View Map Legend",
+      "header": "",
       "slug": "tab-title-legend"
     }
-  }, 
+  },
   {
-    "pk": 14, 
-    "model": "flatblocks.flatblock", 
+    "pk": 14,
+    "model": "flatblocks.flatblock",
     "fields": {
-      "content": "Set prioritization costs", 
-      "header": "", 
+      "content": "Set prioritization costs",
+      "header": "",
       "slug": "form-costs-header"
     }
-  }, 
+  },
   {
-    "pk": 20, 
-    "model": "flatblocks.flatblock", 
+    "pk": 20,
+    "model": "flatblocks.flatblock",
     "fields": {
-      "content": "Total Acres Captured", 
-      "header": "", 
+      "content": "Total Acres Captured",
+      "header": "",
       "slug": "show-percent-met"
     }
-  }, 
+  },
   {
-    "pk": 41, 
-    "model": "flatblocks.flatblock", 
+    "pk": 41,
+    "model": "flatblocks.flatblock",
     "fields": {
-      "content": "Report", 
-      "header": "", 
+      "content": "Report",
+      "header": "",
       "slug": "show-total-costs"
     }
-  }, 
+  },
   {
-    "pk": 11, 
-    "model": "flatblocks.flatblock", 
+    "pk": 11,
+    "model": "flatblocks.flatblock",
     "fields": {
-      "content": "Planning Units", 
-      "header": "", 
+      "content": "Planning Units",
+      "header": "",
       "slug": "show-planning-units"
     }
-  }, 
+  },
   {
-    "pk": 15, 
-    "model": "flatblocks.flatblock", 
+    "pk": 15,
+    "model": "flatblocks.flatblock",
     "fields": {
-      "content": "In addition to the areas you targeted earlier, select areas that are to be AVOIDED in the new prioritization scenario.", 
-      "header": "", 
+      "content": "In addition to the areas you targeted earlier, select areas that are to be AVOIDED in the new prioritization scenario.",
+      "header": "",
       "slug": "form-costs-description"
     }
-  }, 
+  },
   {
-    "pk": 35, 
-    "model": "flatblocks.flatblock", 
+    "pk": 35,
+    "model": "flatblocks.flatblock",
     "fields": {
-      "content": "low", 
-      "header": "", 
+      "content": "low",
+      "header": "",
       "slug": "target-low"
     }
-  }, 
+  },
   {
-    "pk": 19, 
-    "model": "flatblocks.flatblock", 
+    "pk": 40,
+    "model": "flatblocks.flatblock",
     "fields": {
-      "content": "Determine whether the juniper management goal was met by reviewing the chart below.  The chart lists whether the goal was met for one or many objectives, the total acres captured and the percentage of total acreage captured within the selected planning units. ", 
-      "header": "", 
-      "slug": "show-targets-explanation"
-    }
-  }, 
-  {
-    "pk": 40, 
-    "model": "flatblocks.flatblock", 
-    "fields": {
-      "content": "The optimal prioritization scenario", 
-      "header": "", 
+      "content": "The optimal prioritization scenario",
+      "header": "",
       "slug": "optimal-prioritization-scenario"
     }
-  }, 
+  },
   {
-    "pk": 16, 
-    "model": "flatblocks.flatblock", 
+    "pk": 16,
+    "model": "flatblocks.flatblock",
     "fields": {
-      "content": "Planning Units", 
-      "header": "", 
+      "content": "Planning Units",
+      "header": "",
       "slug": "planning-units"
     }
-  }, 
+  },
   {
-    "pk": 17, 
-    "model": "flatblocks.flatblock", 
+    "pk": 17,
+    "model": "flatblocks.flatblock",
     "fields": {
-      "content": "Select the planning units that best define areas of your management interest.", 
-      "header": "", 
+      "content": "Select the planning units that best define areas of your management interest.",
+      "header": "",
       "slug": "form-geography-header"
     }
-  }, 
+  },
   {
-    "pk": 8, 
-    "model": "flatblocks.flatblock", 
+    "pk": 48,
+    "model": "flatblocks.flatblock",
     "fields": {
-      "content": "Inputs", 
-      "header": "", 
-      "slug": "show-inputs"
-    }
-  }, 
-  {
-    "pk": 9, 
-    "model": "flatblocks.flatblock", 
-    "fields": {
-      "content": "Results Summary", 
-      "header": "", 
-      "slug": "show-results-summary"
-    }
-  }, 
-  {
-    "pk": 25, 
-    "model": "flatblocks.flatblock", 
-    "fields": {
-      "content": "There are currently no shared scenarios available.\r\n<br/><br/>\r\nYour colleagues can share their prioritization scenarios allowing you to view results and copy them to your own work space for further modification.", 
-      "header": "", 
-      "slug": "new-share-scenario"
-    }
-  }, 
-  {
-    "pk": 26, 
-    "model": "flatblocks.flatblock", 
-    "fields": {
-      "content": "Manage", 
-      "header": "", 
-      "slug": "manage"
-    }
-  }, 
-  {
-    "pk": 3, 
-    "model": "flatblocks.flatblock", 
-    "fields": {
-      "content": "You haven't created any prioritization scenarios yet.\r\n<br/><br/>\r\nYou can create customized prioritization scenarios, view the results on the map, study the output reports, export to various format, save them for future use, edit them and share them with colleagues. ", 
-      "header": "", 
-      "slug": "new-manage-scenario"
-    }
-  }, 
-  {
-    "pk": 23, 
-    "model": "flatblocks.flatblock", 
-    "fields": {
-      "content": "Select target", 
-      "header": "", 
-      "slug": "geography"
-    }
-  }, 
-  {
-    "pk": 18, 
-    "model": "flatblocks.flatblock", 
-    "fields": {
-      "content": "<h4>Scenario should be rerun</h4> New data has been loaded into the prioritization tool since this scenario was created. We recommended that you <em>Edit</em> and rerun the scenario to make sure the results are still valid with the current data.", 
-      "header": "", 
-      "slug": "scenario-expired-message"
-    }
-  }, 
-  {
-    "pk": 27, 
-    "model": "flatblocks.flatblock", 
-    "fields": {
-      "content": "Collaborate", 
-      "header": "", 
-      "slug": "shared"
-    }
-  }, 
-  {
-    "pk": 43, 
-    "model": "flatblocks.flatblock", 
-    "fields": {
-      "content": "Build Scenarios", 
-      "header": "", 
-      "slug": "tab-title-scenario"
-    }
-  }, 
-  {
-    "pk": 45, 
-    "model": "flatblocks.flatblock", 
-    "fields": {
-      "content": "View Data Selected", 
-      "header": "", 
-      "slug": "tab-title-active"
-    }
-  }, 
-  {
-    "pk": 22, 
-    "model": "flatblocks.flatblock", 
-    "fields": {
-      "content": "Areas to Avoid", 
-      "header": "", 
-      "slug": "constraints"
-    }
-  }, 
-  {
-    "pk": 21, 
-    "model": "flatblocks.flatblock", 
-    "fields": {
-      "content": "Management Objectives", 
-      "header": "", 
-      "slug": "targets"
-    }
-  }, 
-  {
-    "pk": 51, 
-    "model": "flatblocks.flatblock", 
-    "fields": {
-      "content": "Tutorials", 
-      "header": "", 
-      "slug": "Tutorials-Title"
-    }
-  }, 
-  {
-    "pk": 49, 
-    "model": "flatblocks.flatblock", 
-    "fields": {
-      "content": "Get Started", 
-      "header": "", 
-      "slug": "get-help-title"
-    }
-  }, 
-  {
-    "pk": 52, 
-    "model": "flatblocks.flatblock", 
-    "fields": {
-      "content": "Testing, 1, 2, 3", 
-      "header": "", 
-      "slug": "tutorial-content"
-    }
-  }, 
-  {
-    "pk": 6, 
-    "model": "flatblocks.flatblock", 
-    "fields": {
-      "content": "<p>\r\n Welcome to the Oregon Juniper Management Tool - A juniper management prioritization support tool for Eastern Oregon developed by Ecotrust and the Bureau of Land Management (BLM).\r\n\r\n<h3>Background</h3> Over the past 100 years, scientists have been documenting the spread of juniper at alarming rates across eastern Oregon, down through Nevada, Utah, and into parts of eastern California, with some studies noting as much as a tenfold increase since the late 1800s.  This expansion comes with a heavy cost to local ecosystems (e.g. sagebrush habitats) and threatened species such as sage grouse and pygmy rabbits. The reasons for juniper expansion are varied, but researchers see over-grazing practices of the past, fire suppression and changing climate conditions as the leading factors that have led to the species\u2019 success. The situation has land managers and owners, ranchers, and other concerned community members wondering what can be done to halt the juniper\u2019s steady advance in the West. </p>\r\n\r\n<p>But addressing the problem is no easy task.  Removal of the species at different stages of development and at remote locations can be extremely expensive.  And where the species are treated can have varied results on restoration of surrounding habitats. It\u2019s a challenge to figure out how to get the most value from limited resources for habitat restoration. </p>\r\n\r\n<p>To assist BLM to meet these challenges, Ecotrust has created the Oregon Juniper Management Tool using the Madrona framework, a software platform developed by Ecotrust to create web-based spatial management tools.  This tool allows land managers to review a suite of juniper-related spatial data layers such as juniper canopy, sage grouse habitat, hydrology, and public ownership in an interactive web map viewer, and then build personalized scenarios for juniper removal by defining specific objectives such as how many acres of juniper to remove or whether or not to prioritize removal in sage grouse habitat.</p>\r\n\r\n<h3>Requirements</h3> The tool itself is an open source, online mapping application that allows users to zoom in, pan and query a wide variety of mapped data. At its core is the intuitive and easy to use mapping interface that will work on any modern (past 5 years) browser or hardware. Firefox and Chrome web browsers are preferred due to stability, but Safari and Internet Explorer (versions 9+) web browsers are also compatible.  Please be forewarned that Internet Explorer versions 7 and 8, while technically functional, are extremely inefficient, slow and unpredictable.  You are therefore strongly advised to avoid using older versions of Internet Explorer whenever possible. </p>\r\n\r\n\r\n\r\n", 
-      "header": "", 
-      "slug": "about-content"
-    }
-  }, 
-  {
-    "pk": 48, 
-    "model": "flatblocks.flatblock", 
-    "fields": {
-      "content": "<h3>Getting Started</h3>\r\n<p>All users are able to design the map by selecting what data layers to show, explore the map using pan and zoom functionality, and investigate data sets pertaining to juniper as well as wildlife species, protected lands and management. To access all the key features of this tool, you'll need to be a registered user.  To do this simply click on the \"Register\" button located in the upper right hand corner of the tool.  You will be prompted to create a unique username and password and to share your email address.  You can only have one email address per account.  Once you have entered your information an email will be sent to the email address you provided with an activation link.  If you encounter any problems while registering please email ksdev@ecotrust.org.  If you are already a registered user you can sign in by clicking the \"Sign In\" button located in the upper right hand corner of the tool using your username and password.  While you must be a registered user to access  the tools full functionality, you can map and explore the multitude of data layers that were compiled for this the tool without registering.  While the key purpose of this tool is to assist BLM in prioritizing areas for juniper management, the tool is available to interested individuals, organizations and/or agencies to create priority scenarios, collaborate and share those scenarios, as well as visualize the many datasets that support the underlying analysis.  To launch the tool simply click on the \"Oregon Juniper Management Tool\" title listed on the upper left hand corner of this webpage. \r\n\r\n<h5>Watch Video Tutorial: Introduction to the Juniper Management Tool</h5>\r\n<iframe src=\"http://www.youtube.com/embed/4y9uZSXI20I?autoplay=true\">\r\n</iframe>\r\n\r\n\r\n<P>\r\n\r\n<h4>Select Data to Map</h4>\r\nTo begin exploring the Juniper Management Tool click the \u201cSelect Data to Map\u201d tab at the top of the map page.  You will see seven data themes that organize the spatial data into logical groupings. \r\n\r\n<h5>Design a Base Map</h5>\r\n<p>\r\nThe <B>Base Map</B> heading at the top of the tree view will have different base maps to choose from.  Different base maps are contributed from various organizations such as ESRI, Mapbox, National Geographic and Ecotrust.  To further orient yourself click on the <B>Base</B> heading to add additional base data layers such as cities, highways, rivers and BLM lands.  Please note that the base data layer called \"Planning Unit\" is the area of analysis determined by BLM at the beginning of this project. \"Planning Units\" are derived from 5th field HUCS (i.e. watershed scale) and serve as the area of analysis for all summarized and priority scenario outputs of the tool. The map will initially have the following layers selected as a base map for you: Planning Units, city names and basic terrain.  \r\n\r\n<h5>Explore data inputs</h5>\r\n<p>\r\nAdditional data sets can be added or removed from your map from the following themes; <B>Juniper</B>, <B>Wildlife Species</B>, <B>Management</B>, <B>Areas to Avoid/Costs</B>, <B>Summarized Data by Planning Unit</B>.  To explore these layers, click on the arrow next to the heading and a tree view will expand exposing the layers. Click on the check box next to the desired layer and you will see it appear on the map.  The icon to the left of the data layer name with a white \"i\" in a black circle is the \"Information\" icon. Click on it to see a short description of the data layer. Most themes are self explanatory by their naming convention (i.e. Wildlife Species), however, \"Areas to Avoid/Costs\" and \"Summarized Data by Planning Unit\" deserve further explanation for first time users of the tool. The data sets in the \"Areas to Avoid/Costs\" theme relate directly to creating a new prioritization scenario.  Please review <B>Build Scenarios</B> below to learn more about these data layers.  The \"Summarized Data by Planning Unit\" theme exists so that users can visualize spatial patterns of density for varying Juniper phases and Areas to Avoid. All summarized data are also available to examine as an individual layer in the appropriate data theme. \r\n</p>The interactive map also allows you to access planning unit information directly from the map window. To learn the name of a specific planning unit simply hover your mouse over the planning unit in question.  You can also click on each planning unit in the map for additional summarized information such the acreage of juniper phases, BLM wilderness lands, etc. \r\n</p>\r\n\r\n<h4>View Data Selected</h4>\r\n<p>Once you have <b>Selected Data to Map</b> you can customize the look of your map by clicking on the middle tab at the top of the map page.  You will see the data layers that you selected previously.  To the left of the data layer name there are three icons.  The first icon to the left of the other two is a white \"i\" in a black circle.  This is the \"Information\" icon. Click on it to see a short description of the data layer. The middle icon with a half white and half black circle is the \"Transparency\" icon.  Click on this icon to change the transparency of individual data layers.  Transparency is particularly helpful when showing overlap between data layers, such as sage grouse habitat and juniper data. The last icon on the right, the black X is the \"Remove\" icon.  Click on this icon to remove the data layer from the map.  Finally, you can rearrange the order of the data layers in the map by clicking and holding the data layer and dragging it to the desired location.  This is a very important step since the order the data layers stack on top of each other relates to the order that you selected.  So if you first chose a base map, then juniper stands, then roads you would not see the roads or the juniper data because they are \"below\" the base map.  You can see this in the <b>View Data Selected</b> tab.  The base map will be on top, the juniper stands will be in the middle, and the roads will be on the bottom.  In this example you would want to click and drag the base map to the bottom of the map, the juniper stands to the middle, and the roads to the top. Experiment and explore the multitude of ways that you can visualize the various data layers.\r\n\r\n<h5>Watch Video Tutorial: How to Review Data Layers Using the Interactive Mapping Tool</h5>\r\n<iframe src=\"http://youtube.com/embed/-MUz3nJVLQc?autoplay=true\">\r\n</iframe>\r\n\r\n<P>\r\n\r\n<h4>Creating Scenarios</h4>\r\nThis feature is only available to registered users.  To begin, click the <b>Build Scenarios</b> tab.  This will show you a list of all previously created scenarios with other descriptive information. You can either review a former scenario that you created by simply clicking on the scenarios name, or you can create a new prioritization scenario by clicking on the \"Create New Scenario\" button.  This will open the New Prioritization Scenario page.  There are four steps to creating a new prioritization scenario; 1) Select Target, 2) Management Objectives, 3) Areas to Avoid, and 4) Describe.  The first step asks you to select the planning units that best define areas of your management interest.  The second step asks you to specify acreage to target for each management objective.  Use the sliding bar to the right (towards \"high\") to increase the amount of acres you're targeting. The third step sets the prioritization costs.  This step allows you to select specific areas that are to be avoided in your new prioritization scenario.  To review what these data sets (or any others available in the tool) look like in relation to your management objectives you can go back to the \"Select Data to Map\" and the \"View Data Selected\" tabs at any time to alter the look of your map. The final fourth step asks you to name and describe the new prioritization scenario for future reference.  When you are done, simply click the \"Run Scenario\" button to begin processing your new scenario.  \r\n\r\n<h5>Watch Video: How to Create Juniper Management Scenarios</h5>\r\n<iframe src=\"http://youtube.com/embed/dycrlqJVWgM?autoplay=true\">\r\n</iframe>\r\n\r\n<P>\r\n\r\n<h5>Review, Edit and Scenarios</h5>\r\nOnce your new prioritization scenario is processed the results will immediately be displayed both on the map and on the page. The map will highlight the planning units that met your management objectives, while avoiding the costs. The page will have four tabs that allow you to further evaluate the selected planning units and output of the prioritization scenario tool; 1) Inputs, 2) Management Objectives, 3) Planning Units, and 4) Reports.  The \"Inputs\" tab simply allows you to review the the Management Objectives and the Areas to Avoid  that you selected for the current scenario.  The \"Management Objective\" tab shows whether the management goal was met or not within a summarized chart. The chart lists whether the goal was met for one or many objectives, the total acres captured and the percentage of total acreage captured within the selected planning units. The \"Planning Units\" tab lists each Planning Unit selected to meet your management goal.  To see where any particular Planning Unit is located on the map you can click anywhere on the Planning Units row. The map will center to that Planning Unit and a black arrow will appear pointing at the Planning Unit in question. The right column lists the name of each Planning Unit. To the right of the name you will each Area to Avoid that you selected when building the scenario.  There is a ranking of high, medium (\"med\"), and low listed below each of the Areas to Avoid.  A value of \"low\" means that the Planning Unit has below average summarized acreage when compared to all Planning Units selected and analyzed in this scenario.  A value of \"med\" means that the Planning Unit has average summarized acreage when compared to all Planning Units selected and analyzed in this scenario.  A value of \"high\" means that the Planning Unit has above average summarized acreage when compared to all Planning Units selected and analyzed in this scenario.  Therefore, if you see that Alvord Lake has a \"low\" Area of Environmental Concern (ACEC) yet \"high\" BLM Wilderness Lands, this means that treating for Juniper in Alvord Lake will help you meet your management objectives, and while there is low ACEC acreage there is high acreage of BLM Wilderness Lands present in the watershed.  Remember, at any time you can go back to the <b>Select Data to Map</b> tab and add additional data layers (such as BLM Wilderness Lands and ACEC) to review and compare to your prioritization scenario results. The final \"Report\" tab lists a variety of summarized acreage information for each selected Planning Unit.  The right column lists the name of each Planning Unit.  Simply scroll through the data columns to find a wealth of additional information.  As on the \"Planning Units\" tab you can see where any particular Planning Unit is located on the map by simply clicking anywhere on the Planning Units row. The map will center to that Planning Unit and a black arrow will appear pointing at the Planning Unit in question.  \r\n\r\n<p>At any point while reviewing your results you can use the 6 buttons at the top of the page to do the following: 1) Return to List, 2) Edit, 3) Copy, 4) Download, 5) Share, and 6) Delete.  The \"Return to List\" button is located on the far left. Click on this button to return to the <B>Build Scenarios</B> page.  The \"Edit\" button allows you to edit the inputs of your current scenario.  The \"Copy\" button creates a copy of the current scenario and saves it in the scenario list on the <B>Build Scenarios</B> page.  The \"Download\" button will  zip the results of your prioritization scenario as a shapefile for use in GIS software. Additionally, you can select other scenarios to create an \"array\"; i.e. an aggregate of the results from all selected scenarios. At present the report attributes are not yet available for download in this iteration of the tool.  The \"Share\" button allows you to share the current scenario with particular groups that have been created.  To create a new group contact ksdev@ecotrust.org.\r\n\r\n\r\n<h5>Watch Video: How to Review, Edit and Share Scenarios</h5>\r\n<iframe src=\"http://youtube.com/embed/dycrlqJVWgM?autoplay=true\">\r\n</iframe>\r\n\r\n\r\n", 
-      "header": "", 
+      "content": "<h3>Getting Started</h3>\r\n<p>All users are able to design the map by selecting what data layers to show, explore the map using pan and zoom functionality, and investigate data sets pertaining to juniper as well as wildlife species, protected lands and management. To access all the key features of this tool, you'll need to be a registered user.  To do this simply click on the \"Register\" button located in the upper right hand corner of the tool.  You will be prompted to create a unique username and password and to share your email address.  You can only have one email address per account.  Once you have entered your information an email will be sent to the email address you provided with an activation link.  If you encounter any problems while registering please email ksdev@ecotrust.org.  If you are already a registered user you can sign in by clicking the \"Sign In\" button located in the upper right hand corner of the tool using your username and password.  While you must be a registered user to access  the tools full functionality, you can map and explore the multitude of data layers that were compiled for this the tool without registering.  While the key purpose of this tool is to assist BLM in prioritizing areas for juniper management, the tool is available to interested individuals, organizations and/or agencies to create priority scenarios, collaborate and share those scenarios, as well as visualize the many datasets that support the underlying analysis.  To launch the tool simply click on the \"Oregon Juniper Management Tool\" title listed on the upper left hand corner of this webpage. \r\n\r\n<h5>Watch Video Tutorial: Introduction to the Juniper Management Tool</h5>\r\n<iframe src=\"http://www.youtube.com/embed/4y9uZSXI20I?autoplay=true\">\r\n</iframe>\r\n\r\n\r\n<P>\r\n\r\n<h4>Select Data to Map</h4>\r\nTo begin exploring the Juniper Management Tool click the \u201cSelect Data to Map\u201d tab at the top of the map page.  You will see seven data themes that organize the spatial data into logical groupings. \r\n\r\n<h5>Design a Base Map</h5>\r\n<p>\r\nThe <B>Base Map</B> heading at the top of the tree view will have different base maps to choose from.  Different base maps are contributed from various organizations such as ESRI, Mapbox, National Geographic and Ecotrust.  To further orient yourself click on the <B>Base</B> heading to add additional base data layers such as cities, highways, rivers and BLM lands.  Please note that the base data layer called \"Planning Unit\" is the area of analysis determined by BLM at the beginning of this project. \"Planning Units\" are derived from 5th field HUCS (i.e. watershed scale) and serve as the area of analysis for all summarized and priority scenario outputs of the tool. The map will initially have the following layers selected as a base map for you: Planning Units, city names and basic terrain.  \r\n\r\n<h5>Explore data inputs</h5>\r\n<p>\r\nAdditional data sets can be added or removed from your map from the following themes; <B>Juniper</B>, <B>Wildlife Species</B>, <B>Management</B>, <B>Areas to Avoid/Costs</B>, <B>Summarized Data by Planning Unit</B>.  To explore these layers, click on the arrow next to the heading and a tree view will expand exposing the layers. Click on the check box next to the desired layer and you will see it appear on the map.  The icon to the left of the data layer name with a white \"i\" in a black circle is the \"Information\" icon. Click on it to see a short description of the data layer. Most themes are self explanatory by their naming convention (i.e. Wildlife Species), however, \"Areas to Avoid/Costs\" and \"Summarized Data by Planning Unit\" deserve further explanation for first time users of the tool. The data sets in the \"Areas to Avoid/Costs\" theme relate directly to creating a new prioritization scenario.  Please review <B>Build Scenarios</B> below to learn more about these data layers.  The \"Summarized Data by Planning Unit\" theme exists so that users can visualize spatial patterns of density for varying Juniper phases and Areas to Avoid. All summarized data are also available to examine as an individual layer in the appropriate data theme. \r\n</p>The interactive map also allows you to access planning unit information directly from the map window. To learn the name of a specific planning unit simply hover your mouse over the planning unit in question.  You can also click on each planning unit in the map for additional summarized information such the acreage of juniper phases, BLM wilderness lands, etc. \r\n</p>\r\n\r\n<h4>View Data Selected</h4>\r\n<p>Once you have <b>Selected Data to Map</b> you can customize the look of your map by clicking on the middle tab at the top of the map page.  You will see the data layers that you selected previously.  To the left of the data layer name there are three icons.  The first icon to the left of the other two is a white \"i\" in a black circle.  This is the \"Information\" icon. Click on it to see a short description of the data layer. The middle icon with a half white and half black circle is the \"Transparency\" icon.  Click on this icon to change the transparency of individual data layers.  Transparency is particularly helpful when showing overlap between data layers, such as sage grouse habitat and juniper data. The last icon on the right, the black X is the \"Remove\" icon.  Click on this icon to remove the data layer from the map.  Finally, you can rearrange the order of the data layers in the map by clicking and holding the data layer and dragging it to the desired location.  This is a very important step since the order the data layers stack on top of each other relates to the order that you selected.  So if you first chose a base map, then juniper stands, then roads you would not see the roads or the juniper data because they are \"below\" the base map.  You can see this in the <b>View Data Selected</b> tab.  The base map will be on top, the juniper stands will be in the middle, and the roads will be on the bottom.  In this example you would want to click and drag the base map to the bottom of the map, the juniper stands to the middle, and the roads to the top. Experiment and explore the multitude of ways that you can visualize the various data layers.\r\n\r\n<h5>Watch Video Tutorial: How to Review Data Layers Using the Interactive Mapping Tool</h5>\r\n<iframe src=\"http://youtube.com/embed/-MUz3nJVLQc?autoplay=true\">\r\n</iframe>\r\n\r\n<P>\r\n\r\n<h4>Creating Scenarios</h4>\r\nThis feature is only available to registered users.  To begin, click the <b>Build Scenarios</b> tab.  This will show you a list of all previously created scenarios with other descriptive information. You can either review a former scenario that you created by simply clicking on the scenarios name, or you can create a new prioritization scenario by clicking on the \"Create New Scenario\" button.  This will open the New Prioritization Scenario page.  There are four steps to creating a new prioritization scenario; 1) Select Target, 2) Management Objectives, 3) Areas to Avoid, and 4) Describe.  The first step asks you to select the planning units that best define areas of your management interest.  The second step asks you to specify acreage to target for each management objective.  Use the sliding bar to the right (towards \"high\") to increase the amount of acres you're targeting. The third step sets the prioritization costs.  This step allows you to select specific areas that are to be avoided in your new prioritization scenario.  To review what these data sets (or any others available in the tool) look like in relation to your management objectives you can go back to the \"Select Data to Map\" and the \"View Data Selected\" tabs at any time to alter the look of your map. The final fourth step asks you to name and describe the new prioritization scenario for future reference.  When you are done, simply click the \"Run Scenario\" button to begin processing your new scenario.  \r\n\r\n<h5>Watch Video: How to Create Juniper Management Scenarios</h5>\r\n<iframe src=\"http://youtube.com/embed/dycrlqJVWgM?autoplay=true\">\r\n</iframe>\r\n\r\n<P>\r\n\r\n<h5>Review, Edit and Scenarios</h5>\r\nOnce your new prioritization scenario is processed the results will immediately be displayed both on the map and on the page. The map will highlight the planning units that met your management objectives, while avoiding the costs. The page will have four tabs that allow you to further evaluate the selected planning units and output of the prioritization scenario tool; 1) Inputs, 2) Management Objectives, 3) Planning Units, and 4) Reports.  The \"Inputs\" tab simply allows you to review the the Management Objectives and the Areas to Avoid  that you selected for the current scenario.  The \"Management Objective\" tab shows whether the management goal was met or not within a summarized chart. The chart lists whether the goal was met for one or many objectives, the total acres captured and the percentage of total acreage captured within the selected planning units. The \"Planning Units\" tab lists each Planning Unit selected to meet your management goal.  To see where any particular Planning Unit is located on the map you can click anywhere on the Planning Units row. The map will center to that Planning Unit and a black arrow will appear pointing at the Planning Unit in question. The right column lists the name of each Planning Unit. To the right of the name you will each Area to Avoid that you selected when building the scenario.  There is a ranking of high, medium (\"med\"), and low listed below each of the Areas to Avoid.  A value of \"low\" means that the Planning Unit has below average summarized acreage when compared to all Planning Units selected and analyzed in this scenario.  A value of \"med\" means that the Planning Unit has average summarized acreage when compared to all Planning Units selected and analyzed in this scenario.  A value of \"high\" means that the Planning Unit has above average summarized acreage when compared to all Planning Units selected and analyzed in this scenario.  Therefore, if you see that Alvord Lake has a \"low\" Area of Environmental Concern (ACEC) yet \"high\" BLM Wilderness Lands, this means that treating for Juniper in Alvord Lake will help you meet your management objectives, and while there is low ACEC acreage there is high acreage of BLM Wilderness Lands present in the watershed.  Remember, at any time you can go back to the <b>Select Data to Map</b> tab and add additional data layers (such as BLM Wilderness Lands and ACEC) to review and compare to your prioritization scenario results. The final \"Report\" tab lists a variety of summarized acreage information for each selected Planning Unit.  The right column lists the name of each Planning Unit.  Simply scroll through the data columns to find a wealth of additional information.  As on the \"Planning Units\" tab you can see where any particular Planning Unit is located on the map by simply clicking anywhere on the Planning Units row. The map will center to that Planning Unit and a black arrow will appear pointing at the Planning Unit in question.  \r\n\r\n<p>At any point while reviewing your results you can use the 6 buttons at the top of the page to do the following: 1) Return to List, 2) Edit, 3) Copy, 4) Download, 5) Share, and 6) Delete.  The \"Return to List\" button is located on the far left. Click on this button to return to the <B>Build Scenarios</B> page.  The \"Edit\" button allows you to edit the inputs of your current scenario.  The \"Copy\" button creates a copy of the current scenario and saves it in the scenario list on the <B>Build Scenarios</B> page.  The \"Download\" button will  zip the results of your prioritization scenario as a shapefile for use in GIS software. Additionally, you can select other scenarios to create an \"array\"; i.e. an aggregate of the results from all selected scenarios. At present the report attributes are not yet available for download in this iteration of the tool.  The \"Share\" button allows you to share the current scenario with particular groups that have been created.  To create a new group contact ksdev@ecotrust.org.\r\n\r\n\r\n<h5>Watch Video: How to Review, Edit and Share Scenarios</h5>\r\n<iframe src=\"http://youtube.com/embed/dycrlqJVWgM?autoplay=true\">\r\n</iframe>\r\n\r\n\r\n",
+      "header": "",
       "slug": "help"
     }
-  }, 
+  },
   {
-    "pk": 50, 
-    "model": "flatblocks.flatblock", 
+    "pk": 50,
+    "model": "flatblocks.flatblock",
     "fields": {
-      "content": "Learn More", 
-      "header": "", 
+      "content": "Learn More",
+      "header": "",
       "slug": "learn-more-title"
+    }
+  },
+  {
+    "pk": 54,
+    "model": "flatblocks.flatblock",
+    "fields": {
+      "content": "A juniper management prioritization support tool for Eastern Oregon.",
+      "header": "Welcome Content",
+      "slug": "welcome-content"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "flatblocks.flatblock",
+    "fields": {
+      "content": "Inputs",
+      "header": "",
+      "slug": "show-inputs"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "flatblocks.flatblock",
+    "fields": {
+      "content": "Results Summary",
+      "header": "",
+      "slug": "show-results-summary"
+    }
+  },
+  {
+    "pk": 25,
+    "model": "flatblocks.flatblock",
+    "fields": {
+      "content": "There are currently no shared scenarios available.\r\n<br/><br/>\r\nYour colleagues can share their prioritization scenarios allowing you to view results and copy them to your own work space for further modification.",
+      "header": "",
+      "slug": "new-share-scenario"
+    }
+  },
+  {
+    "pk": 26,
+    "model": "flatblocks.flatblock",
+    "fields": {
+      "content": "Manage",
+      "header": "",
+      "slug": "manage"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "flatblocks.flatblock",
+    "fields": {
+      "content": "You haven't created any prioritization scenarios yet.\r\n<br/><br/>\r\nYou can create customized prioritization scenarios, view the results on the map, study the output reports, export to various format, save them for future use, edit them and share them with colleagues. ",
+      "header": "",
+      "slug": "new-manage-scenario"
+    }
+  },
+  {
+    "pk": 23,
+    "model": "flatblocks.flatblock",
+    "fields": {
+      "content": "Select target",
+      "header": "",
+      "slug": "geography"
+    }
+  },
+  {
+    "pk": 18,
+    "model": "flatblocks.flatblock",
+    "fields": {
+      "content": "<h4>Scenario should be rerun</h4> New data has been loaded into the prioritization tool since this scenario was created. We recommended that you <em>Edit</em> and rerun the scenario to make sure the results are still valid with the current data.",
+      "header": "",
+      "slug": "scenario-expired-message"
+    }
+  },
+  {
+    "pk": 27,
+    "model": "flatblocks.flatblock",
+    "fields": {
+      "content": "Collaborate",
+      "header": "",
+      "slug": "shared"
+    }
+  },
+  {
+    "pk": 43,
+    "model": "flatblocks.flatblock",
+    "fields": {
+      "content": "Build Scenarios",
+      "header": "",
+      "slug": "tab-title-scenario"
+    }
+  },
+  {
+    "pk": 45,
+    "model": "flatblocks.flatblock",
+    "fields": {
+      "content": "View Data Selected",
+      "header": "",
+      "slug": "tab-title-active"
+    }
+  },
+  {
+    "pk": 22,
+    "model": "flatblocks.flatblock",
+    "fields": {
+      "content": "Areas to Avoid",
+      "header": "",
+      "slug": "constraints"
+    }
+  },
+  {
+    "pk": 21,
+    "model": "flatblocks.flatblock",
+    "fields": {
+      "content": "Management Objectives",
+      "header": "",
+      "slug": "targets"
+    }
+  },
+  {
+    "pk": 51,
+    "model": "flatblocks.flatblock",
+    "fields": {
+      "content": "Tutorials",
+      "header": "",
+      "slug": "Tutorials-Title"
+    }
+  },
+  {
+    "pk": 49,
+    "model": "flatblocks.flatblock",
+    "fields": {
+      "content": "Get Started",
+      "header": "",
+      "slug": "get-help-title"
+    }
+  },
+  {
+    "pk": 55,
+    "model": "flatblocks.flatblock",
+    "fields": {
+      "content": "Welcome to the BLM Juniper Management Tool",
+      "header": "Welcome Header",
+      "slug": "welcome-header"
+    }
+  },
+  {
+    "pk": 52,
+    "model": "flatblocks.flatblock",
+    "fields": {
+      "content": "Testing, 1, 2, 3",
+      "header": "",
+      "slug": "tutorial-content"
+    }
+  },
+  {
+    "pk": 53,
+    "model": "flatblocks.flatblock",
+    "fields": {
+      "content": "<h3>Requirements</h3> <p>The tool itself is an open source, online mapping application that allows users to zoom in, pan and query a wide variety of mapped data. At its core is the intuitive and easy to use mapping interface that will work on any modern (past 5 years) browser or hardware. Firefox and Chrome web browsers are preferred due to stability, but Safari and Internet Explorer (versions 9+) web browsers are also compatible.  Please be forewarned that Internet Explorer versions 7 and 8, while technically functional, are extremely inefficient, slow and unpredictable.  You are therefore strongly advised to avoid using older versions of Internet Explorer whenever possible. </p>\r\n",
+      "header": "Requirements Content",
+      "slug": "requirements-content"
+    }
+  },
+  {
+    "pk": 19,
+    "model": "flatblocks.flatblock",
+    "fields": {
+      "content": "Determine whether the juniper management goal was met by reviewing the chart below.  The chart lists whether the goal was met for one or many objectives, the total acres captured and the percentage of total acreage captured within the selected planning units. ",
+      "header": "",
+      "slug": "show-targets-explanation"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "flatblocks.flatblock",
+    "fields": {
+      "content": "<h3>Requirements</h3> The tool itself is an open source, online mapping application that allows users to zoom in, pan and query a wide variety of mapped data. At its core is the intuitive and easy to use mapping interface that will work on any modern (past 5 years) browser or hardware. Firefox and Chrome web browsers are preferred due to stability, but Safari and Internet Explorer (versions 9+) web browsers are also compatible.  Please be forewarned that Internet Explorer versions 7 and 8, while technically functional, are extremely inefficient, slow and unpredictable.  You are therefore strongly advised to avoid using older versions of Internet Explorer whenever possible. </p>\r\n\r\n\r\n\r\n",
+      "header": "",
+      "slug": "about-content"
+    }
+  },
+  {
+    "pk": 56,
+    "model": "flatblocks.flatblock",
+    "fields": {
+      "content": "<h3>Background</h3><p> Over the past 100 years, scientists have been documenting the spread of juniper at alarming rates across eastern Oregon, down through Nevada, Utah, and into parts of eastern California, with some studies noting as much as a tenfold increase since the late 1800s.  This expansion comes with a heavy cost to local ecosystems (e.g. sagebrush habitats) and threatened species such as sage grouse and pygmy rabbits. The reasons for juniper expansion are varied, but researchers see over-grazing practices of the past, fire suppression and changing climate conditions as the leading factors that have led to the species\u2019 success. The situation has land managers and owners, ranchers, and other concerned community members wondering what can be done to halt the juniper\u2019s steady advance in the West. </p>\r\n\r\n<p>But addressing the problem is no easy task.  Removal of the species at different stages of development and at remote locations can be extremely expensive.  And where the species are treated can have varied results on restoration of surrounding habitats. It\u2019s a challenge to figure out how to get the most value from limited resources for habitat restoration. </p>\r\n\r\n<p>To assist BLM to meet these challenges, Ecotrust has created the Oregon Juniper Management Tool using the Madrona framework, a software platform developed by Ecotrust to create web-based spatial management tools.  This tool allows land managers to review a suite of juniper-related spatial data layers such as juniper canopy, sage grouse habitat, hydrology, and public ownership in an interactive web map viewer, and then build personalized scenarios for juniper removal by defining specific objectives such as how many acres of juniper to remove or whether or not to prioritize removal in sage grouse habitat.</p>\r\n",
+      "header": "Background Content",
+      "slug": "background-content"
     }
   }
 ]

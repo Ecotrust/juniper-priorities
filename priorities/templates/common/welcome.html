@@ -1,0 +1,44 @@
+{% extends 'common/base.html' %}
+{% load flatblock_tags %}
+
+{% block content %}
+<div class="welcome">
+    <h2>{% flatblock "welcome-header" 3600 %}</h2>
+<p>
+{% flatblock "welcome-content" 3600 %}
+</p>
+<hr/>
+
+<div class="row-fluid">
+    <div class="span11 pagination-centered">
+        <a href="/map">
+            <button type="button" class="btn gobutton">
+                Try the tool now!
+            </button>
+        </a>
+    </div>
+</div>
+
+<div class="row-fluid">
+    <div class="span3">
+        <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Jeneverbes.jpg/443px-Jeneverbes.jpg" />
+    </div>
+    <div class="span8">
+        {% flatblock "background-content" 3600 %}
+    </div>
+</div>
+
+<div class="row-fluid">
+    <div class="span8">
+        {% flatblock "requirements-content" 3600 %}
+    </div>
+    <div class="span3">
+        <img src="http://upload.wikimedia.org/wikipedia/commons/e/eb/Juniper_berries_q.jpg" />
+    </div>
+</div>
+
+
+{% endblock content %}
+
+{% block scripts %}
+{% endblock scripts %}

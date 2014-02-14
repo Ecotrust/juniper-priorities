@@ -4,7 +4,8 @@ from django.conf import settings
 admin.autodiscover()
 
 urlpatterns = patterns( 'seak.views',
-    url(r'^$', 'map', name='map'),
+    url(r'^$', 'welcome', name='welcome'),
+    url(r'^map', 'map', name='map'),
 )
 
 urlpatterns += patterns('',

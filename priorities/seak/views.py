@@ -17,6 +17,17 @@ import tempfile
 
 logger = get_logger()
 
+def welcome(request, template_name='common/welcome.html', extra_context=None):
+    """
+    Welcome window
+    """
+    if not extra_context:
+        extra_context = {}
+
+    context = RequestContext(request, {})
+    context.update(extra_context)
+    return render_to_response(template_name, context)
+
 def map(request, template_name='common/map_ext.html', extra_context=None):
     """
     Main application window
