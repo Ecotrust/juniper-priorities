@@ -363,3 +363,8 @@ tbody.pu-show {
   -o-transition: background-position 0.1s linear;
   transition: background-position 0.1s linear;
 }
+
+iframe {
+    width: 400px;
+    height: 303px;
+}
