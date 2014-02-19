@@ -12,6 +12,7 @@ urlpatterns += patterns('',
     (r'^seak/', include('seak.urls')),
     (r'^analysistools/', include('madrona.analysistools.urls')),
     url(r'^tiles/', 'seak.views.tiles', name="tiles"),
+    url(r'^news/about/$', 'seak.views.about', name='news-about'),
 )
 
 urlpatterns += patterns('madrona',

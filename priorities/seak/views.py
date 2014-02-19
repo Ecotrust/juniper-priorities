@@ -1,5 +1,6 @@
 from madrona.common.utils import get_logger
 from madrona.shapes.views import ShpResponder
+from madrona.layer_manager.models import Layer, Theme
 #from madrona.features.views import get_object_for_viewing
 from django.http import HttpResponse
 from django.template.defaultfilters import slugify
@@ -44,6 +45,35 @@ def map(request, template_name='common/map_ext.html', extra_context=None):
     context.update(extra_context)
     return render_to_response(template_name, context)
 
+def about(request, template_name='news/about.html', extra_context=None):
+    """
+    Learn More Page
+    """
+    if not extra_context:
+        extra_context={}
+
+    themes = []
+    for theme_obj in Theme.objects.all():
+        theme = theme_obj.toDict
+        theme_dict = {}
+        if not theme['layers'] == []:
+            print "%s: %s" % (theme['display_name'], str(theme['layers']))
+            theme_dict['name'] = theme['display_name']
+            theme_dict['description'] = theme['description']
+            theme_dict['layers'] = []
+            for layer in theme['layers']:
+                layer_obj = Layer.objects.get(id=layer)
+                layer_dict = layer_obj.toDict
+                layer_dict['metadata'] = layer_obj.metadata_link
+                theme_dict['layers'].append(layer_dict)
+            themes.append(theme_dict)
+
+    context = RequestContext(request, {
+        'themes': themes
+        })
+    context.update(extra_context)
+    return render_to_response(template_name, context)    
+
 def watershed_shapefile(request, instances):
     from seak.models import PlanningUnitShapes, Scenario
     wshds = PlanningUnit.objects.all()
@@ -55,6 +85,22 @@ def watershed_shapefile(request, instances):
         if p.geom_type == 'Polygon':
             p = MultiPolygon(p)
         results[fid] = {'pu': w, 'geometry': p, 'name': w.name, 'hits': 0, 'bests': 0} 
+
+        # from models import PuVsCost
+
+        # for puCost in PuVsCost.objects.filter(pu=w):
+        #     print "%s %s: %s" % (puCost.pu.name, puCost.cost.dbf_fieldname, puCost.amount)
+        # try:
+        #         try:
+        #             results[fid][puCost.cost.dbf_fieldname] = puCost.amount
+        #         except:
+
+        #             pass
+        # except:
+        #     import pdb
+        #     pdb.set_trace()
+
+
 
     stamp = int(time.time() * 1000.0)
 

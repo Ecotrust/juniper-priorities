@@ -12,6 +12,33 @@
 
 {% flatblock "dataset-content" 3600 %}
 
+{% for theme in themes %}
+<h5 data-toggle="tooltip" data-placement="right" title="{{theme.description}}">{{theme.name}}</h5>
+<table class="theme_table">
+    {% for layer in theme.layers %}
+    <tr>
+        <td class="layer_label">
+            <div data-toggle="tooltip" data-placement="right" title="{{layer.description}}">{{layer.name}}</div>
+        </td>
+        <td class="metadata_link">
+            {% if layer.metadata != None %}
+            {% if layer.metadata != '' %}
+            <a href="{{layer.metadata}}" target="_blank">View</a>
+            {% endif %}
+            {% endif %}
+        </td>
+        <td class="metadata_link">
+            {% if layer.metadata != None %}
+            {% if layer.metadata != '' %}
+            <a href="{{layer.metadata}}">Download</a>
+            {% endif %}
+            {% endif %}
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+{% endfor %}
+
 </div>
 
 {% endblock content %}
