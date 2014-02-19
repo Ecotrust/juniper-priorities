@@ -379,3 +379,15 @@ iframe {
 .help h4 {
     margin-top: 30px;
 }
+
+.theme_table {
+    margin-left: 20px;
+}
+
+.theme_table .layer_label {
+    width: 340px;
+}
+
+.theme_table .metadata_link {
+    width: 65px;
+}
