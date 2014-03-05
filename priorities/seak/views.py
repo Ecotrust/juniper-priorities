@@ -1,5 +1,6 @@
 from madrona.common.utils import get_logger
-from madrona.shapes.views import ShpResponder
+# from madrona.shapes.views import ShpResponder
+from shapes.views import ShpResponder
 from madrona.layer_manager.models import Layer, Theme
 #from madrona.features.views import get_object_for_viewing
 from django.http import HttpResponse
@@ -10,6 +11,7 @@ from django.views.decorators.cache import cache_page, cache_control
 from django.conf import settings
 from django.template import RequestContext
 from seak.models import PlanningUnit
+from models import PuVsCost
 import TileStache 
 import os
 import json
@@ -75,7 +77,7 @@ def about(request, template_name='news/about.html', extra_context=None):
     return render_to_response(template_name, context)    
 
 def watershed_shapefile(request, instances):
-    from seak.models import PlanningUnitShapes, Scenario
+    from seak.models import PlanningUnitShapes, Scenario, PuVsAux
     wshds = PlanningUnit.objects.all()
     wshd_fids = [x.fid for x in PlanningUnit.objects.all()]
     results = {}
@@ -86,21 +88,8 @@ def watershed_shapefile(request, instances):
             p = MultiPolygon(p)
         results[fid] = {'pu': w, 'geometry': p, 'name': w.name, 'hits': 0, 'bests': 0} 
 
-        # from models import PuVsCost
-
-        # for puCost in PuVsCost.objects.filter(pu=w):
-        #     print "%s %s: %s" % (puCost.pu.name, puCost.cost.dbf_fieldname, puCost.amount)
-        # try:
-        #         try:
-        #             results[fid][puCost.cost.dbf_fieldname] = puCost.amount
-        #         except:
-
-        #             pass
-        # except:
-        #     import pdb
-        #     pdb.set_trace()
-
-
+        for puAux in PuVsAux.objects.filter(pu=w):
+            results[fid][puAux.aux.dbf_fieldname] = puAux.amount
 
     stamp = int(time.time() * 1000.0)
 
@@ -138,12 +127,23 @@ Includes scenarios:
 
     for fid in results.keys():
         r = results[fid]
-        PlanningUnitShapes.objects.create(stamp=stamp, fid=fid, **r)
+        # PlanningUnitShapes.objects.create(stamp=stamp, fid=fid, **r)
+        PlanningUnitShapes.objects.create(stamp=stamp, fid=fid, geometry=r['geometry'], bests=r['bests'], hits=r['hits'], pu=r['pu'], name=r['name'])
+        
+
     allpus = PlanningUnitShapes.objects.filter(stamp=stamp)
+    for newPu in allpus:
+        r = results[newPu.fid]
+        for key in r:
+            setattr(newPu, key, r[key])
+
     shp_response = ShpResponder(allpus, readme=readme)
     filename = '_'.join([slugify(i.pk) for i in instances])
     shp_response.file_name = slugify('scenarios_' + filename)
-    return shp_response()
+
+    addl_cols = [x.aux.dbf_fieldname for x in PuVsAux.objects.filter(pu=allpus[0].pu)]
+
+    return shp_response(addl_cols)
 
 def watershed_marxan(request, instance):
     from seak.models import Scenario
