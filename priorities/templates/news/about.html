@@ -24,8 +24,11 @@
         <td class="metadata_link">
             {% if layer.metadata != None %}
             {% if layer.metadata != '' %}
-            <a href="{{layer.metadata}}" target="_blank">View Data</a>
+            <a href="{{layer.metadata}}" target="_blank">View Metadata</a>
             {% endif %}
+            {% endif %}
+            {% if layer.metadata == '' %}
+                <p></p>
             {% endif %}
         </td>
     </tr>
