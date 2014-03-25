@@ -13,6 +13,7 @@
 {% flatblock "dataset-content" 3600 %}
 
 {% for theme in themes %}
+{% if theme.name != 'Base Map' %}
 <h5 data-toggle="tooltip" data-placement="right" title="{{theme.description}}">{{theme.name}}</h5>
 <table class="theme_table">
     {% for layer in theme.layers %}
@@ -30,6 +31,7 @@
     </tr>
     {% endfor %}
 </table>
+{% endif %}
 {% endfor %}
 
 </div>
