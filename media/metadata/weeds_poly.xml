@@ -1,0 +1,664 @@
+﻿<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin>Bureau of Land Management</origin>
+        <pubdate>20140121</pubdate>
+        <title>BLM OR Noxious and Invasive Weeds Polygon</title>
+        <geoform>vector digital data</geoform>
+        <pubinfo>
+          <pubplace>Portland, OR</pubplace>
+          <publish>OR BLM</publish>
+        </pubinfo>
+        <othercit>Geodatabase is known as WEEDS in internal BLM systems.</othercit>
+        <onlink>http://www.blm.gov/or/gis/data.php</onlink>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>weeds_poly: This is a depiction of Noxious and Invasive Weed infestations in Oregon and Washington. Attributes are provided that give basic information about the weed infestation site such as the species of weed, how many plants there are, when the site was discovered, whether this is a current or historical site, etc.</abstract>
+      <purpose>Tracking of noxious weed infestations to aid in prevention and control of establishment and spread.</purpose>
+      <supplinf>BLM (Bureau of Land Management)</supplinf>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <sngdate>
+          <caldate>20140121</caldate>
+          <time>unknown</time>
+        </sngdate>
+      </timeinfo>
+      <current>publication date</current>
+    </timeperd>
+    <status>
+      <progress>In work</progress>
+      <update>As needed</update>
+    </status>
+    <spdom>
+      <bounding>
+        <westbc>-124.511726</westbc>
+        <eastbc>117.181966</eastbc>
+        <northbc>48.987770</northbc>
+        <southbc>-0.000057</southbc>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt>BLM-Theme</themekt>
+        <themekey>Vegetation</themekey>
+      </theme>
+      <theme>
+        <themekt>None</themekt>
+        <themekey>weeds</themekey>
+        <themekey>invasive</themekey>
+        <themekey>invasive species</themekey>
+        <themekey>special plant species</themekey>
+        <themekey>noxious weed infestation</themekey>
+      </theme>
+      <theme>
+        <themekt>ISO 19115</themekt>
+        <themekey>biota</themekey>
+      </theme>
+      <theme>
+        <themekt>ISO 19115 Topic Categories</themekt>
+        <themekey>biota</themekey>
+      </theme>
+      <place>
+        <placekt>None</placekt>
+        <placekey>Pacific Northwest</placekey>
+      </place>
+      <place>
+        <placekt>BLM-State</placekt>
+        <placekey>Oregon</placekey>
+        <placekey>Washington</placekey>
+      </place>
+    </keywords>
+    <accconst>PUBLIC DATA: None, these data are considered public domain</accconst>
+    <useconst>These data are provided by Bureau of Land Management (BLM) “as is” and may contain errors or omissions. The User assumes the entire risk associated with its use of these data and bears all responsibility in determining whether these data are fit for the User’s intended use. The information contained in these data is dynamic and may change over time. The data are not better than the original sources from which they were derived, and both scale and accuracy may vary across the data set. These data may not have the accuracy, resolution, completeness, timeliness, or other characteristics appropriate for applications that potential users of the data may contemplate. The User is encouraged to carefully consider the content of the metadata file associated with these data. These data are neither legal documents nor land surveys, and must not be used as such. Official records may be referenced at most BLM offices. Please report any errors in the data to the BLM office for which it was obtained. The BLM should be cited as the data source in any products derived from these data. Any Users wishing to modify the data should describe the types of modifications they have performed. The User should not misrepresent the data, nor imply that changes made were approved or endorsed by BLM. This information may be updated without notification</useconst>
+    <ptcontac>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Bureau of Land Management, Oregon State Office</cntorg>
+          <cntper>Jeanne Standley</cntper>
+        </cntorgp>
+        <cntpos>Botanist</cntpos>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>1300 Airport Lane</address>
+          <city>North Bend</city>
+          <state>OR</state>
+          <postal>97459</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>(541) 751-4283</cntvoice>
+        <cntfax>(541)751-4303</cntfax>
+        <cntemail>jstandle@blm.gov</cntemail>
+        <hours>8am-5pm</hours>
+      </cntinfo>
+    </ptcontac>
+    <native>ArcGIS, Citrix, WindowsXP</native>
+  </idinfo>
+  <dataqual>
+    <logic>Weeds consist of unique polygons that may overlap.</logic>
+    <complete>Data is currently available for the all districts except Coos Bay.</complete>
+    <posacc>
+      <horizpa>
+        <horizpar>Positional accuracy of the individual polygons is described in the attributes "COORD_SRC" and "ACC_FT".</horizpar>
+      </horizpa>
+    </posacc>
+    <lineage>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>Bureau of Land Management Oregon State Office</origin>
+            <pubdate>20000601</pubdate>
+            <title>24K Digital Raster Graphics Oregon</title>
+            <edition>1st</edition>
+            <geoform>raster digital data</geoform>
+            <pubinfo>
+              <pubplace>Portland, OR</pubplace>
+              <publish>OR BLM</publish>
+            </pubinfo>
+          </citeinfo>
+        </srccite>
+        <srcscale>24000</srcscale>
+        <typesrc>onLine</typesrc>
+        <srctime>
+          <timeinfo>
+            <sngdate>
+              <caldate>unknown</caldate>
+            </sngdate>
+          </timeinfo>
+          <srccurr>publication date</srccurr>
+        </srctime>
+        <srccitea>24K DRG</srccitea>
+        <srccontr>Back drop for digitizing</srccontr>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>Bureau of Land Management</origin>
+            <pubdate>unknown</pubdate>
+            <title>BLM Digital Orthophoto Quadrangles</title>
+            <geoform>map</geoform>
+          </citeinfo>
+        </srccite>
+        <srcscale>24000</srcscale>
+        <typesrc>onLine</typesrc>
+        <srctime>
+          <timeinfo>
+            <rngdates>
+              <begdate>19980101</begdate>
+              <begtime>unknown</begtime>
+              <enddate>20020101</enddate>
+              <endtime>unknown</endtime>
+            </rngdates>
+          </timeinfo>
+          <srccurr>ground condition</srccurr>
+        </srctime>
+        <srccitea>DOQ</srccitea>
+        <srccontr>Back drop for digitizing</srccontr>
+      </srcinfo>
+      <procstep>
+        <procdesc>Current version of coverage was redesigned as a geodatabase and loaded into ArcSDE. The following entity changes were performed during this redesign: New field "VERSION_NAME" added. The old "ACC" attribute information was split out into two new fields, "COORD_SRC" and "ACC_FT".</procdesc>
+        <procdate>unknown</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>Bureau of Land Management, Oregon State Office</cntorg>
+              <cntper>Steve Salas</cntper>
+            </cntorgp>
+            <cntpos>GIS Specialist</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>P.O. Box 2965</address>
+              <city>Portland</city>
+              <state>OR</state>
+              <postal>97208</postal>
+              <country>US</country>
+            </cntaddr>
+            <cntvoice>(503) 808-6416</cntvoice>
+            <cntemail>ssalas@blm.gov</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+      <procstep>
+        <procdesc>Updated Weeds with 2010 new sites and changes to old sites. About 860 sites.</procdesc>
+        <procdate>20110217</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>Bureau of Land Management, Burns District</cntorg>
+              <cntper>Pam Keller</cntper>
+            </cntorgp>
+            <cntpos>GIS Coordinator</cntpos>
+            <cntaddr>
+              <addrtype>mailing and physical</addrtype>
+              <address>28910 Hwy 20 West</address>
+              <city>Hines</city>
+              <state>OR</state>
+              <postal>97738</postal>
+              <country>US</country>
+            </cntaddr>
+            <cntvoice>(541) 573-4486</cntvoice>
+            <cntemail>pkeller@blm.gov</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+      <procstep>
+        <procdesc>Added the 627 weed polygons (buffered from points) created by Molly Boyter in 2009.</procdesc>
+        <procdate>20111014</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>Bureau of Land Management, Burns District</cntorg>
+              <cntper>Pam Keller</cntper>
+            </cntorgp>
+            <cntpos>GIS Coordinator</cntpos>
+            <cntaddr>
+              <addrtype>mailing and physical</addrtype>
+              <address>28910 Hwy 20 West</address>
+              <city>Hines</city>
+              <state>OR</state>
+              <postal>97738</postal>
+              <country>US</country>
+            </cntaddr>
+            <cntvoice>(541) 573-4486</cntvoice>
+            <cntemail>pkeller@blm.gov</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+      <procstep>
+        <procdesc>2011 weed location inventory sites for Burns, Coos Bay and Eugene added. Earlier sites for Coos Bay also added. Unique GIS_IDs created. Except for Burns, SITE_ID was simply set to GIS_ID. For the other Districts, this may not be what is desired since it doesn’t indicate whether a site is related to an existing site (in which case it would have the same SITE_ID) but has changed it’s extent. There is a great deal of overlap in Eugene sites that will need to be resolved at some time to avoid a greatly inflated acreage. Multi-part polygons (thousands) were exploded and unique IDs added to all. There were thousands of “self-intersect” errors from creating sites by buffering roads and not thinning the vertices. A global thin (generalize) to 1 meter was done and eliminated the errors without significant change to the shape of the polygons. There were some SITE_ID/GIS_IDs that were too high (in the billions) to allow for concatenation of DIST_CD to make a statewide unique ID. These were dropped to lower numbers by subtracting a fixed number. Contact Pam Keller for specifics if needed. For the entire dataset REV_DATE and DISC_DATE were cleaned up to eliminate invalid values. Also if REV_DATE was blank and DISC_DATE not blank, REV_DATE was set to DISC_DATE. And vice versa. All remaining blanks and nulls set to “UNKNOWN”.</procdesc>
+        <procdate>20120101</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>Bureau of Land Management, Burns District Office</cntorg>
+              <cntper>Pamela Keller</cntper>
+            </cntorgp>
+            <cntpos>GIS Coordinator</cntpos>
+            <cntaddr>
+              <addrtype>mailing and physical</addrtype>
+              <address>28910 Hwy 20 West</address>
+              <city>Hines</city>
+              <state>OR</state>
+              <postal>97738-9424</postal>
+              <country>US</country>
+            </cntaddr>
+            <cntvoice>(541) 573-4486</cntvoice>
+            <cntemail>pkeller@blm.gov</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+      <procstep>
+        <procdesc>NISMS_ID field changed from LongInt to GUID. Publish Classifier field.</procdesc>
+        <procdate>20130402</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>Bureau of Land Management</cntorg>
+              <cntper>Steve Salas</cntper>
+            </cntorgp>
+            <cntpos>GIS Spec.</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>P.O. Box 2965</address>
+              <city>Portland</city>
+              <state>OR</state>
+              <postal>97208</postal>
+              <country>US</country>
+            </cntaddr>
+            <cntvoice>(503) 808-6416</cntvoice>
+            <cntemail>r2mills@blm.gov</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+    </lineage>
+  </dataqual>
+  <spdoinfo>
+    <direct>Vector</direct>
+    <ptvctinf>
+      <sdtsterm>
+        <sdtstype>GT-polygon composed of chains</sdtstype>
+        <ptvctcnt>133024</ptvctcnt>
+      </sdtsterm>
+    </ptvctinf>
+  </spdoinfo>
+  <spref>
+    <horizsys>
+      <geograph>
+        <latres>2e-008</latres>
+        <longres>2e-008</longres>
+        <geogunit>Decimal Degrees</geogunit>
+      </geograph>
+      <geodetic>
+        <horizdn>D North American 1983</horizdn>
+        <ellips>GRS 1980</ellips>
+        <semiaxis>6378137.0</semiaxis>
+        <denflat>298.257222101</denflat>
+      </geodetic>
+    </horizsys>
+  </spref>
+  <eainfo>
+    <detailed>
+      <enttyp>
+        <enttypl>OSODBA.WEEDS_POLY_new</enttypl>
+      </enttyp>
+      <attr>
+        <attrlabl>ACC_FT</attrlabl>
+        <attrdef>How close, in feet, the spatial GIS depiction is to the actual location on the ground.  There are several factors to consider in GIS error: scale and accuracy of map-based sources, accuracy of GPS equipment, and the skill level of the data manipulators.  A value of "0" indicates no entry was made.  This is the correct value when the COORD_SRC is another GIS theme (DLG, GCD, DEM) because the accuracy is determined by that theme.  If COORD_SRC is MAP or GPS, however, a value of "0" indicates a missing value that should be filled in either with a non-zero number or "-1".  A value of "-1" indicates that the accuracy is unknown and no reliable estimate can be made.</attrdef>
+        <attrdefs>Bureau of Land Management</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>COORD_SRC</attrlabl>
+        <attrdef>The actual source of the GIS coordinates for the line segments.</attrdef>
+        <attrdefs>Bureau of Land Management</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>CFF</edomv>
+            <edomvd>Lines duplicated or buffered from Cartographic Feature Files (USFS).</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>DEM</edomv>
+            <edomvd>Digital Elevation Model (30m or better accuracy) used for creation of contours.</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>DLG</edomv>
+            <edomvd>Lines duplicated or buffered from USGS Digital Line Graph derived GIS themes.</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>DOQ</edomv>
+            <edomvd>Digitized linework over Digital Orthoquad backdrop.</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>DRG</edomv>
+            <edomvd>Digitized linework over Digital Raster Graphic backdrop.</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>GPS</edomv>
+            <edomvd>Lines obtained from a Global Positioning System device.</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>MAP</edomv>
+            <edomvd>Digitized linework from hardcopy map.</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>TRS</edomv>
+            <edomvd>Coordinates only given as a legal description (township, range, section).</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>UNK</edomv>
+            <edomvd>Unknown coordinate source (Default value).</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>DISC_DATE</attrlabl>
+        <attrdef>The date which the site was originally discovered (YYYYMMDD).</attrdef>
+        <attrdefs>Bureau of Land Management</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>DIST_CD</attrlabl>
+        <attrdef>A unique 2 character identifier for a BLM District within a BLM Administrative Area</attrdef>
+        <attrdefs>Bureau of Land Management</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>01</edomv>
+            <edomvd>Lakeview</edomvd>
+          </edom>
+          <edom>
+            <edomv>02</edomv>
+            <edomvd>Burns</edomvd>
+          </edom>
+          <edom>
+            <edomv>03</edomv>
+            <edomvd>Vale</edomvd>
+          </edom>
+          <edom>
+            <edomv>05</edomv>
+            <edomvd>Prineville</edomvd>
+          </edom>
+          <edom>
+            <edomv>08</edomv>
+            <edomvd>Salem</edomvd>
+          </edom>
+          <edom>
+            <edomv>09</edomv>
+            <edomvd>Eugene</edomvd>
+          </edom>
+          <edom>
+            <edomv>10</edomv>
+            <edomvd>Roseburg</edomvd>
+          </edom>
+          <edom>
+            <edomv>11</edomv>
+            <edomvd>Medford</edomvd>
+          </edom>
+          <edom>
+            <edomv>12</edomv>
+            <edomvd>Coos Bay</edomvd>
+          </edom>
+          <edom>
+            <edomv>13</edomv>
+            <edomvd>Spokane</edomvd>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>GIS_ID</attrlabl>
+        <attrdef>GIS assigned numeric (integers only) identifier for every polygon feature. GIS_ID is never duplicated in the database. Used in conjunction with SITE_ID to track changes in the extent of a weed population over time. If a site has increased or decreased in size, the old population extent may be kept for historical reference. The new population extent would be assigned the same SITE_ID value, but a unique GIS_ID value. The OC_CD value of new population extent would be coded "C" and the old population is changed from "C" to "H".</attrdef>
+        <attrdefs>Bureau of Land Management</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>NUM_PLTS</attrlabl>
+        <attrdef>The number of individual plants that infest a particular weed site. Can also represent the number per unit of measure (e.g., 100 plants per acre) when used in combination with UNIT_MEAS.</attrdef>
+        <attrdefs>Bureau of Land Management</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>OBJECTID</attrlabl>
+        <attrdef>Internal feature number.</attrdef>
+        <attrdefs>ESRI</attrdefs>
+        <attrdomv>
+          <udom>Sequential unique whole numbers that are automatically generated.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>OC_CD</attrlabl>
+        <attrdef>Defines whether an area is currently occupied by a weed, no longer occupied by a weed, or if a change in the extent of a weed population has occurred. If a site has increased or decreased in size, the old population extent may be kept for historical reference and the OC_CD value for the old population is changed from "C" to "H". The new population extent would be coded "C" and be assigned the same SITE_ID value, but a unique GIS_ID value.</attrdef>
+        <attrdefs>Bureau of Land Management</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>H</edomv>
+            <edomvd>OC_CD value for the old population</edomvd>
+          </edom>
+          <edom>
+            <edomv>C</edomv>
+            <edomvd>The new population extent</edomvd>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>REV_DATE</attrlabl>
+        <attrdef>The most recent date that the site was revisited (YYYYMMDD)</attrdef>
+        <attrdefs>Bureau of Land Management</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>SHAPE</attrlabl>
+        <attrdef>Feature geometry.</attrdef>
+        <attrdefs>ESRI</attrdefs>
+        <attrdomv>
+          <udom>Coordinates defining the features.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>SITE_ID</attrlabl>
+        <attrdef>Unique number assigned to each new noxious weed site (infestation).</attrdef>
+        <attrdefs>Bureau of Land Management</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>SPECCODE</attrlabl>
+        <attrdef>An acronym constructed following the Garrison-Skovlin_Poulton system to represent a plant genus/species. Also called a Plant Symbol. Codes are assigned by the USDA National Resource Conservation Service (NRCS) national botanist.</attrdef>
+        <attrdefs>USDA, NRCS 1999. The PLANTS database (http://plants.usda.gov/plants). National Plant Data Center, Baton Rouge, LA 70874-4490 USA</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>CLASSIFIER</attrlabl>
+        <attrdef>Bureau of Land Management employee, cooperating organization or company that identifies or classifies the plant.</attrdef>
+        <attrdefs>BLM</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>UNIT_MEAS</attrlabl>
+        <attrdef>Standardized abbreviations for length, weight, and area in English and metric units of measure. This attribute will only be used in conjunction with the attribute NUM_PLTS.</attrdef>
+        <attrdefs>Bureau of Land Management</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>AC</edomv>
+            <edomvd>Acre</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>SQM</edomv>
+            <edomvd>Square meters</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>SQMI</edomv>
+          </edom>
+          <edom>
+            <edomv>HA</edomv>
+            <edomvd>Square miles</edomvd>
+            <edomvd>Hectares</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>TOTAL</edomv>
+            <edomvd>Total count, no units applied</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>UNIQUE_ID</attrlabl>
+      </attr>
+      <attr>
+        <attrlabl>COMMENTS</attrlabl>
+        <attrdef>Any additional information.</attrdef>
+        <attrdefs>Bureau of Land Management</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>NISIMS_ID</attrlabl>
+      </attr>
+      <attr>
+        <attrlabl>COVER_PCT</attrlabl>
+        <attrdef>Percent of total ground cover occupied by weed plants.</attrdef>
+        <attrdefs>Bureau of Land Management</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>PHENOLOGY</attrlabl>
+        <attrdef>Growth stage of target plants.</attrdef>
+        <attrdefs>Bureau of Land Management</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>Seedling</edomv>
+            <edomvd>Seedling</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Rosette</edomv>
+            <edomvd>Rosette</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Bolting</edomv>
+            <edomvd>Bolting</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Bud</edomv>
+            <edomvd>Bud</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Flowering</edomv>
+            <edomvd>Flowering</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Seedset</edomv>
+            <edomvd>Seedset</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Deaddormant</edomv>
+            <edomvd>Deaddormant</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Seedling/Seedset</edomv>
+            <edomvd>Seedling/Seedset</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>Bud/Flowering</edomv>
+            <edomvd>Bud/Flowering</edomvd>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>Rosette/Bolting</edomv>
+            <edomvd>Rosette/Bolting</edomvd>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>Rosette/Flowering</edomv>
+            <edomvd>Rosette/Flowering</edomvd>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>Seedling/Rosette</edomv>
+            <edomvd>Seedling/Rosette</edomvd>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>Flowering/Seedset</edomv>
+            <edomvd>Flowering/Seedset</edomvd>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>SHAPE.AREA</attrlabl>
+      </attr>
+      <attr>
+        <attrlabl>SHAPE.LEN</attrlabl>
+      </attr>
+    </detailed>
+    <overview>
+      <eaover>Attributes are provided that give basic information about the weed infestation site such as the species of weed, how many plants there are, when the site was discovered, whether this is a current or historical site, etc.</eaover>
+    </overview>
+  </eainfo>
+  <distinfo>
+    <distrib>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Bureau of Land Management</cntorg>
+          <cntper>Eric Hiebenthal</cntper>
+        </cntorgp>
+        <cntpos>GIS Data Management Specialist</cntpos>
+        <cntaddr>
+          <addrtype>mailing</addrtype>
+          <address>P.O Box 2965</address>
+          <city>Portland</city>
+          <state>OR</state>
+          <postal>97208</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>503-808-6340</cntvoice>
+        <cntfax>503-808-6419</cntfax>
+        <cntemail>ehiebent@blm.gov</cntemail>
+        <cntinst>contact instructions</cntinst>
+      </cntinfo>
+    </distrib>
+    <distliab>The BLM assumes no responsibility for errors or omissions. No warranty is made by the BLM as to the accuracy, reliability, or completeness of these data for individual use or aggregate use with other data; nor shall the act of distribution to contractors, partners, or beyond, constitute any such warranty for individual or aggregate data use with other data. Although these data have been processed successfully on computers of BLM, no warranty, expressed or implied, is made by BLM regarding the use of these data on any other system, or for general or scientific purposes, nor does the fact of distribution constitute or imply any such warranty. In no event shall the BLM have any liability whatsoever for payment of any consequential, incidental, indirect, special, or tort damages of any kind, including, but not limited to, any loss of profits arising out of the use or reliance on the geographic data or arising out of the delivery, installation, operation, or support by BLM.</distliab>
+  </distinfo>
+  <metainfo>
+    <metd>20000608</metd>
+    <metrd>20130402</metrd>
+    <metc>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Bureau of Land Management, Oregon State Office</cntorg>
+          <cntper>Roger Mills</cntper>
+        </cntorgp>
+        <cntpos>GIS Specialist</cntpos>
+        <cntaddr>
+          <addrtype>mailing</addrtype>
+          <address>P.O. Box 2965</address>
+          <city>Portland</city>
+          <state>OR</state>
+          <postal>97208</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>(503) 808-6340</cntvoice>
+        <cnttdd>tdd/tty phone</cnttdd>
+        <cntfax>(503) 808-6419</cntfax>
+        <cntemail>r2mills@blm.gov</cntemail>
+        <hours>8:00-4:00</hours>
+        <cntinst>None</cntinst>
+      </cntinfo>
+    </metc>
+    <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+    <metstdv>FGDC-STD-001-1998</metstdv>
+    <mettc>local time</mettc>
+    <metsi>
+      <metsc>Unclassified</metsc>
+    </metsi>
+  </metainfo>
+</metadata>

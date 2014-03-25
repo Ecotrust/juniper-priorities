@@ -1,0 +1,430 @@
+﻿<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin>OR/WA BLM</origin>
+        <pubdate>20130624</pubdate>
+        <pubtime>unknown</pubtime>
+        <title>BLM OR Visual Resource Inventory Publication Polygon</title>
+        <geoform>vector digital data</geoform>
+        <pubinfo>
+          <pubplace>Portland,OR</pubplace>
+        </pubinfo>
+        <onlink>http://www.blm.gov/or/gis/data.php</onlink>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>vri_pub_poly: Publication dataset showing Visual Resource Inventory (VRI) classes for BLM-managed lands in Oregon and Washington. The classes are based on scenic quality, sensitivity level, and distance zones.</abstract>
+      <purpose>Resource management planning, characterization and management of scenic/visual quality</purpose>
+      <supplinf>BLM - Bureau of Land Management</supplinf>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <sngdate>
+          <caldate>20130624</caldate>
+          <time>unknown</time>
+        </sngdate>
+      </timeinfo>
+      <current>publication date</current>
+    </timeperd>
+    <status>
+      <progress>In work</progress>
+      <update>As needed</update>
+    </status>
+    <spdom>
+      <bounding>
+        <westbc>-124.513434</westbc>
+        <eastbc>-116.922270</eastbc>
+        <northbc>49.000115</northbc>
+        <southbc>41.992470</southbc>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt>None</themekt>
+        <themekey>land use planning</themekey>
+        <themekey>land management</themekey>
+        <themekey>Lands</themekey>
+        <themekey>boundaries</themekey>
+        <themekey>Recreation</themekey>
+      </theme>
+      <theme>
+        <themekt>ISO 19115</themekt>
+        <themekey>environment</themekey>
+      </theme>
+      <theme>
+        <themekt>BLM-Theme</themekt>
+        <themekey>Visual Resources</themekey>
+      </theme>
+      <place>
+        <placekt>BLM-State</placekt>
+        <placekey>Oregon</placekey>
+        <placekey>Washington</placekey>
+      </place>
+      <place>
+        <placekt>None</placekt>
+        <placekey>Pacific Northwest</placekey>
+      </place>
+    </keywords>
+    <accconst>PUBLIC DATA: None, these data are considered public domain.</accconst>
+    <useconst>These data are provided by Bureau of Land Management (BLM) “as is” and may contain errors or omissions. Users assumes the entire risk associated with its use of these data and bears all responsibility in determining whether these data are fit for intended use. The information contained in these data is dynamic and may change over time. The data are not better than the original sources from which they were derived, and both scale and accuracy may vary across the data set. These data may not have the accuracy, resolution, completeness, timeliness, or other characteristics appropriate for applications that potential users of the data may contemplate. Users are encouraged to carefully consider the content of the metadata file associated with these data. These data are neither legal documents nor land surveys, and must not be used as such. Official records may be referenced at most BLM offices. Please report any errors in the data to the BLM office from which it was obtained. The BLM should be cited as the data source in any products derived from these data. Users wishing to modify the data should describe the types of modifications they have performed. Users should not misrepresent the data, nor imply that changes made were approved or endorsed by BLM. This data may be updated by the BLM without notification.</useconst>
+    <ptcontac>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Bureau of Land Management, OR/WA State Office</cntorg>
+          <cntper>Jerry Magee</cntper>
+        </cntorgp>
+        <cntpos>Natural Resource Specialist</cntpos>
+        <cntaddr>
+          <addrtype>mailing</addrtype>
+          <address>P. O. Box 2965</address>
+          <city>Portland</city>
+          <state>OR</state>
+          <postal>97208-2965</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>(503) 808-6086</cntvoice>
+        <cntfax>(503) 808-6021</cntfax>
+        <cntemail>gmagee@blm.gov</cntemail>
+      </cntinfo>
+    </ptcontac>
+    <native>Microsoft Windows XP Version 5.1 (Build 2600) Service Pack 2; ESRI ArcCatalog 9.1.0.722</native>
+    <crossref>
+      <citeinfo>
+        <origin>OR/WA BLM</origin>
+        <pubdate>20070308</pubdate>
+        <pubtime>unknown</pubtime>
+        <title>vrm_pub_poly</title>
+        <geoform>vector digital data</geoform>
+      </citeinfo>
+    </crossref>
+  </idinfo>
+  <dataqual>
+    <logic>Visual Resource Inventory (VRI) consists of unique, non-overlapping polygons.</logic>
+    <complete>Data is currently available for the Burns, Coos Bay, Eugene, Lakeview, Medford, Prineville, Salem, and Roseburg Districts.</complete>
+    <posacc>
+      <horizpa>
+        <horizpar>Unknown</horizpar>
+      </horizpa>
+    </posacc>
+    <lineage>
+      <procstep>
+        <procdesc>Current version of geodatabase was loaded into ArcSDE.</procdesc>
+        <procdate>20070131</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>OR BLM/Northrop Grumman Corporation</cntorg>
+              <cntper>Barbara W. Haney</cntper>
+            </cntorgp>
+            <cntpos>Sr. GIS Technical Support Specialist</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>PO Box 2965</address>
+              <city>Portland</city>
+              <state>OR</state>
+              <postal>97208</postal>
+            </cntaddr>
+            <cntvoice>503-808-6313</cntvoice>
+            <cntemail>bhaney@or.blm.gov</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+      <procstep>
+        <procdesc>Dataset clipped to BLM ownership</procdesc>
+        <procdate>20070308</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>OR BLM/Northrop Grumman Corporation</cntorg>
+              <cntper>Barbara W. Haney</cntper>
+            </cntorgp>
+            <cntpos>Sr. GIS Technical Support Specialist</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>PO Box 2965</address>
+              <city>Portland</city>
+              <state>OR</state>
+              <postal>97208</postal>
+            </cntaddr>
+            <cntvoice>503-808-6313</cntvoice>
+            <cntemail>bhaney@or.blm.gov</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+      <procstep>
+        <procdesc>Intersected VRI Classes, Scenic Quality Ratings, Distance Zones, and Sensitivity Levels from AECOM contract work. Added fields and calculated coded domain values to match coded domain values of target data. Loaded objects into VRI_POLY.</procdesc>
+        <procdate>20110509</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>Bureau of Land Management, Spokane District Office</cntorg>
+              <cntper>Mike Fallon</cntper>
+            </cntorgp>
+            <cntpos>GIS Specialist</cntpos>
+            <cntaddr>
+              <addrtype>mailing and physical</addrtype>
+              <address>1103 N Fancher Road</address>
+              <city>Spokane Valley</city>
+              <state>WA</state>
+              <postal>99212</postal>
+              <country>US</country>
+            </cntaddr>
+            <cntvoice>(509) 536-1276</cntvoice>
+            <cntemail>mfallon@blm.gov</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+      <procstep>
+        <procdesc>Fixed some areas that extended beyond the boundaries of Juniper Dunes Wilderness, added areas found with wilderness character south of wilderness as VRI II.</procdesc>
+        <procdate>20120124</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>Bureau of Land Management, Spokane District Office</cntorg>
+              <cntper>Mike Fallon</cntper>
+            </cntorgp>
+            <cntpos>GIS Specialist</cntpos>
+            <cntaddr>
+              <addrtype>mailing and physical</addrtype>
+              <address>1103 N Fancher Road</address>
+              <city>Spokane Valley</city>
+              <state>WA</state>
+              <postal>99212</postal>
+              <country>US</country>
+            </cntaddr>
+            <cntvoice>(509) 536-1276</cntvoice>
+            <cntemail>mfallon@blm.gov</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+      <procstep>
+        <procdesc>Discrepancies between original contractor supplied data were resolved. Previous edits correcting boundary at Juniper Dunes wilderness was not altered.</procdesc>
+        <procdate>20120125</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>Bureau of Land Management, Spokane District Office</cntorg>
+              <cntper>Mike Fallon</cntper>
+            </cntorgp>
+            <cntpos>GIS Specialist</cntpos>
+            <cntaddr>
+              <addrtype>mailing and physical</addrtype>
+              <address>1103 N Fancher Road</address>
+              <city>Spokane Valley</city>
+              <state>WA</state>
+              <postal>99212</postal>
+              <country>US</country>
+            </cntaddr>
+            <cntvoice>(509) 536-1276</cntvoice>
+            <cntemail>mfallon@blm.gov</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+    </lineage>
+  </dataqual>
+  <spdoinfo>
+    <direct>Vector</direct>
+    <ptvctinf>
+      <sdtsterm>
+        <sdtstype>GT-polygon composed of chains</sdtstype>
+        <ptvctcnt>9676</ptvctcnt>
+      </sdtsterm>
+    </ptvctinf>
+  </spdoinfo>
+  <spref>
+    <horizsys>
+      <geograph>
+        <latres>2e-008</latres>
+        <longres>2e-008</longres>
+        <geogunit>Decimal Degrees</geogunit>
+      </geograph>
+      <geodetic>
+        <horizdn>D North American 1983</horizdn>
+        <ellips>GRS 1980</ellips>
+        <semiaxis>6378137.0</semiaxis>
+        <denflat>298.257222101</denflat>
+      </geodetic>
+    </horizsys>
+  </spref>
+  <eainfo>
+    <detailed>
+      <enttyp>
+        <enttypl>vri_pub_poly</enttypl>
+        <enttypd>Visual Resource Inventory Class designations on BLM lands</enttypd>
+        <enttypds>Bureau of Land Management</enttypds>
+      </enttyp>
+      <attr>
+        <attrlabl>DISTANCE_ZONE</attrlabl>
+        <attrdef>Indicates whether the area being inventoried is in the foreground-middle(FM) ground of a person's view, in the background (BG), or seldom seen (SS).</attrdef>
+        <attrdefs>Bureau of Land Management</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>FM</edomv>
+            <edomvd>Foreground-Middleground</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>BG</edomv>
+            <edomvd>Background</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>SS</edomv>
+            <edomvd>Seldom Seen</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>OBJECTID</attrlabl>
+        <attrdef>Internal feature number.</attrdef>
+        <attrdefs>ESRI</attrdefs>
+        <attrdomv>
+          <udom>Sequential unique whole numbers that are automatically generated.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>SHAPE</attrlabl>
+        <attrdef>Feature geometry.</attrdef>
+        <attrdefs>ESRI</attrdefs>
+        <attrdomv>
+          <udom>Coordinates defining the features.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>VRI_CLASS</attrlabl>
+        <attrdef>VRI Classes are the result of the evaluation of an area for it's visual potential based on several criteria including scenic quality, sensitivity level, and distance zones.</attrdef>
+        <attrdefs>Bureau of Land Management</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>I</edomv>
+            <edomvd>Assigned to all special areas where the current management situations require maintaining a natural environment essentially unaltered by man.</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>II</edomv>
+            <edomvd>Assigned where scenic quality is highest, A, or where the scenic quality is B and the distance zone is foreground/middleground.</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>III</edomv>
+            <edomvd>Assigned where scenic quality is B, distance zone is background or seldom seen and sensitivity is High or where sensitivity is Medium but the distance zone is foreground/middleground.</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>IV</edomv>
+            <edomvd>Assigned to areas that don't meet the criteria for I, II, or III.</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>VRI_SCENIC</attrlabl>
+        <attrdef>A code to denote most (A), moderately (B), or least (C) scenic quality based on factors such as landform, vegetation, water, color, influence of adjacent scenery, scarcity, and cultural modifications.</attrdef>
+        <attrdefs>Bureau of Land Management</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>A</edomv>
+            <edomvd>Most Scenic; score of 19 or more using procedures in BLM Handbook H-8410-1</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>B</edomv>
+            <edomvd>Moderately Scenic; score of 12-18 using procedures in BLM Handbook H-8410-1</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>C</edomv>
+            <edomvd>Least Scenic; score of 11 or less using procedures in BLM Handbook H-8410-1</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>VRI_SENSITIVITY</attrlabl>
+        <attrdef>The visual sensitivity of the area being inventoried based on type of users, amount of use, public interest, adjacent land uses, and special areas.</attrdef>
+        <attrdefs>Bureau of Land Management</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>HIGH</edomv>
+            <edomvd>High level of sensitivity</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>MOD</edomv>
+            <edomvd>Moderate level of sensitivity</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>LOW</edomv>
+            <edomvd>Low level of sensitivity</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>SHAPE.AREA</attrlabl>
+      </attr>
+      <attr>
+        <attrlabl>SHAPE.LEN</attrlabl>
+      </attr>
+    </detailed>
+    <overview>
+      <eaover>Polygons show the boundaries of different VRI Class areas.</eaover>
+    </overview>
+  </eainfo>
+  <distinfo>
+    <distrib>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Bureau of Land Management, Oregon State Office</cntorg>
+          <cntper>Eric Hiebenthal</cntper>
+        </cntorgp>
+        <cntpos>GIS Data Management Specialist</cntpos>
+        <cntaddr>
+          <addrtype>mailing</addrtype>
+          <address>P.O. Box 2965</address>
+          <city>Portland</city>
+          <state>OR</state>
+          <postal>97208</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>503-808-6565</cntvoice>
+        <cntfax>503-808-6419</cntfax>
+        <cntemail>ehiebent@blm.gov</cntemail>
+      </cntinfo>
+    </distrib>
+    <distliab>The BLM assumes no responsibility for errors or omissions and makes no warranty as to the accuracy, reliability, or completeness of these data for individual use or aggregate use with other data; nor shall the act of distribution to contractors, partners, or beyond, constitute any such warranty for individual or aggregate data use with other data. BLM computers successfully processed this data. The BLM makes no warranty, expressed or implied, regarding the use of this data on any other system, or for general or scientific purposes, nor does distribution constitute or imply any such warranty. The BLM has no liability for payment of any consequential, incidental, indirect, special, or tort damages of any kind, including, but not limited to, any loss of profits arising out of the use or reliance on the geographic data or arising out of the delivery, installation, operation, or support by BLM.</distliab>
+  </distinfo>
+  <metainfo>
+    <metd>20090106</metd>
+    <metrd>20120821</metrd>
+    <metc>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Bureau of Land Management, Oregon State Office</cntorg>
+          <cntper>Stanley Frazier</cntper>
+        </cntorgp>
+        <cntpos>State Data Administrator</cntpos>
+        <cntaddr>
+          <addrtype>mailing</addrtype>
+          <address>P.O. Box 2965</address>
+          <city>Portland</city>
+          <state>OR</state>
+          <postal>97208</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>(503)808-6009 (direct), (503)808-6004 (front desk)</cntvoice>
+        <cntfax>(503)808-6419</cntfax>
+        <cntemail>sfrazier@blm.gov</cntemail>
+      </cntinfo>
+    </metc>
+    <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+    <metstdv>FGDC-STD-001-1998</metstdv>
+    <mettc>local time</mettc>
+    <metsi>
+      <metscs>Not Classified</metscs>
+    </metsi>
+  </metainfo>
+</metadata>

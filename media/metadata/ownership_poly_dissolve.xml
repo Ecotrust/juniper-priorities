@@ -1,0 +1,557 @@
+﻿<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin>Bureau of Land Management, Oregon State Office</origin>
+        <pubdate>20131219</pubdate>
+        <title>BLM OR Management Ownership Dissolve Polygon</title>
+        <geoform>vector digital data</geoform>
+        <onlink>http://www.blm.gov/or/gis/data-details.php?data=ds000011</onlink>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>ownership_poly_dissolve: This theme portrays information related to surface jurisdiction of lands located in the states of Oregon and Washington.</abstract>
+      <purpose>Land use planning, watershed analysis, project planning.</purpose>
+      <supplinf>Bureau of Land Management (BLM)</supplinf>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <rngdates>
+          <begdate>20091001</begdate>
+          <enddate>present</enddate>
+        </rngdates>
+      </timeinfo>
+      <current>publication date</current>
+    </timeperd>
+    <status>
+      <progress>Complete</progress>
+      <update>As needed</update>
+    </status>
+    <spdom>
+      <bounding>
+        <westbc>-124.785528</westbc>
+        <eastbc>-116.463565</eastbc>
+        <northbc>49.002430</northbc>
+        <southbc>41.624852</southbc>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt>BLM-Theme</themekt>
+        <themekey>Land Use Planning</themekey>
+      </theme>
+      <theme>
+        <themekt>None</themekt>
+        <themekey>jurisdiction</themekey>
+        <themekey>landlines</themekey>
+        <themekey>Dissolve</themekey>
+        <themekey>Base Data</themekey>
+        <themekey>ownership</themekey>
+      </theme>
+      <theme>
+        <themekt>ISO 19115</themekt>
+        <themekey>planningCadastre</themekey>
+      </theme>
+      <theme>
+        <themekt>ISO 19115 Topic Categories</themekt>
+        <themekey>planningCadastre</themekey>
+      </theme>
+      <place>
+        <placekt>BLM-State</placekt>
+        <placekey>Oregon</placekey>
+        <placekey>Washington</placekey>
+      </place>
+    </keywords>
+    <accconst>PUBLIC DATA: None, these data are considered public domain.</accconst>
+    <useconst>These data are provided by Bureau of Land Management (BLM) “as is” and may contain errors or omissions. The User assumes the entire risk associated with its use of these data and bears all responsibility in determining whether these data are fit for the User’s intended use. The information contained in these data is dynamic and may change over time. The data are not better than the original sources from which they were derived, and both scale and accuracy may vary across the data set. These data may not have the accuracy, resolution, completeness, timeliness, or other characteristics appropriate for applications that potential users of the data may contemplate. The User is encouraged to carefully consider the content of the metadata file associated with these data. These data are neither legal documents nor land surveys, and must not be used as such. Official records may be referenced at most BLM offices. Please report any errors in the data to the BLM office from which it was obtained. The BLM should be cited as the data source in any products derived from these data. Any Users wishing to modify the data should describe the types of modifications they have performed. The User should not misrepresent the data, nor imply that changes made were approved or endorsed by BLM. This data may be updated by the BLM without notification.</useconst>
+    <ptcontac>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Bureau of Land Management</cntorg>
+          <cntper>Timothy Keck</cntper>
+        </cntorgp>
+        <cntpos>Land Surveyor</cntpos>
+        <cntaddr>
+          <addrtype>mailing</addrtype>
+          <address>P.O. Box 2965</address>
+          <city>Portland</city>
+          <state>OR</state>
+          <postal>97208</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>(503) 808-6190</cntvoice>
+        <cntemail>tkeck@blm.gov</cntemail>
+      </cntinfo>
+    </ptcontac>
+    <native>Microsoft Windows XP Version 5.1 (Build 2600) Service Pack 2; ESRI ArcCatalog 9.1.0.722</native>
+  </idinfo>
+  <dataqual>
+    <attracc>
+      <attraccr>Attributes were compared with the source material for accuracy. Discrepancies were cross checked with other sources to determine and confirm the correct attribute.</attraccr>
+    </attracc>
+    <logic>The Ownership_Poly_Dissolve contains no overlapping or splintered polygons.</logic>
+    <complete>This theme covers the states of Oregon and Washington.</complete>
+    <posacc>
+      <horizpa>
+        <horizpar>Source Data derived from the BLM addresses positional accuracy by referring to the error ellipses from the Geographic coordinate data base (GCDB). Other Source data derived from other Federal, State, and county sources as a rule did not address positional accuracy. Accuracy was then determined from metadata statements if available.</horizpar>
+      </horizpa>
+    </posacc>
+    <lineage>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>Pierce County, Washington</origin>
+            <title>cadastre_thenrit7505517</title>
+            <onlink>http://www.co.pierce.wa.us/pc/interactive.htm</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>onLine</typesrc>
+        <srccitea>cadastre_thenrit7505517</srccitea>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>Whatcom County</origin>
+            <title>Whatcom</title>
+            <onlink>http://www.whatcomcounty.us/pds/planning/gis/gisdata.jsp</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>onLine</typesrc>
+        <srccitea>Whatcom</srccitea>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>Thurston County, Washington</origin>
+            <title>controlpoints</title>
+            <onlink>http://www.geodata.org/online.htm</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>onLine</typesrc>
+        <srccitea>controlpoints</srccitea>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>Snohomish County, Washington</origin>
+            <title>Snohomish</title>
+            <onlink>http://www1.co.snohomish.wa.us/Departments/Information_Services/</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>onLine</typesrc>
+        <srccitea>Snohomish</srccitea>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>Franklin County, Washington</origin>
+            <title>FranklinCountyTwpId</title>
+            <onlink>http://gis.co.franklin.wa.us/</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>onLine</typesrc>
+        <srccitea>FranklinCountyTwpId</srccitea>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>OR/WA BLM</origin>
+            <title>Western Oregon Digital Data Base</title>
+          </citeinfo>
+        </srccite>
+        <srcscale>0</srcscale>
+        <typesrc>None</typesrc>
+        <srccitea>WODDB</srccitea>
+        <srccontr>Western Oregon Digital Database data is Points, lines, and attributes; supplied for Oregon State by the Oregon State Office Geographic Sciences branch, Spatial Products section.</srccontr>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>Klickitat County, Washington</origin>
+            <title>Klickitat</title>
+            <onlink>http://klickitatcounty.org/</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>onLine</typesrc>
+        <srccitea>Klickitat</srccitea>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>Lewis County, Washington</origin>
+            <title>LewisCo</title>
+            <onlink>http://maps.lewiscountywa.gov/maps/maplib_index.html</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>onLine</typesrc>
+        <srccitea>LewisCo</srccitea>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>Grays Harbor County, Washington</origin>
+            <title>GHC_PLS</title>
+          </citeinfo>
+        </srccite>
+        <typesrc>onLine</typesrc>
+        <srccitea>GHC_PLS</srccitea>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>Franklin County, Washington</origin>
+            <title>FranklinCounty</title>
+            <onlink>http://gis.co.franklin.wa.us/</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>onLine</typesrc>
+        <srccitea>FranklinCounty</srccitea>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>Douglas County, Washington</origin>
+            <title>DCParcels9_8_06</title>
+            <onlink>http://www.douglascountywa.net/departments/tls/gis/default.asp</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>onLine</typesrc>
+        <srccitea>DCParcels9_8_06</srccitea>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>Clallam County, Washington</origin>
+            <title>plss_coverage</title>
+            <onlink>http://www.clallam.net/directory/departments.html</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>onLine</typesrc>
+        <srccitea>plss_coverage</srccitea>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>Yakima County, Washington</origin>
+            <title>YakamaCog83</title>
+          </citeinfo>
+        </srccite>
+        <typesrc>None</typesrc>
+        <srccitea>YakamaCog83</srccitea>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>Clallam County, Washington</origin>
+            <title>Cc_gps points</title>
+            <onlink>http://www.clallam.net/directory/departments.html</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>onLine</typesrc>
+        <srccitea>Cc_gps points</srccitea>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>OR/WA BLM</origin>
+            <pubdate>unknown</pubdate>
+            <title>Geographic Coordinate Database</title>
+            <pubinfo>
+              <pubplace>Portland, OR</pubplace>
+              <publish>OR BLM</publish>
+            </pubinfo>
+          </citeinfo>
+        </srccite>
+        <srcscale>12000</srcscale>
+        <typesrc>CD-ROM</typesrc>
+        <srctime>
+          <timeinfo>
+            <rngdates>
+              <begdate>19850101</begdate>
+              <begtime>unknown</begtime>
+              <enddate>unknown</enddate>
+            </rngdates>
+          </timeinfo>
+          <srccurr>publication date</srccurr>
+        </srctime>
+        <srccitea>GCDB</srccitea>
+        <srccontr>Lines, points, and attributes; supplied for the State of Oregon by the BLM Oregon State Office.</srccontr>
+      </srcinfo>
+      <procstep>
+        <procdesc>Data was assembled using information from the Oregon State Office and from various federal, state, and county agencies. When data from multiple sources covered the same area, the data was then assessed for best quality content and accuracy. Priorities were determined for acceptance. Data with positional accuracy statements were first choice (GCDB data). Data with accuracy statements in the metadata were second, and data without accuracy statements was the third priority for acceptance. The data was then combined with and edge matched to previously accepted data and adjusted to conform to the topology rules.</procdesc>
+        <srcused>GCDB</srcused>
+        <srcused>WODDB</srcused>
+        <procdate>not complete</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>Bureau of Land Management, OR/WA State Office</cntorg>
+              <cntper>Tim Keck</cntper>
+            </cntorgp>
+            <cntpos>Land Surveyor, 957.3 GCDB Section</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>P. O. Box 2965</address>
+              <city>Portland</city>
+              <state>OR</state>
+              <postal>97208-2965</postal>
+              <country>US</country>
+            </cntaddr>
+            <cntvoice>(503) 808-6164</cntvoice>
+            <cntemail>Tim_Keck@or.blm.gov</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+      <procstep>
+        <procdesc>Washington state data extracted from equivalent WA_LLI theme (WA_Ownership_poly). Any overlaps with existing Oregon data in OWNERSHIP_POLY were resolved by deleting features from OWNERSHIP_POLY. Field VERSION_NAME of the Washington data was filled with the value "InitialLoad". Fields matching OWNERSHIP_POLY were added to the Washington data and the values were translated from the corresponding Washington data fields using crosswalk tables approved by data steward Tim Keck. Washington data loaded into OWNERSHIP_POLY. Edge-match of data along the Oregon and Washington border was completed by Erin Frostad using GCDB points.</procdesc>
+        <procdate>20091023</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>Bureau of Land Management, Oregon State Office</cntorg>
+              <cntper>Steve Salas</cntper>
+            </cntorgp>
+            <cntpos>GIS Specialist</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>P.O. Box 2965</address>
+              <city>Portland</city>
+              <state>OR</state>
+              <postal>97208</postal>
+              <country>US</country>
+            </cntaddr>
+            <cntvoice>503 808-6416</cntvoice>
+            <cntemail>ssalas@blm.gov</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+      <procstep>
+        <procdesc>Contiguous parcels were dissolved by common values described in the Property_Status field to form single part polygons.</procdesc>
+        <procdate>20091027</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>Bureau of Land Management, Oregon State Office</cntorg>
+              <cntper>Steve Salas</cntper>
+            </cntorgp>
+            <cntpos>GIS Specialist</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>P.O. Box 2965</address>
+              <city>Portland</city>
+              <state>OR</state>
+              <postal>97208</postal>
+              <country>US</country>
+            </cntaddr>
+            <cntvoice>503 808-6416</cntvoice>
+            <cntemail>ssalas@blm.gov</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+    </lineage>
+  </dataqual>
+  <spdoinfo>
+    <direct>Vector</direct>
+    <ptvctinf>
+      <sdtsterm>
+        <sdtstype>GT-polygon composed of chains</sdtstype>
+        <ptvctcnt>32866</ptvctcnt>
+      </sdtsterm>
+    </ptvctinf>
+  </spdoinfo>
+  <spref>
+    <horizsys>
+      <geograph>
+        <latres>2.00000016548074e-008</latres>
+        <longres>2.00000016548074e-008</longres>
+        <geogunit>Decimal Degrees</geogunit>
+      </geograph>
+      <geodetic>
+        <horizdn>D North American 1983</horizdn>
+        <ellips>GRS 1980</ellips>
+        <semiaxis>6378137.0</semiaxis>
+        <denflat>298.257222101</denflat>
+      </geodetic>
+    </horizsys>
+  </spref>
+  <eainfo>
+    <detailed>
+      <enttyp>
+        <enttypl>
+Ownership_poly, Federal</enttypl>
+        <enttypd>Attributes relating to the responsible owner or manager of a parcel in the state of Oregon</enttypd>
+        <enttypds>BLM</enttypds>
+      </enttyp>
+      <attr>
+        <attrlabl>OBJECTID</attrlabl>
+        <attrdef>Internal feature number.</attrdef>
+        <attrdefs>ESRI</attrdefs>
+        <attrdomv>
+          <udom>Sequential unique whole numbers that are automatically generated.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>PROPERTY_STATUS</attrlabl>
+        <attrdef>The entity that administers the surface rights</attrdef>
+        <attrdefs>OR/WA BLM</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>Bureau of Indian Affairs</edomv>
+          </edom>
+          <edom>
+            <edomv>Bureau of Land Management</edomv>
+          </edom>
+          <edom>
+            <edomv>Bonneville Power Administration</edomv>
+          </edom>
+          <edom>
+            <edomv>Bureau of Reclamation</edomv>
+          </edom>
+          <edom>
+            <edomv>Corps of Engineers</edomv>
+          </edom>
+          <edom>
+            <edomv>U.S. Dept. of Defense (except Corps of Engineers)</edomv>
+          </edom>
+          <edom>
+            <edomv>U.S. Dept. of Energy</edomv>
+          </edom>
+          <edom>
+            <edomv>Federal Aviation Administration</edomv>
+          </edom>
+          <edom>
+            <edomv>FWS</edomv>
+            <edomvd>U.S. Fish and Wildlife Service</edomvd>
+          </edom>
+          <edom>
+            <edomv>General Services Administration</edomv>
+          </edom>
+          <edom>
+            <edomv>Local Government</edomv>
+          </edom>
+          <edom>
+            <edomv>NPS</edomv>
+            <edomvd>National Park Service</edomvd>
+          </edom>
+          <edom>
+            <edomv>Private Individual or Company</edomv>
+          </edom>
+          <edom>
+            <edomv>Lands Managed by Private Industry</edomv>
+          </edom>
+          <edom>
+            <edomv>Private Non-Industrial Owner</edomv>
+          </edom>
+          <edom>
+            <edomv>Private Urban Lands</edomv>
+          </edom>
+          <edom>
+            <edomv>State Agency</edomv>
+          </edom>
+          <edom>
+            <edomv>State Dept. of Forestry</edomv>
+          </edom>
+          <edom>
+            <edomv>Division of State Lands</edomv>
+          </edom>
+          <edom>
+            <edomv>State Dept. of Parks and Recreation</edomv>
+          </edom>
+          <edom>
+            <edomv>State Dept. of Fish and Wildlife</edomv>
+          </edom>
+          <edom>
+            <edomv>Undetermined</edomv>
+          </edom>
+          <edom>
+            <edomv>U.S. Coast Guard</edomv>
+          </edom>
+          <edom>
+            <edomv>U.S. Dept. of Agriculture (except Forest Service)</edomv>
+          </edom>
+          <edom>
+            <edomv>U.S. Forest Service</edomv>
+          </edom>
+          <edom>
+            <edomv>Water</edomv>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>SHAPE</attrlabl>
+        <attrdef>Feature geometry.</attrdef>
+        <attrdefs>ESRI</attrdefs>
+        <attrdomv>
+          <udom>Coordinates defining the features.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>SHAPE.AREA</attrlabl>
+      </attr>
+      <attr>
+        <attrlabl>SHAPE.LEN</attrlabl>
+      </attr>
+    </detailed>
+  </eainfo>
+  <distinfo>
+    <distrib>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Bureau of Land Management</cntorg>
+          <cntper>Eric Hiebenthal</cntper>
+        </cntorgp>
+        <cntpos>GIS Data Management Specialist</cntpos>
+        <cntaddr>
+          <addrtype>mailing</addrtype>
+          <address>P.O Box 2965</address>
+          <city>Portland</city>
+          <state>OR</state>
+          <postal>97208</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>503-808-6340</cntvoice>
+        <cntfax>503-808-6419</cntfax>
+        <cntemail>ehiebent@blm.gov</cntemail>
+        <cntinst>contact instructions</cntinst>
+      </cntinfo>
+    </distrib>
+    <distliab>The BLM assumes no responsibility for errors or omissions. No warranty is made by the BLM as to the accuracy, reliability, or completeness of these data for individual use or aggregate use with other data; nor shall the act of distribution to contractors, partners, or beyond, constitute any such warranty for individual or aggregate data use with other data. Although these data have been processed successfully on computers of BLM, no warranty, expressed or implied, is made by BLM regarding the use of these data on any other system, or for general or scientific purposes, nor does the fact of distribution constitute or imply any such warranty. In no event shall the BLM have any liability whatsoever for payment of any consequential, incidental, indirect, special, or tort damages of any kind, including, but not limited to, any loss of profits arising out of the use or reliance on the geographic data or arising out of the delivery, installation, operation, or support by BLM.</distliab>
+    <stdorder>
+      <fees>Contact distributor.</fees>
+      <ordering>Data are only available through the Oregon/Washington State office of the Bureau of Land Management.</ordering>
+    </stdorder>
+  </distinfo>
+  <metainfo>
+    <metd>20130403</metd>
+    <metrd>20140404</metrd>
+    <metc>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Bureau of Land Management, Oregon State Office</cntorg>
+          <cntper>Roger Mills</cntper>
+        </cntorgp>
+        <cntpos>GIS Specialist</cntpos>
+        <cntaddr>
+          <addrtype>mailing</addrtype>
+          <address>P.O. Box 2965</address>
+          <city>Portland</city>
+          <state>OR</state>
+          <postal>97208</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>(503) 808-6340</cntvoice>
+        <cnttdd>tdd/tty phone</cnttdd>
+        <cntfax>(503) 808-6419</cntfax>
+        <cntemail>r2mills@blm.gov</cntemail>
+        <hours>8:00-4:00</hours>
+        <cntinst>None</cntinst>
+      </cntinfo>
+    </metc>
+    <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+    <metstdv>FGDC-STD-001-1998</metstdv>
+    <mettc>local time</mettc>
+    <metsi>
+      <metscs>Not Classified</metscs>
+    </metsi>
+  </metainfo>
+</metadata>

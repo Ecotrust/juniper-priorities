@@ -1,0 +1,657 @@
+﻿<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin>Bureau of Land Management.</origin>
+        <pubdate>20120425</pubdate>
+        <title>BLM OR Wild Horse and Burro Herd Management Area Polygons</title>
+        <onlink>http://www.blm.gov/or/resources/whb/index.php</onlink>
+        <onlink>http://www.blm.gov/or/gis/data.php</onlink>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>whb_hma_poly: A Congressionally designated area of land to which specific laws and regulations pertaining to the management of wild horses and burros are applied.</abstract>
+      <purpose>Polygons depicting BLM Herd Management Areas to be use for the purpose of Land Use Management.</purpose>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <sngdate>
+          <caldate>20120425</caldate>
+        </sngdate>
+      </timeinfo>
+      <current>publication date</current>
+    </timeperd>
+    <status>
+      <progress>Complete</progress>
+      <update>As needed</update>
+    </status>
+    <spdom>
+      <bounding>
+        <westbc>-125</westbc>
+        <eastbc>-115</eastbc>
+        <northbc>47</northbc>
+        <southbc>41</southbc>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt>None</themekt>
+        <themekey>Wild Horse and Burro</themekey>
+        <themekey>WHB</themekey>
+      </theme>
+      <theme>
+        <themekt>BLM-Theme</themekt>
+        <themekey>Wildlife</themekey>
+        <themekey>Land Use Management</themekey>
+      </theme>
+      <theme>
+        <themekt>ISO 19115</themekt>
+        <themekey>biota</themekey>
+      </theme>
+      <theme>
+        <themekt>ISO 19115 Topic Categories</themekt>
+        <themekey>biota</themekey>
+      </theme>
+      <place>
+        <placekt>BLM-State</placekt>
+        <placekey>California</placekey>
+        <placekey>Oregon</placekey>
+      </place>
+    </keywords>
+    <accconst>PUBLIC DATA: None, these data are considered public domain.</accconst>
+    <useconst>These data are provided by Bureau of Land Management (BLM) “as is” and may contain errors or omissions. The User assumes the entire risk associated with its use of these data and bears all responsibility in determining whether these data are fit for the User’s intended use. The information contained in these data is dynamic and may change over time. The data are not better than the original sources from which they were derived, and both scale and accuracy may vary across the data set. These data may not have the accuracy, resolution, completeness, timeliness, or other characteristics appropriate for applications that potential users of the data may contemplate. The User is encouraged to carefully consider the content of the metadata file associated with these data. These data are neither legal documents nor land surveys, and must not be used as such. Official records may be referenced at most BLM offices. Please report any errors in the data to the BLM office from which it was obtained. The BLM should be cited as the data source in any products derived from these data. Any Users wishing to modify the data should describe the types of modifications they have performed. The User should not misrepresent the data, nor imply that changes made were approved or endorsed by BLM. This data may be updated by the BLM without notification.</useconst>
+    <ptcontac>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Bureau of Land Management, Burns District Office</cntorg>
+          <cntper>Pam Keller</cntper>
+        </cntorgp>
+        <cntpos>GIS Specialist</cntpos>
+        <cntaddr>
+          <addrtype>mailing</addrtype>
+          <address>28910 Hwy 20 West</address>
+          <city>Hines</city>
+          <state>OR</state>
+          <postal>97738-9424</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>(541) 573-4486</cntvoice>
+        <cntfax>(541) 573-4411</cntfax>
+        <cntemail>pkeller@blm.gov</cntemail>
+      </cntinfo>
+    </ptcontac>
+  </idinfo>
+  <dataqual>
+    <lineage>
+      <procstep>
+        <procdesc>Updated South Steens HA and HMA and Alvord-Tule and Heath Creek-Sheepshead HMAs. Pam Keller/Rick Hall. Coordinated with Vale to create SEO_HMA for the SE Oregon RMP.</procdesc>
+        <procdate>19940101</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>BLM</cntorg>
+              <cntper>Pam Keller</cntper>
+            </cntorgp>
+            <cntpos>GIS Spec</cntpos>
+            <cntaddr>
+              <addrtype>mailing and physical</addrtype>
+              <address>28910 Hwy 20 West</address>
+              <city>Hines</city>
+              <state>OR</state>
+              <postal>97738-9424</postal>
+              <country>US</country>
+            </cntaddr>
+            <cntvoice>(541) 573-4486</cntvoice>
+            <cntfax>(541) 573-4411</cntfax>
+            <cntemail>pkeller</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+      <procstep>
+        <procdesc>Sent export of or-ha to Pat Green at WO-210 (former OR/WA GIS chief). Also involvement from Jerry Fullerton, Chris Hamilton, Eric Stone. He had sent a national extent coverage of herd areas for our review and we requested he replace with or-ha. However, we adopted the attributes in the national coverage (a standard of sorts).</procdesc>
+        <procdate>19980101</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>BLM</cntorg>
+              <cntper>Pam Keller</cntper>
+            </cntorgp>
+            <cntpos>GIS Spec</cntpos>
+            <cntaddr>
+              <addrtype>mailing and physical</addrtype>
+              <address>28910 Hwy 20 West</address>
+              <city>Hines</city>
+              <state>OR</state>
+              <postal>97738-9424</postal>
+              <country>US</country>
+            </cntaddr>
+            <cntvoice>(541) 573-4486</cntvoice>
+            <cntfax>(541) 573-4411</cntfax>
+            <cntemail>pkeller@blm.gov</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+      <procstep>
+        <procdesc>Created first OR/WA merged data, called OR-HA. Pam Keller/Dean Bolstad: One set of polygons, no overlap. Started with SEO_HMA and LAKPRN_HMA (not as much QA/QC). Pam worked with Dean (OR/WA Wildhorse program operations lead) to acquire and/or confirm herd area boundaries with the Districts (Prineville, Lakeview, Burns and Vale) horse program leads. Started with a GIS coverage created by OSO from small scale, very inaccurate maps. These early maps (which were then used for the original GIS data created by OSO) included: “Wild Horse Herd Management Areas” possibly produced by BLM in 1993, 1:1,000,000 scale, blueline. “Southeast Oregon Special Management Areas” July 1984, produced by BLM, 1:500,000 scale. “Original Herd Management Areas in Oregon” 1981, produced by USGS, no scale, but larger than 1,000,000 and smaller than 500,000. Original herd areas created by 1971 Wild Free-Roaming Horse &amp; Burro Act did not have official maps except those in District files and these may have been lost. The boundaries were described in general terms like ‘where there are horses’. Focus was on creating accurate HMA boundaries since these are the currently managed boundaries. HA (original, no longer managed for horses) boundaries were added on to the HMA boundaries and no attempt was made to “improve” the linework since there were no official maps or descriptions available. Districts were asked for more accurate boundaries or approve the inaccurate boundary as “best there is”. Received from Lakeview (Paul Whitman, Theresa Romasko): 1) Small scale map and boundary description for Pokegama: “Hwy 66 to Klamath River, Klamath River to Copco Res, Copco Res to Irongate Res, Irongate to Jenny Crk, Jenny Crk to Hwy 66”. Approved by Bill Lindsey &amp; Elena Robisch 4/27/1998. 2) ½ in:mile map of Beatys Butte HMA without boundary description. 3) 1 in: mile map of Paisley Desert HMA with boundary symbolized for fences and rim.</procdesc>
+        <procdate>19980101</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>BLM</cntorg>
+              <cntper>Pam Keller</cntper>
+            </cntorgp>
+            <cntpos>GIS Spec</cntpos>
+            <cntaddr>
+              <addrtype>mailing and physical</addrtype>
+              <address>28910 Hwy 20 West</address>
+              <city>Hines</city>
+              <state>OR</state>
+              <postal>97738-9424</postal>
+              <country>US</country>
+            </cntaddr>
+            <cntvoice>(541) 573-4486</cntvoice>
+            <cntfax>(541) 573-4411</cntfax>
+            <cntemail>pkeller@blm.gov</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+      <procstep>
+        <procdesc>Received from updates from Vale (Brent Grasty).</procdesc>
+        <procdate>19990101</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>BLM</cntorg>
+              <cntper>Pam Keller</cntper>
+            </cntorgp>
+            <cntpos>GIS Spec</cntpos>
+            <cntaddr>
+              <addrtype>mailing and physical</addrtype>
+              <address>28910 Hwy 20 West</address>
+              <city>Hines</city>
+              <state>OR</state>
+              <postal>97738-9424</postal>
+              <country>US</country>
+            </cntaddr>
+            <cntvoice>(541) 573-4486</cntvoice>
+            <cntfax>(541) 573-4411</cntfax>
+            <cntemail>pkeller@blm.gov</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+      <procstep>
+        <procdesc>Took out some unnecessary interior pasture lines in Vale.</procdesc>
+        <procdate>20000101</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>BLM</cntorg>
+              <cntper>Pam Keller</cntper>
+            </cntorgp>
+            <cntpos>GIS Spec</cntpos>
+            <cntaddr>
+              <addrtype>mailing and physical</addrtype>
+              <address>28910 Hwy 20 West</address>
+              <city>Hines</city>
+              <state>OR</state>
+              <postal>97738-9424</postal>
+              <country>US</country>
+            </cntaddr>
+            <cntvoice>(541) 573-4486</cntvoice>
+            <cntemail>(541) 573-4411</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+      <procstep>
+        <procdesc>Supplied OR-HA (intersected with BLM ownership) GIS export file to National WHB Program Office at Nevada SO. Worked with them and Burns District Horse program staff (mostly Connie Pettyjohn, then Dellera) on reconciling the GIS polygons with the information in the national Wild Horse and Burro Information System. Had to reconcile name, number, total acres and BLM acres. Most recently the requests were to specifically identify each change to the original boundary with approving land management plan, date and change in acres. Land exchanges (some from the 1980’s) were another problem in reconciling acre differences.</procdesc>
+        <procdate>unknown</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>BLM</cntorg>
+              <cntper>Pam Keller/Bea Wade/Mark O’Brien (plus some involvement from Mark Egge, Terry Woosley.</cntper>
+            </cntorgp>
+            <cntpos>GIS Spec</cntpos>
+            <cntaddr>
+              <addrtype>mailing and physical</addrtype>
+              <address>28910 Hwy 20 West</address>
+              <city>Hines</city>
+              <state>OR</state>
+              <postal>97738-9424</postal>
+              <country>US</country>
+            </cntaddr>
+            <cntvoice>(541) 573-4486</cntvoice>
+            <cntfax>(541) 573-4411</cntfax>
+            <cntemail>pkeller@blm.gov</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+      <procstep>
+        <procdesc>Change to Pokegama requested by Tonya Pinckney not done, original retained.</procdesc>
+        <procdate>20010101</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>BLM</cntorg>
+              <cntper>Pam Keller</cntper>
+            </cntorgp>
+            <cntpos>GIS Spec</cntpos>
+            <cntaddr>
+              <addrtype>mailing and physical</addrtype>
+              <address>28910 Hwy 20 West</address>
+              <city>Hines</city>
+              <state>OR</state>
+              <postal>97738-9424</postal>
+              <country>US</country>
+            </cntaddr>
+            <cntvoice>(541) 573-4486</cntvoice>
+            <cntfax>(541) 573-4411</cntfax>
+            <cntemail>pkeller@blm.gov</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+      <procstep>
+        <procdesc>Adjusted boundary between Alvord-Tule and Coyote Lake to the fence.</procdesc>
+        <procdate>20010101</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>BLM</cntorg>
+              <cntper>Pam Keller/Rick Hall</cntper>
+            </cntorgp>
+            <cntpos>GIS Spec</cntpos>
+            <cntaddr>
+              <addrtype>mailing and physical</addrtype>
+              <address>28910 Hwy 20 West</address>
+              <city>Hines</city>
+              <state>OR</state>
+              <postal>97738-9424</postal>
+              <country>US</country>
+            </cntaddr>
+            <cntvoice>(541) 573-4486</cntvoice>
+            <cntfax>(541) 573-4411</cntfax>
+            <cntemail>pkeller@blm.gov</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+      <procstep>
+        <procdesc>Added CENSUS_COUNT, LASTCENSUS_DATE, LASTGATHER_DATE, AML-LOW and AML-HIGH (Appropriate Management Level - range of animal numbers in the herd area).</procdesc>
+        <procdate>20020101</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>BLM</cntorg>
+              <cntper>Pam Keller</cntper>
+            </cntorgp>
+            <cntpos>GIS Spec</cntpos>
+            <cntaddr>
+              <addrtype>mailing and physical</addrtype>
+              <address>28910 Hwy 20 West</address>
+              <city>Hines</city>
+              <state>OR</state>
+              <postal>97738-9424</postal>
+              <country>US</country>
+            </cntaddr>
+            <cntvoice>(541) 573-4486</cntvoice>
+            <cntfax>(541) 573-4411</cntfax>
+            <cntemail>pkeller@blm.gov</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+      <procstep>
+        <procdesc>Steens CMPA/Andrews MU RMP. Combined Coyote with Alvord-Tule. Reduced Kiger HMA and S. Steens HMA by large Steens Act land exchanges.</procdesc>
+        <procdate>20050101</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>BLM</cntorg>
+              <cntper>Kelly Hazen/Pam Keller/Dean Bolstad</cntper>
+            </cntorgp>
+            <cntpos>GIS Spec</cntpos>
+            <cntaddr>
+              <addrtype>mailing and physical</addrtype>
+              <address>28910 Hwy 20 West</address>
+              <city>Hines</city>
+              <state>OR</state>
+              <postal>97738-9424</postal>
+              <country>US</country>
+            </cntaddr>
+            <cntvoice>(541) 573-4486</cntvoice>
+            <cntfax>(541) 573-4411</cntfax>
+            <cntemail>pkeller@blm.gov</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+      <procstep>
+        <procdesc>Moved OR-HA into SDE orsovctr and renamed WHB_POLY. Was being maintained in Burns. Edits now done by getting a copy from orsovctr and replacing with updated feature class. (started the process in 2005, but not actually done until 2008)</procdesc>
+        <procdate>20080101</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>BLM</cntorg>
+              <cntper>Pam Keller</cntper>
+            </cntorgp>
+            <cntpos>GIS Spec</cntpos>
+            <cntaddr>
+              <addrtype>mailing and physical</addrtype>
+              <address>28910 Hwy 20 West</address>
+              <city>Hines</city>
+              <state>OR</state>
+              <postal>97738-9424</postal>
+              <country>US</country>
+            </cntaddr>
+            <cntvoice>(541) 573-4486</cntvoice>
+            <cntfax>(541) 573-4411</cntfax>
+            <cntemail>pkeller@blm.gov</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+      <procstep>
+        <procdesc>Deleted Buckskin Seeding from Coyote Lake HA. Also some small exclosure “out” areas that would not have been fenced out in the 1970s.</procdesc>
+        <procdate>20100101</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>BLM</cntorg>
+              <cntper>Pam Keller/Bill Andersen</cntper>
+            </cntorgp>
+            <cntpos>201006</cntpos>
+            <cntaddr>
+              <addrtype>mailing and physical</addrtype>
+              <address>28910 Hwy 20 West</address>
+              <city>Hines</city>
+              <state>OR</state>
+              <postal>97738-9424</postal>
+              <country>US</country>
+            </cntaddr>
+            <cntvoice>(541) 573-4486</cntvoice>
+            <cntfax>(541) 573-4411</cntfax>
+            <cntemail>pkeller@blm.gov</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+      <procstep>
+        <procdesc>Made significant corrections to Diamond Craters, Kiger (Smyth Creek), Second Flat, East Wagontire, Middle Fork, Riddle Mountain and Palomino Buttes Herd Areas (the portions of the original herd areas outside of currently managed herd area). Used maps from the 1977 district herd area files and interpreted by Bill as necessary. In most cases the original fences determining the location of wild horses at the time of the 1971 Act are still existing and the linework was pulled from current Grazing Allotment and Pasture feature class (GRA_ARC). In some cases the fences have changed, but the original fence location could be seen on USGS topo quads and the linework was digitized using DRG backdrop. Attribute for Original Herd Area name added to help with the acres reconciliation for NPO.</procdesc>
+        <procdate>20100101</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>BLM</cntorg>
+              <cntper>Pam Keller/Bill Andersen</cntper>
+            </cntorgp>
+            <cntpos>GIS Spec</cntpos>
+            <cntaddr>
+              <addrtype>mailing and physical</addrtype>
+              <address>28910 Hwy 20 West</address>
+              <city>Hines</city>
+              <state>OR</state>
+              <postal>97738-9424</postal>
+              <country>US</country>
+            </cntaddr>
+            <cntvoice>(541) 573-4486</cntvoice>
+            <cntfax>(541) 573-4411</cntfax>
+            <cntemail>pkeller@blm.gov</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+      <procstep>
+        <procdesc>Conversion to National WHB data standard. Pam Keller/Steve Salas. To edit we will export a file geodatabase from the “Replication” SDE instance, edit and put back.WHB_POLY split into whb_hma_poly and whb_ha_poly along with corresponding arcs. Whb_hma_arc feature level metadata (defining feature, coordinate source and accuracy) filled in by reviewing map and documents files. Whb_ha_arc copied from whb_hma_arc where coincident. Boundary lines outside of currently managed HMA were copied from WHB_POLY (created polylines). A few interior lines (where original herd areas were combined into currently managed HMA) were copied from older or-ha archives. These were given a creation date of 1/1/1994. National standard also includes Historical HMAs which we won’t use.</procdesc>
+        <procdate>20120401</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>Bureau of Land Management, Burns District Office</cntorg>
+              <cntper>Pam Keller/Steve Salas</cntper>
+            </cntorgp>
+            <cntpos>GIS Spec</cntpos>
+            <cntaddr>
+              <addrtype>mailing and physical</addrtype>
+              <address>28910 Hwy 20 West</address>
+              <city>Hines</city>
+              <state>OR</state>
+              <postal>97738-9424</postal>
+              <country>US</country>
+            </cntaddr>
+            <cntvoice>(541) 573-4486</cntvoice>
+            <cntfax>(541) 573-4411</cntfax>
+            <cntemail>pkeller@blm.gov</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+    </lineage>
+  </dataqual>
+  <spdoinfo>
+    <ptvctinf>
+      <sdtsterm>
+        <sdtstype>GT-polygon composed of chains</sdtstype>
+        <ptvctcnt>0</ptvctcnt>
+      </sdtsterm>
+    </ptvctinf>
+  </spdoinfo>
+  <eainfo>
+    <detailed>
+      <enttyp>
+        <enttypl>whb_hma_poly</enttypl>
+      </enttyp>
+      <attr>
+        <attrlabl>OBJECTID</attrlabl>
+        <attrdef>Internal feature number.</attrdef>
+        <attrdefs>ESRI</attrdefs>
+        <attrdomv>
+          <udom>Sequential unique whole numbers that are automatically generated.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>SHAPE</attrlabl>
+        <attrdef>Feature geometry.</attrdef>
+        <attrdefs>ESRI</attrdefs>
+        <attrdomv>
+          <udom>Coordinates defining the features.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>HMA_NAME</attrlabl>
+        <attrdef>Herd Management Area Name.  The designated name of the Herd Management Area as declared by BLM.  (Logical Attribute:  Herd Management Area Territory Name.  The name of the Herd Management Area or Forest Service Wild Horse Territory by which it is known to the business.  A Congressionally designated area of land to which specific laws and regulations pertaining to the management of wild horses and burros are applied. The Bureau uses the term Herd Management Area; the Forest Service uses the term Wild Horse Territory.)  </attrdef>
+        <attrdefs>BLM</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>HMA_ID</attrlabl>
+        <attrdef>The designed primary key that will uniquely identify a single occurrence of the entity.  The six character code number assigned to the Herd Management Area.  The code consists of the two character administrative state abbreviation, followed by an assigned four digit code.  This field is used to connect this spatial dataset to the current WHB system, and should match that number.  </attrdef>
+        <attrdefs>BLM</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>GIS_ACRES</attrlabl>
+        <attrdef>The area of the polygon described in the Polygon Form Unit of Measure Type Name.  The entire acreage of the polygon regardless of land status.  Default:  0.0  This is a calculated value of area, in units of acres, based on the area field created by default within the ESRI Polygon data structure.  For the purposes of a 'national data layer', the data are to be stored in geographic coordinates which do not correspond to ground values.  This requires that there be a standard method for calculating this attribute.   The method used for these data are as follows:  Project the data into a standard projection such as the ESRI default Albers equal-area projection for the continental United States, "US Albers NAD 1983."  (Make sure the area measure of your data is square meters, as opposed to square feet.)  Then use the field calculator in ArcMap with the expression:  [GIS_ACRES] = [SHAPE_Area] * 0.0002471044.  Please note that the figure used in this calculation is the factor for converting the US Survey Foot value from the length of a meter, as opposed to the International Standard for converting meters and feet.</attrdef>
+        <attrdefs>BLM</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>ADM_UNIT_CD</attrlabl>
+        <attrdef>The code that indicates the formal grouping of positions at into designated units and the assignment of functions and responsibilities to those units based on the DOI FPPS structure.  The BLM administrative unit/office that is a combination of Administrative State Code and Administrative Office Code that fully identifies the geographic area which has jurisdiction over the lands.  This should be the code for the office.  This is an eight-character code.  In the FMBS Organization Codes, use the last eight characters (e.g. LLAK030900).   Attribute Domain Assignment:  DOM_ADM_UNIT_CD</attrdef>
+        <attrdefs>BLM</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>ADMIN_AGCY</attrlabl>
+        <attrdef>The official name by which the organization is known.  An organization may include businesses, agencies, or corporations, but not individual persons.  The initials of the Federal agency which administers the Herd Area.  Valid values are BLM or USFS.  (Note:  While this attribute may contain additional values in other datasets, for this dataset these are the only applicable values.)   Attribute Domain Assignment:  WHB_DOM_ADMIN_AGCY  Default:  UNK</attrdef>
+        <attrdefs>BLM</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>ADMIN_ST</attrlabl>
+        <attrdef>Administrative State Code: A two letter, upper case abbreviation for the administrative state office.  The current list of values is:  AK, AZ, CA, CO, ES, ID, MT, NM, NV, OR, UT and WY.  In the FBMS Organization Codes, use the second 2 characters (after the LL).  (e.g. LLAK039000).    Attribute Domain Assignment:  DOM_ADMIN_ST   (Logical Attribute: State Alphabetic Code.  An alphabetic abbreviation that represents each of the 50 states of the United States, the District of Columbia, the outlying areas of the United States, and associated areas.  FIPS PUB 5-2.)  An administrative unit that identifies the state or geographic area which has administrative jurisdiction over lands, and cases.  The land for a case may not be physically located in the associated administrative state.  Only those states that are BLM administrative states are in the domain for this entity. Example: Montana is the Administrative State for public lands in the geographic States of Montana, South and North Dakota.</attrdef>
+        <attrdefs>BLM</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>AK</edomv>
+            <edomvd>Alaska</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>AZ</edomv>
+            <edomvd>Arizona</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>CA</edomv>
+            <edomvd>California</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>CO</edomv>
+            <edomvd>Colorado</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>ES</edomv>
+            <edomvd>Eastern States</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>ID</edomv>
+            <edomvd>Idaho</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>MT</edomv>
+            <edomvd>Montana</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>NM</edomv>
+            <edomvd>New Mexico</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>NV</edomv>
+            <edomvd>Nevada</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>OR</edomv>
+            <edomvd>Oregon</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>UT</edomv>
+            <edomvd>Utah</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>WY</edomv>
+            <edomvd>Wyoming</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>XX</edomv>
+            <edomvd>Unknown</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>HERD_TYPE</attrlabl>
+        <attrdef>The name that indicates the type of animal that is being managed.    The type of animals historically in the Herd Area.  Valid values:  HORSE, BURRO, BOTH, UNK.  Attribute Domain Assignment:  WHB_DOM_HERD_TYPE  Default:  UNK</attrdef>
+        <attrdefs>BLM</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>ROD_DT</attrlabl>
+        <attrdef>The date on which the decision is signed by the person who has approval authority for the decisions.  The format for storing the date field in the geodatabase (GDB) will be MM/DD/YYYY   The ESRI software displays the date field according to how dates are formatted for display on the computer.  The FGDC-compliant format for the date field, YYYYMMDD, is for publishing/displaying the date field.   There are two methods in which the FGDC format could be used for storing the date.  The date format on the computer can be reset which may introduce unintended consequences within other programs, or the date field could be defined as a text field which would leave ample room for errors being introduced to the data.  Although the National Data Standards are intended to be platform-independent, the ESRI GDB format is the current platform implemented throughout the BLM.  Default:  09/09/9999</attrdef>
+        <attrdefs>BLM</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>BLM_ACRES</attrlabl>
+        <attrdef>The amount of acreage in the herd area that is under BLM jurisdiction.  </attrdef>
+        <attrdefs>BLM</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>LUP_ID</attrlabl>
+        <attrdef>The designed primary key that will uniquely identify a single occurrence of the entity.    The identifier for the Land Use Plan that designated the Herd Management Area.</attrdef>
+        <attrdefs>BLM</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>GlobalID</attrlabl>
+        <attrdef>GlobalID:  Software generated value.  A field of type UUID (Universal Unique Identifier) in which values are automatically assigned by the geodatabase when a row is created.  This field is not editable and is automatically populated when it is added for existing data.   This attribute is included for purposes of replication.  It is not used as a unique identifier for relationships between feature classes/tables  (Logical Attribute: None.)</attrdef>
+        <attrdefs>BLM</attrdefs>
+        <attrdomv>
+          <udom>Not representable in a domain</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>SHAPE_Length</attrlabl>
+        <attrdef>Length of feature in internal units.</attrdef>
+        <attrdefs>ESRI</attrdefs>
+        <attrdomv>
+          <udom>Positive real numbers that are automatically generated.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>SHAPE_Area</attrlabl>
+        <attrdef>Area of feature in internal units squared.</attrdef>
+        <attrdefs>ESRI</attrdefs>
+        <attrdomv>
+          <udom>Positive real numbers that are automatically generated.</udom>
+        </attrdomv>
+      </attr>
+    </detailed>
+    <detailed>
+      <enttyp>
+        <enttypl>whb_hma_docs_rel</enttypl>
+      </enttyp>
+    </detailed>
+  </eainfo>
+  <distinfo>
+    <distrib>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Bureau of Land Management</cntorg>
+          <cntper>Eric Hiebenthal</cntper>
+        </cntorgp>
+        <cntpos>GIS Data Management Specialist</cntpos>
+        <cntaddr>
+          <addrtype>mailing</addrtype>
+          <address>P.O Box 2965</address>
+          <city>Portland</city>
+          <state>OR</state>
+          <postal>97208</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>503-808-6340</cntvoice>
+        <cntfax>503-808-6419</cntfax>
+        <cntemail>ehiebent@blm.gov</cntemail>
+        <cntinst>contact instructions</cntinst>
+      </cntinfo>
+    </distrib>
+    <distliab>The BLM assumes no responsibility for errors or omissions. No warranty is made by the BLM as to the accuracy, reliability, or completeness of these data for individual use or aggregate use with other data; nor shall the act of distribution to contractors, partners, or beyond, constitute any such warranty for individual or aggregate data use with other data. Although these data have been processed successfully on computers of BLM, no warranty, expressed or implied, is made by BLM regarding the use of these data on any other system, or for general or scientific purposes, nor does the fact of distribution constitute or imply any such warranty. In no event shall the BLM have any liability whatsoever for payment of any consequential, incidental, indirect, special, or tort damages of any kind, including, but not limited to, any loss of profits arising out of the use or reliance on the geographic data or arising out of the delivery, installation, operation, or support by BLM.</distliab>
+    <stdorder>
+      <fees>Contact distributor.</fees>
+      <ordering>Data are only available through the Oregon/Washington State office of the Bureau of Land Management.</ordering>
+    </stdorder>
+  </distinfo>
+  <metainfo>
+    <metd>20120425</metd>
+    <metc>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Bureau of Land Management, Oregon State Office</cntorg>
+          <cntper>Roger Mills</cntper>
+        </cntorgp>
+        <cntpos>GIS Specialist</cntpos>
+        <cntaddr>
+          <addrtype>mailing</addrtype>
+          <address>P.O. Box 2965</address>
+          <city>Portland</city>
+          <state>OR</state>
+          <postal>97208</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>(503) 808-6340</cntvoice>
+        <cnttdd>tdd/tty phone</cnttdd>
+        <cntfax>(503) 808-6419</cntfax>
+        <cntemail>r2mills@blm.gov</cntemail>
+        <hours>8:00-4:00</hours>
+        <cntinst>None</cntinst>
+      </cntinfo>
+    </metc>
+    <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+    <metstdv>FGDC-STD-001-1998</metstdv>
+    <mettc>local time</mettc>
+  </metainfo>
+</metadata>

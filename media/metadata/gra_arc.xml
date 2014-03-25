@@ -1,0 +1,840 @@
+﻿<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin>OR/WA BLM</origin>
+        <pubdate>20140211</pubdate>
+        <pubtime>unknown</pubtime>
+        <title>BLM OR Grazing Allotments and Pastures Line</title>
+        <geoform>vector digital data</geoform>
+        <pubinfo>
+          <pubplace>Portland</pubplace>
+          <publish>OR</publish>
+        </pubinfo>
+        <othercit>Geodatabase is known as GRA in internal BLM systems.</othercit>
+        <onlink>http://www.blm.gov/or/gis/data.php</onlink>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>GRA_ARC: Linework describing livestock grazing allotment and pasture boundaries. For a complete description of this data contact the BLM Oregon Data Steward for a copy of "Grazing Allotments and Pastures Data Standard"</abstract>
+      <purpose>Land use planning, allotment management plans, and analysis.</purpose>
+      <supplinf>BLM -Bureau of Land Management Animal Unit - Considered to be one mature cow of approximately 1,000 pounds, either dry, or with a calf up to 6 months of age or equivalent based on a standardized amount of forage consumed. AUM (Animal Unit Month) - The amount of dry forage required by one animal unit for one month based on a forage allowance of 26 pounds per day. RAS (Rangeland Administration System) - The system used by BLM for billing for grazing on public land. The system contains allotments, pastures, permittees, grazing fees and other pertinent information related to public land grazing. Fenced Federal Range - Generally a small amount of public land fenced with a large amount of private land. Seed Ripe - In terms of plant phenology, it is that point from where seed becomes hard to the beginning of seed dispersal. Custodial - An area where the grazing system is not defined and resource values on public land are protected.</supplinf>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <sngdate>
+          <caldate>20140211</caldate>
+        </sngdate>
+      </timeinfo>
+      <current>publication date</current>
+    </timeperd>
+    <status>
+      <progress>In work</progress>
+      <update>As needed</update>
+    </status>
+    <spdom>
+      <bounding>
+        <westbc>-124.077907</westbc>
+        <eastbc>-116.774507</eastbc>
+        <northbc>49.000110</northbc>
+        <southbc>41.893851</southbc>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt>None</themekt>
+        <themekey>Allotment</themekey>
+        <themekey>Pasture</themekey>
+        <themekey>Livestock</themekey>
+        <themekey>Grazing</themekey>
+      </theme>
+      <theme>
+        <themekt>BLM-Theme</themekt>
+        <themekey>Range</themekey>
+        <themekey>Land Use Planning</themekey>
+      </theme>
+      <theme>
+        <themekt>ISO 19115</themekt>
+        <themekey>boundaries</themekey>
+        <themekey>planningCadastre</themekey>
+        <themekey>farming</themekey>
+      </theme>
+      <theme>
+        <themekt>ISO 19115 Topic Categories</themekt>
+        <themekey>planningCadastre</themekey>
+        <themekey>boundaries</themekey>
+        <themekey>farming</themekey>
+      </theme>
+      <place>
+        <placekt>BLM-State</placekt>
+        <placekey>Washington</placekey>
+        <placekey>Oregon</placekey>
+      </place>
+    </keywords>
+    <accconst>PUBLIC DATA: None, these data are considered public domain.</accconst>
+    <useconst>These data are provided by Bureau of Land Management (BLM) “as is” and may contain errors or omissions. The User assumes the entire risk associated with its use of these data and bears all responsibility in determining whether these data are fit for the User’s intended use. The information contained in these data is dynamic and may change over time. The data are not better than the original sources from which they were derived, and both scale and accuracy may vary across the data set. These data may not have the accuracy, resolution, completeness, timeliness, or other characteristics appropriate for applications that potential users of the data may contemplate. The User is encouraged to carefully consider the content of the metadata file associated with these data. These data are neither legal documents nor land surveys, and must not be used as such. Official records may be referenced at most BLM offices. Please report any errors in the data to the BLM office from which it was obtained. The BLM should be cited as the data source in any products derived from these data. Any Users wishing to modify the data should describe the types of modifications they have performed. The User should not misrepresent the data, nor imply that changes made were approved or endorsed by BLM. This data may be updated by the BLM without notification.</useconst>
+    <ptcontac>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Bureau of Land Management</cntorg>
+          <cntper>Robert Hopper</cntper>
+        </cntorgp>
+        <cntpos>Rangeland Management Specialist</cntpos>
+        <cntaddr>
+          <addrtype>mailing</addrtype>
+          <address>2965 P.O. Box</address>
+          <city>Portland</city>
+          <state>OR</state>
+          <postal>97208</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>(503) 808-6118</cntvoice>
+        <cntfax>(503) 808-6334</cntfax>
+        <cntemail>rhopper@blm.gov</cntemail>
+      </cntinfo>
+    </ptcontac>
+    <native>ArcGIS, Citrix, WindowsXP ________________________________________</native>
+  </idinfo>
+  <dataqual>
+    <attracc>
+      <attraccr>Some attribute data is contained within the Rangeland Administration System database. Accuracy of those attributes is assured through the annual billing process.</attraccr>
+    </attracc>
+    <logic>Grazing allotments consist of unique polygons. Pastures are fully contained within one allotment.</logic>
+    <complete>Data is currently available for the Burns, Medford, Lakeview, Spokane, Coos Bay, Vale, and Prineville BLM Districts.</complete>
+    <posacc>
+      <horizpa>
+        <horizpar>Unknown</horizpar>
+      </horizpa>
+    </posacc>
+    <lineage>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>BLM District range staff</origin>
+            <pubdate>unknown</pubdate>
+            <title>Grazing Authorization and Billing System</title>
+          </citeinfo>
+        </srccite>
+        <typesrc>None</typesrc>
+        <srctime>
+          <timeinfo>
+            <rngdates>
+              <begdate>unknown</begdate>
+              <enddate>20040101</enddate>
+              <endtime>unknown</endtime>
+            </rngdates>
+          </timeinfo>
+          <srccurr>publication date</srccurr>
+        </srctime>
+        <srccitea>GABS</srccitea>
+        <srccontr>Attribute data.</srccontr>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>U.S. Geological Survey or another mapping agency in cooperation with USGS.</origin>
+            <title>1:24,000-scale Digital Raster Graphics files</title>
+            <pubinfo>
+              <pubplace>Reston, Virginia</pubplace>
+              <publish>USGS</publish>
+            </pubinfo>
+          </citeinfo>
+        </srccite>
+        <srcscale>24000</srcscale>
+        <typesrc>None</typesrc>
+        <srccitea>DRG</srccitea>
+        <srccontr>Backdrop for screen digitizing lines for allotments and pastures.</srccontr>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>U.S. Geological Survey or another mapping agency in cooperation with USGS.</origin>
+            <title>1:24,000-scale Digital Line Graphs</title>
+            <pubinfo>
+              <pubplace>Reston, Virginia</pubplace>
+              <publish>USGS</publish>
+            </pubinfo>
+          </citeinfo>
+        </srccite>
+        <srcscale>24000</srcscale>
+        <typesrc>None</typesrc>
+        <srccitea>DLG</srccitea>
+        <srccontr>Lines for allotments and pastures.</srccontr>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>OR/WA BLM</origin>
+            <pubdate>19890101</pubdate>
+            <title>Geographic Coordinate Database Oregon (Point and Line)</title>
+            <geoform>map</geoform>
+            <pubinfo>
+              <pubplace>Portland, OR</pubplace>
+              <publish>OR BLM</publish>
+            </pubinfo>
+          </citeinfo>
+        </srccite>
+        <srcscale>24000</srcscale>
+        <typesrc>onLine</typesrc>
+        <srctime>
+          <timeinfo>
+            <sngdate>
+              <caldate>unknown</caldate>
+            </sngdate>
+          </timeinfo>
+          <srccurr>publication date</srccurr>
+        </srctime>
+        <srccitea>GCDB</srccitea>
+        <srccontr>Polygon corners and lines.</srccontr>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>BLM District range staff</origin>
+            <pubdate>unknown</pubdate>
+            <title>Rangeland Administration System</title>
+          </citeinfo>
+        </srccite>
+        <typesrc>None</typesrc>
+        <srctime>
+          <timeinfo>
+            <rngdates>
+              <begdate>20040101</begdate>
+              <begtime>unknown</begtime>
+              <enddate>unknown</enddate>
+            </rngdates>
+          </timeinfo>
+          <srccurr>publication date</srccurr>
+        </srctime>
+        <srccitea>RAS</srccitea>
+        <srccontr>Attribute data.</srccontr>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>U.S. Forest Service</origin>
+            <title>Grazing Allotment Boundaries Forest Service Oregon</title>
+          </citeinfo>
+        </srccite>
+        <srcscale>24000</srcscale>
+        <typesrc>None</typesrc>
+        <srctime>
+          <timeinfo>
+            <sngdate>
+              <caldate>unknown</caldate>
+            </sngdate>
+          </timeinfo>
+          <srccurr>publication date</srccurr>
+        </srctime>
+        <srccitea>Grazing Allotment Boundaries Forest Service Oregon</srccitea>
+        <srccontr>Digital fencelines for adjacent allotments; FS allotment numbers.</srccontr>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>BLM District range staff</origin>
+            <pubdate>20050101</pubdate>
+            <title>BLM District records</title>
+          </citeinfo>
+        </srccite>
+        <srcscale>24000</srcscale>
+        <typesrc>hardcopyPaper</typesrc>
+        <srctime>
+          <timeinfo>
+            <rngdates>
+              <begdate>19950101</begdate>
+              <begtime>unknown</begtime>
+              <enddate>present</enddate>
+            </rngdates>
+          </timeinfo>
+          <srccurr>ground condition</srccurr>
+        </srctime>
+        <srccitea>BLM-GRA</srccitea>
+        <srccontr>Polygons for allotments and pastures.</srccontr>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>U.S. Geological Survey or another mapping agency in cooperation with USGS.</origin>
+            <title>1:24,000-scale Digital Orthophoto Quadrangles</title>
+            <pubinfo>
+              <pubplace>Reston, Virginia</pubplace>
+              <publish>USGS</publish>
+            </pubinfo>
+          </citeinfo>
+        </srccite>
+        <srcscale>24000</srcscale>
+        <typesrc>hardcopyPhoto</typesrc>
+        <srccitea>DOQ</srccitea>
+        <srccontr>Backdrop for screen digitizing lines for allotments and pastures.</srccontr>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>BLM OR/WA State Office</origin>
+            <pubdate>19960901</pubdate>
+            <title>Landlines</title>
+            <pubinfo>
+              <pubplace>Portland, OR</pubplace>
+              <publish>OR BLM</publish>
+            </pubinfo>
+          </citeinfo>
+        </srccite>
+        <typesrc>None</typesrc>
+        <srctime>
+          <timeinfo>
+            <rngdates>
+              <begdate>8/1/1996</begdate>
+              <enddate>present</enddate>
+            </rngdates>
+          </timeinfo>
+          <srccurr>publication date</srccurr>
+        </srctime>
+        <srccitea>LLI</srccitea>
+        <srccontr>Lines for allotments and pastures.</srccontr>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>BLM District range staff</origin>
+            <pubdate>unknown</pubdate>
+            <title>Global Positioning System data</title>
+          </citeinfo>
+        </srccite>
+        <typesrc>None</typesrc>
+        <srctime>
+          <timeinfo>
+            <rngdates>
+              <begdate>19950101</begdate>
+              <begtime>unknown</begtime>
+              <enddate>unknown</enddate>
+            </rngdates>
+          </timeinfo>
+          <srccurr>publication date</srccurr>
+        </srctime>
+        <srccitea>GPS</srccitea>
+        <srccontr>Lines for allotments and pastures.</srccontr>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>U.S. Forest Service</origin>
+            <title>Cartographic Feature Files</title>
+            <serinfo>
+              <sername>Cartographic Feature Files</sername>
+            </serinfo>
+            <pubinfo>
+              <publish>U.S. Forest Service</publish>
+            </pubinfo>
+          </citeinfo>
+        </srccite>
+        <srcscale>24000</srcscale>
+        <typesrc>None</typesrc>
+        <srctime>
+          <timeinfo>
+            <sngdate>
+              <caldate>unknown</caldate>
+            </sngdate>
+          </timeinfo>
+          <srccurr>publication date</srccurr>
+        </srctime>
+        <srccitea>FS_CFF</srccitea>
+        <srccontr>Digital fencelines</srccontr>
+      </srcinfo>
+      <procstep>
+        <procdesc>Line feature class was exported from polygon</procdesc>
+        <procdate>unknown</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>Bureau of Land Management, Oregon State Office</cntorg>
+              <cntper>Barbara Welsh-Haney</cntper>
+            </cntorgp>
+            <cntpos>GS0301 - GIS Specialist (GIS DATA MGMT)</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>PO Box 2965</address>
+              <city>Portland</city>
+              <state>OR</state>
+              <postal>97208</postal>
+              <country>US</country>
+            </cntaddr>
+            <cntvoice>(503) 808-6313</cntvoice>
+            <cntemail>bhaney@blm.gov</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+      <procstep>
+        <procdesc>Deleted two parcels from AllotNum 00756 in the GRA per Angela Links instructions. These two parcels were transfered to Douglas County PUD and are no longer under BLM management.</procdesc>
+        <procdate>20101227</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>Bureau of Land Management, Wenatchee Field Office</cntorg>
+              <cntper>Alan Monek</cntper>
+            </cntorgp>
+            <cntpos>GIS Specialist</cntpos>
+            <cntaddr>
+              <addrtype>mailing and physical</addrtype>
+              <address>915 Walla Walla</address>
+              <city>Wenatchee</city>
+              <state>WA</state>
+              <postal>98801</postal>
+              <country>US</country>
+            </cntaddr>
+            <cntvoice>(509) 665-2142</cntvoice>
+            <cntfax>(509) 665-2121</cntfax>
+            <cntemail>amonek@blm.gov</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+      <procstep>
+        <procdesc>Renamed fields GRADEFFEATURE to DEF_FEATURE, GRACOORDSOURCE to COORD_SRC , and GRAACCURACYFT to ACCURACY_FT which are the standard field names for feature-level metadata.</procdesc>
+        <procdate>20111001</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>Bureau of Land Management, Oregon State Office</cntorg>
+              <cntper>Steve Salas</cntper>
+            </cntorgp>
+            <cntpos>GIS Specialist</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>P.O. Box 2965</address>
+              <city>Portland</city>
+              <state>OR</state>
+              <postal>97208</postal>
+              <country>US</country>
+            </cntaddr>
+            <cntvoice>(503) 808-6416</cntvoice>
+            <cntemail>ssalas@blm.gov</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+      <procstep>
+        <procdesc>New Allotment boundaries entered for McCormack, Coffelt (N/S) Klootchman, Scott, and Spring Creek Related to land exchange 12/2011</procdesc>
+        <procdate>20111203</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>Bureau of Land Management</cntorg>
+              <cntper>Greg Daniels</cntper>
+            </cntorgp>
+            <cntpos>GIS-Coordinator</cntpos>
+            <cntaddr>
+              <addrtype>mailing and physical</addrtype>
+              <address>3050 NE 3rd Street</address>
+              <city>Prineville</city>
+              <state>OR</state>
+              <postal>97754</postal>
+              <country>US</country>
+            </cntaddr>
+            <cntvoice>541-416-6768</cntvoice>
+            <cntemail>gdaniels@blm.gov</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+      <procstep>
+        <procdesc>Updates to Domain DEF_FEATURE and COOR_SRC.</procdesc>
+        <procdate>20130315</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>Bureau of Land Management</cntorg>
+              <cntper>Roger Mills</cntper>
+            </cntorgp>
+            <cntpos>GIS Spec.</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>P.O. Box 2965</address>
+              <city>Portland</city>
+              <state>OR</state>
+              <postal>97208</postal>
+              <country>US</country>
+            </cntaddr>
+            <cntvoice>(503) 808-6340</cntvoice>
+            <cntemail>r2mills@blm.gov</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+    </lineage>
+  </dataqual>
+  <spdoinfo>
+    <indspref>Oregon</indspref>
+    <direct>Vector</direct>
+    <ptvctinf>
+      <sdtsterm>
+        <sdtstype>String</sdtstype>
+        <ptvctcnt>29204</ptvctcnt>
+      </sdtsterm>
+    </ptvctinf>
+  </spdoinfo>
+  <spref>
+    <horizsys>
+      <geograph>
+        <latres>8.98315284119521e-009</latres>
+        <longres>8.98315284119521e-009</longres>
+        <geogunit>Decimal Degrees</geogunit>
+      </geograph>
+      <geodetic>
+        <horizdn>D North American 1983</horizdn>
+        <ellips>GRS 1980</ellips>
+        <semiaxis>6378137.0</semiaxis>
+        <denflat>298.257222101</denflat>
+      </geodetic>
+    </horizsys>
+  </spref>
+  <eainfo>
+    <detailed>
+      <enttyp>
+        <enttypl>OSODBA.gra_arc</enttypl>
+        <enttypd>Area of land designated and managed for livestock grazing. The polygons are attributed by a pasture number and naming system that is consistent with the Rangeland Administration System (RAS). All land, regardless of ownership or whether it is used for livestock grazing, may be covered with a polygon.</enttypd>
+        <enttypds>43CFR4100.05 and BLM Manual H-4110-1.22D</enttypds>
+      </enttyp>
+      <attr>
+        <attrlabl>objectid</attrlabl>
+        <attrdef>Internal feature number.</attrdef>
+        <attrdefs>ESRI</attrdefs>
+        <attrdomv>
+          <udom>Sequential unique whole numbers that are automatically generated.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>shape</attrlabl>
+        <attrdef>Feature geometry.</attrdef>
+        <attrdefs>ESRI</attrdefs>
+        <attrdomv>
+          <udom>Coordinates defining the features.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>DEF_FEATURE</attrlabl>
+        <attrdef>The physical or legal feature that defines the boundary according to the legal boundary description.  In general, the lowest level defining feature, but it depends on how the boundary segment is actually defined.  For example, SUBDIVISION rather than COUNTY unless the boundary segment is specifically defined as following the COUNTY boundary.  If the line is copied from another theme, and already has DEF_FEATURE, it should be reviewed and may need to be changed for use in this dataset.  Allotments and Pastures may be legally described by Township/Range and sections.  It is important to know the legal description.  However, it is not sufficient just to know the legal description because pastures are in fact defined by the physical features that keep livestock in or out.  Legal Land Lines are used only if there is no physically confining feature and the pasture needs to be closed.  If fences are not yet digitally captured it may be necessary to use ownership and section lines or roads or streams as legally described, but these should be replaced when the fence is captured.  If it is known that a particular pasture boundary segment is a fence, then the GRA_ARC attribute DEF_FEATURE should be set to "FENCE" even if the line temporarily used to depict it is a parcel line.  The GRA lines depicting pasture boundaries usually represent or are related to fences, rims, water, roads, subdivisions (sections or ownership) which may be found on other themes.  It is important to know as precisely as possible what defines a pasture boundary.  If the boundary is described as a stream then the question needs to be asked, "Which side of the stream?" because that determines which pasture includes the water.  Often a pasture boundary will follow the middle of a stream or road in which case the appropriate segment from the GIS transportation or hydrography theme is copied.  If the boundary is defined as one side or the other, then the transportation or hydrography segment can be buffered, and the appropriate buffer line used or an offset line can be digitized.  In summary, the following hierarchy is used for creating GRA lines and attributing DEF_FEATURE:  1.  FENCE, always use fencelines first, if possible 2.  RIM, LAKE, STREAM_LBANK, STREAM_RBANK, STREAM 3.  ROAD, ROAD_OFFSET 4.  SUBDIVISION 5.  POINT-TO-POINT 6.  UNKNOWN</attrdef>
+        <attrdefs>BLM</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>BLM_ADMIN</edomv>
+            <edomvd>Bureau of Land Management administrative boundary</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>COAST_3MILE</edomv>
+            <edomvd>Separating coastal water from territorial sea at 3-mile</edomvd>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>ELEVATION</edomv>
+            <edomvd>Line of common elevation</edomvd>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>FENCE</edomv>
+            <edomvd>Fence line</edomvd>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>FOREST_SERVICE_ADMIN</edomv>
+            <edomvd>Forest Service administrative boundaries</edomvd>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>HU</edomv>
+            <edomvd>Hydrologic unit divide</edomvd>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>JETTY</edomv>
+            <edomvd>Jetty</edomvd>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>JURISDICTION</edomv>
+            <edomvd>Surface jurisdiction boundary</edomvd>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>LAVA</edomv>
+            <edomvd>Edge of lava flow</edomvd>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>LEVEE</edomv>
+            <edomvd>Dike or levee</edomvd>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>MARSH</edomv>
+            <edomvd>Edge of marsh, wetland, swamp, or bog boundary</edomvd>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>MINERAL DISTURBANCE</edomv>
+            <edomvd>Edge of quarry, mine, gravel stockpile or other mineral surface disturbance area</edomvd>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>NLCS BOUNDARY</edomv>
+            <edomvd>Wilderness, Wild and Scenic River, Historic District or other NLCS designation boundary</edomvd>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>POINT-TO-POINT</edomv>
+            <edomvd>Boundary defined by a straight line segment between two points</edomvd>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>POWERLINE</edomv>
+            <edomvd>Power transmission line</edomvd>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>RIDGE</edomv>
+            <edomvd>Ridge</edomvd>
+          </edom>
+          <edom>
+            <edomv>RIGHT-OF-WAY</edomv>
+            <edomvd>A legal right of way forms boundary</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>RIM</edomv>
+            <edomvd>Line generally follows a natural topographic barrier</edomvd>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>ROAD</edomv>
+            <edomvd>Road or primitive road - routes managed for use by low or high-clearance (4WD) vehicles, but not ATV's</edomvd>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>ROAD_OFFSET</edomv>
+            <edomvd>Boundary is offset from a road (not a consistent buffer)</edomvd>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>SHORELINE</edomv>
+            <edomvd>Lake, pond, reservoir, bay or ocean shoreline or meander line</edomvd>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>STREAM_LBANK</edomv>
+            <edomvd>Downstream left stream bank</edomvd>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>STREAM_RBANK</edomv>
+            <edomvd>Downstream right stream bank</edomvd>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>SUBDIVISION</edomv>
+            <edomvd>Public Land Survey System derivied aliquot (1/2's, 1/4's) parts and lots</edomvd>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>TRAIL</edomv>
+            <edomvd>Trail - routes managed for human-powered, stock or off-highway vehicle forms of travel</edomvd>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>UNKNOWN</edomv>
+            <edomvd>Defining feature is unknown</edomvd>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>VEGETATION</edomv>
+            <edomvd>Seeding boundary or other relatively permanent vegetation change</edomvd>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>WATERCOURSE</edomv>
+            <edomvd>Stream, river, ditch, canal or drainage centerline</edomvd>
+          </edom>
+          <edom>
+            <edomv>WATERCOURSE_OFFSET</edomv>
+            <edomvd>Boundary is offset from a watercourse (not a consistent buffer)</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>CLOSURE</edomv>
+            <edomvd>Closure extension. Used to close small gaps.</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>COUNTY</edomv>
+            <edomvd>County boundary</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>GRAZING_BOUNDARY</edomv>
+            <edomvd>Pasture or other administrative grazing boundary that is not fenced and does not follow a subdivision or some other legal boundary.</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>OTHER</edomv>
+            <edomvd>Known boundary not represented by other domain options.</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>PARKING_AREA</edomv>
+            <edomvd>Motorized vehicle parking area.</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>COORD_SRC</attrlabl>
+        <attrdef>The actual source of the GIS coordinates for the line segments.  If the line is copied from another theme and already has COORD_SRC, it should be reviewed and may need to be changed for use in this dataset.</attrdef>
+        <attrdefs>BLM</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>CFF</edomv>
+            <edomvd>Lines duplicated or buffered from Cartographic Feature Files (USFS)</edomvd>
+          </edom>
+          <edom>
+            <edomv>DEM</edomv>
+            <edomvd>Digital Elevation Model (30m or better accuracy) used for creation of contours</edomvd>
+          </edom>
+          <edom>
+            <edomv>DIS</edomv>
+            <edomvd>Lines generated to connect discontinuous features</edomvd>
+          </edom>
+          <edom>
+            <edomv>DLG</edomv>
+            <edomvd>Lines duplicated or buffered from (24K scale accuracy) USGS Digital Line Graphs</edomvd>
+          </edom>
+          <edom>
+            <edomv>DOQ</edomv>
+            <edomvd>Screen digitized linework over Digital Orthoquad backdrop</edomvd>
+          </edom>
+          <edom>
+            <edomv>DRG</edomv>
+            <edomvd>Screen digitized linework over Digital Raster Graphic backdrop</edomvd>
+          </edom>
+          <edom>
+            <edomv>GCD</edomv>
+            <edomvd>Lines snapped to Geographic Coordinate Database Points</edomvd>
+          </edom>
+          <edom>
+            <edomv>GPS</edomv>
+            <edomvd>Lines obtained from a Global Positioning System device</edomvd>
+          </edom>
+          <edom>
+            <edomv>IMG</edomv>
+            <edomvd>Linework derived from interpretation of satellite or other non-photographic imagery</edomvd>
+          </edom>
+          <edom>
+            <edomv>MAP</edomv>
+            <edomvd>Digitized linework from hardcopy map</edomvd>
+          </edom>
+          <edom>
+            <edomv>MTP</edomv>
+            <edomvd>Lines duplicated from Digital Master Title Plat</edomvd>
+          </edom>
+          <edom>
+            <edomv>SOURCEL</edomv>
+            <edomvd>Source Layer from BLM GIS</edomvd>
+          </edom>
+          <edom>
+            <edomv>SRV</edomv>
+            <edomvd>Survey methods were used to create the linework (e.g., COGO)</edomvd>
+          </edom>
+          <edom>
+            <edomv>TIGER</edomv>
+            <edomvd>Tiger Data</edomvd>
+          </edom>
+          <edom>
+            <edomv>TRS</edomv>
+            <edomvd>Coordinates only given as a legal description (township, range, section)</edomvd>
+          </edom>
+          <edom>
+            <edomv>UNK</edomv>
+            <edomvd>Unknown coordinate source</edomvd>
+          </edom>
+          <edom>
+            <edomv>WOD</edomv>
+            <edomvd>WODDB Photogrammetric</edomvd>
+          </edom>
+          <edom>
+            <edomv>CADNSDI</edomv>
+            <edomvd>CADNSDI - Coordinates from or snapped to the CADNSDI dataset. CADNSDI is the cadastral national spatial data infrastructure publication data set for rectangular and non-rectangular public land survey system (PLSS) data</edomvd>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>ACCURACY_FT</attrlabl>
+        <attrdef>How close, in feet, the spatial GIS depiction is to the actual location on the ground.  There are several factors to consider in GIS error:  scale and accuracy of map-based sources, accuracy of GPS equipment, and the skill level of the data manipulators.  A value of "0" indicates no entry was made.  This is the correct value when the COORD_SRC is another GIS theme (DLG, Geographic Coordinate Database (GCD), Digital Elevation Model) because the accuracy is determined by that theme.  However, if COORD_SRC is MAP (digitized from a paper map) or GPS, a value of "0" indicates a missing value that should be filled in either with a non-zero number or "-1." A value of "-1" indicates that the accuracy is unknown and no reliable estimate can be made.</attrdef>
+        <attrdefs>BLM</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>GlobalID</attrlabl>
+      </attr>
+      <attr>
+        <attrlabl>SHAPE.LEN</attrlabl>
+      </attr>
+    </detailed>
+  </eainfo>
+  <distinfo>
+    <distrib>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Bureau of Land Management</cntorg>
+          <cntper>Eric Hiebenthal</cntper>
+        </cntorgp>
+        <cntpos>GIS Data Management Specialist</cntpos>
+        <cntaddr>
+          <addrtype>mailing</addrtype>
+          <address>P.O Box 2965</address>
+          <city>Portland</city>
+          <state>OR</state>
+          <postal>97208</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>503-808-6340</cntvoice>
+        <cntfax>503-808-6419</cntfax>
+        <cntemail>ehiebent@blm.gov</cntemail>
+        <cntinst>contact instructions</cntinst>
+      </cntinfo>
+    </distrib>
+    <distliab>The BLM assumes no responsibility for errors or omissions. No warranty is made by the BLM as to the accuracy, reliability, or completeness of these data for individual use or aggregate use with other data; nor shall the act of distribution to contractors, partners, or beyond, constitute any such warranty for individual or aggregate data use with other data. Although these data have been processed successfully on computers of BLM, no warranty, expressed or implied, is made by BLM regarding the use of these data on any other system, or for general or scientific purposes, nor does the fact of distribution constitute or imply any such warranty. In no event shall the BLM have any liability whatsoever for payment of any consequential, incidental, indirect, special, or tort damages of any kind, including, but not limited to, any loss of profits arising out of the use or reliance on the geographic data or arising out of the delivery, installation, operation, or support by BLM.</distliab>
+    <stdorder>
+      <fees>Contact distributor.</fees>
+      <ordering>Data are only available through the Oregon/Washington State office of the Bureau of Land Management.</ordering>
+    </stdorder>
+  </distinfo>
+  <metainfo>
+    <metd>20130308</metd>
+    <metrd>20130315</metrd>
+    <metc>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Bureau of Land Management, Oregon State Office</cntorg>
+          <cntper>Roger Mills</cntper>
+        </cntorgp>
+        <cntpos>GIS Specialist</cntpos>
+        <cntaddr>
+          <addrtype>mailing</addrtype>
+          <address>P.O. Box 2965</address>
+          <city>Portland</city>
+          <state>OR</state>
+          <postal>97208</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>(503) 808-6340</cntvoice>
+        <cnttdd>tdd/tty phone</cnttdd>
+        <cntfax>(503) 808-6419</cntfax>
+        <cntemail>r2mills@blm.gov</cntemail>
+        <hours>8:00-4:00</hours>
+        <cntinst>None</cntinst>
+      </cntinfo>
+    </metc>
+    <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+    <metstdv>FGDC-STD-001-1998</metstdv>
+    <mettc>local time</mettc>
+    <metsi>
+      <metscs>Not Classified</metscs>
+    </metsi>
+  </metainfo>
+</metadata>

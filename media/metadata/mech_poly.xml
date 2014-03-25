@@ -1,0 +1,1219 @@
+﻿<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin>Bureau of Land Management</origin>
+        <pubdate>20140207</pubdate>
+        <title>BLM OR Mechanical Treatments Polygon</title>
+        <geoform>vector digital data</geoform>
+        <onlink>http://www.blm.gov/or/gis/data.php</onlink>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>MECH_POLY: This dataset represents completed mechanical treatments on BLM managed lands in the states of Oregon and Washington. Mechanical treatments are 1.) machine and manual methods of area treatment; 2.) pulling, piling, chopping, grinding, or mowing treatments to consolidate, reduce or clear live or dead vegetation (might be grass, brush, small trees, stump removal), as well as "Cut-Leave" of trees, and soil preparation such as plowing or ripping.</abstract>
+      <purpose>This dataset is used for district, state, and regional needs for management and query of land management treatment.</purpose>
+      <supplinf>Treatments are human alterations to the landscape for the purpose of natural resource management, including use, enhancement, and protection. A treatment creates something new; it creates a new physical entity on the landscape. This distinguishes treatments from attributes or information about treatments. Treatments are areas (polygons), zones of alteration.</supplinf>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <sngdate>
+          <caldate>20140207</caldate>
+        </sngdate>
+      </timeinfo>
+      <current>ground condition</current>
+    </timeperd>
+    <status>
+      <progress>Complete</progress>
+      <update>Continually</update>
+    </status>
+    <spdom>
+      <bounding>
+        <westbc>-124.473920</westbc>
+        <eastbc>-117.026496</eastbc>
+        <northbc>48.941070</northbc>
+        <southbc>41.996682</southbc>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt>ISO 19115</themekt>
+        <themekey>environment</themekey>
+        <themekey>biota</themekey>
+      </theme>
+      <theme>
+        <themekt>BLM-Theme</themekt>
+        <themekey>Vegetation</themekey>
+        <themekey>Land Use Planning</themekey>
+      </theme>
+      <theme>
+        <themekt>None</themekt>
+        <themekey>Mech</themekey>
+        <themekey>Mechanical</themekey>
+        <themekey>Treatments</themekey>
+        <themekey>Completed</themekey>
+      </theme>
+      <place>
+        <placekt>BLM-State</placekt>
+        <placekey>Washington</placekey>
+        <placekey>Oregon</placekey>
+      </place>
+    </keywords>
+    <accconst>PUBLIC DATA: None, these data are considered public domain.</accconst>
+    <useconst>These data are provided by Bureau of Land Management (BLM) “as is” and may contain errors or omissions. The User assumes the entire risk associated with its use of these data and bears all responsibility in determining whether these data are fit for the User’s intended use. The information contained in these data is dynamic and may change over time. The data are not better than the original sources from which they were derived, and both scale and accuracy may vary across the data set. These data may not have the accuracy, resolution, completeness, timeliness, or other characteristics appropriate for applications that potential users of the data may contemplate. The User is encouraged to carefully consider the content of the metadata file associated with these data. These data are neither legal documents nor land surveys, and must not be used as such. Official records may be referenced at most BLM offices. Please report any errors in the data to the BLM office for which it was obtained. The BLM should be cited as the data source in any products derived from these data. Any Users wishing to modify the data should describe the types of modifications they have performed. The User should not misrepresent the data, nor imply that changes made were approved or endorsed by BLM. This information may be updated without notification.</useconst>
+    <ptcontac>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Bureau of Land Management, Oregon State Office</cntorg>
+          <cntper>Stan Frazier</cntper>
+        </cntorgp>
+        <cntpos>State Data Administrator</cntpos>
+        <cntaddr>
+          <addrtype>mailing</addrtype>
+          <address>P.O. Box 2965</address>
+          <city>Portland</city>
+          <state>OR</state>
+          <postal>97208</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>(503)808-6009 (direct), (503)808-6004 (front desk)</cntvoice>
+        <cntfax>(503)808-6419</cntfax>
+        <cntemail>sfrazier@blm.gov</cntemail>
+      </cntinfo>
+    </ptcontac>
+    <native>Microsoft Windows Server 2008 R2 Version 6.1 (Build 7601) Service Pack 1; Esri ArcGIS 10.1.1.3143</native>
+    <crossref>
+      <citeinfo>
+        <origin>Bureau of Land Management</origin>
+        <pubdate>20120201</pubdate>
+        <title>BLM OR Harvest Treatments Polygon</title>
+        <onlink>http://www.blm.gov/or/gis/data.php</onlink>
+      </citeinfo>
+    </crossref>
+    <crossref>
+      <citeinfo>
+        <origin>Bureau of Land Management</origin>
+        <pubdate>20120201</pubdate>
+        <title>BLM OR Prescribed Fire Treatments Polygon</title>
+        <onlink>http://www.blm.gov/or/gis/data.php</onlink>
+      </citeinfo>
+    </crossref>
+    <crossref>
+      <citeinfo>
+        <origin>Bureau of Land Management</origin>
+        <pubdate>20120201</pubdate>
+        <title>BLM OR Chemical Treatments Polygon</title>
+        <onlink>http://www.blm.gov/or/gis/data.php</onlink>
+      </citeinfo>
+    </crossref>
+    <crossref>
+      <citeinfo>
+        <origin>Bureau of Land Management</origin>
+        <pubdate>20120201</pubdate>
+        <title>BLM OR Protection Treatments Polygon</title>
+        <onlink>http://www.blm.gov/or/gis/data.php</onlink>
+      </citeinfo>
+    </crossref>
+    <crossref>
+      <citeinfo>
+        <origin>Bureau of Land Management</origin>
+        <pubdate>20120201</pubdate>
+        <title>BLM OR Biological Treatments Polygon</title>
+        <onlink>http://www.blm.gov/or/gis/data.php</onlink>
+      </citeinfo>
+    </crossref>
+    <crossref>
+      <citeinfo>
+        <origin>Bureau of Land Management</origin>
+        <pubdate>20120201</pubdate>
+        <title>BLM OR Revegetation Treatments Polygon</title>
+        <onlink>http://www.blm.gov/or/gis/data.php</onlink>
+      </citeinfo>
+    </crossref>
+  </idinfo>
+  <dataqual>
+    <attracc>
+      <attraccr>Many features were imported from the legacy data and the attributes are very incomplete. However, newer features will have more complete information and over time the dataset will become more accurate.</attraccr>
+    </attracc>
+    <complete>Treatments are dynamic themes that are subject to frequent edits and changes.</complete>
+    <lineage>
+      <procstep>
+        <procdesc>Legacy data may be introduced to the dataset by manuscripting on maps and digitizing, GPS, on-screen digitizing using a DOQ or DRG backdrop, duplicating lines from ownership, roads or stream layers, or a combination of these. Treatment boundaries that are based on identifiable physical features such as roads, ridgelines, streams, or on ownership changes should utilize those source line features to illustrate the cartographic relationship. New treatment polygons and edits of existing polygons will be added and noted by district staff.</procdesc>
+        <procdate>unknown</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>Bureau of Land Management, Burns District Office</cntorg>
+              <cntper>Pamela Keller</cntper>
+            </cntorgp>
+            <cntpos>GIS Coordinators</cntpos>
+            <cntaddr>
+              <addrtype>mailing and physical</addrtype>
+              <address>28910 Hwy 20 West</address>
+              <city>Portland</city>
+              <state>OR</state>
+              <postal>97738-9424</postal>
+              <country>US</country>
+            </cntaddr>
+            <cntvoice>(541) 573-4486</cntvoice>
+            <cntemail>pkeller@blm.gov</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+    </lineage>
+  </dataqual>
+  <spdoinfo>
+    <direct>Vector</direct>
+    <ptvctinf>
+      <sdtsterm>
+        <sdtstype>GT-polygon composed of chains</sdtstype>
+        <ptvctcnt>18525</ptvctcnt>
+      </sdtsterm>
+    </ptvctinf>
+  </spdoinfo>
+  <spref>
+    <horizsys>
+      <geograph>
+        <latres>2e-008</latres>
+        <longres>2e-008</longres>
+        <geogunit>Decimal Degrees</geogunit>
+      </geograph>
+      <geodetic>
+        <horizdn>D North American 1983</horizdn>
+        <ellips>GRS 1980</ellips>
+        <semiaxis>6378137.0</semiaxis>
+        <denflat>298.257222101</denflat>
+      </geodetic>
+    </horizsys>
+  </spref>
+  <eainfo>
+    <detailed>
+      <enttyp>
+        <enttypl>OSODBA.MECH_POLY_new</enttypl>
+      </enttyp>
+      <attr>
+        <attrlabl>OBJECTID</attrlabl>
+        <attrdef>Internal feature number.</attrdef>
+        <attrdefs>ESRI</attrdefs>
+        <attrdomv>
+          <udom>Sequential unique whole numbers that are automatically generated.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>SHAPE</attrlabl>
+        <attrdef>Feature geometry.</attrdef>
+        <attrdefs>ESRI</attrdefs>
+        <attrdomv>
+          <udom>Coordinates defining the features.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>TRT_ID</attrlabl>
+        <attrdef>Unique number identifier for the treatment entity.  Multiple “units” of a treatment are given unique TRT_IDs and TRT_ID is unique across all treatment feature classes.  Multiple units or phases of a treatment project are tied together by TRT_NAME, PLANID, NFPORS_PROJID or CONTRACTID as applicable.</attrdef>
+        <attrdefs>BLM</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>TRT_NAME</attrlabl>
+        <attrdef>Free text name that identifies the treatment entity, preferably with a place reference and treatment type reference.  The name is one-to-one with TRT_ID and the two together provide more reliable identification as long as neither is changed.  Naming conventions need to be standardized by programs and/or offices and enforced in order to avoid confusion and loss of information.</attrdef>
+        <attrdefs>BLM</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>PROJ_NAME</attrlabl>
+        <attrdef>District-assigned name for a project that encompasses several treatment types and/or treatment units.  It is not the same as the plan or project authorizing the action (PLANID) and there may be many PROJ_NAME for one PLANID.</attrdef>
+        <attrdefs>BLM</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>MECH_TYPE</attrlabl>
+        <attrdef>Type of mechanical (manual or machine) site treatment that alters the land surface or vegetation.</attrdef>
+        <attrdefs>BLM</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>TRT_STATUS</attrlabl>
+        <attrdef>Status of the treatment action. Used in conjunction with TRT_DATE.</attrdef>
+        <attrdefs>BLM</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>Completed</edomv>
+            <edomvd>Treatment action  completed</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>TRT_DATE</attrlabl>
+        <attrdef>Date the treatment was completed or planned start date. TRT_STATUS provides the necessary information to know whether the treatment is completed or not. YYYYMMDD or YYYYMM, or YYYY format.</attrdef>
+        <attrdefs>BLM</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>MECH_METH</attrlabl>
+        <attrdef>Specific methods, tools, and materials used for mechanical (machine or manual) treatment.</attrdef>
+        <attrdefs>BLM</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>Dozer</edomv>
+            <edomvd>Dozer</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Chainsaw</edomv>
+            <edomvd>Chainsaw</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Disking</edomv>
+            <edomvd>Disking</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Ripping</edomv>
+            <edomvd>Ripping</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Trenching</edomv>
+            <edomvd>Trenching</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Scalping</edomv>
+            <edomvd>Scalping</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Machine-Unspecified</edomv>
+            <edomvd>Machine-Unspecified</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Manual</edomv>
+            <edomvd>Manual</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Masticator</edomv>
+            <edomvd>Masticator</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Feller/Buncher</edomv>
+            <edomvd>Feller/Buncher</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Skidder/Yarder</edomv>
+            <edomvd>Skidder/Yarder</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Forwarder</edomv>
+            <edomvd>Forwarder</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Unknown</edomv>
+            <edomvd>Unknown</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Monitor</edomv>
+            <edomvd>Monitor</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>TRT_TARG</attrlabl>
+        <attrdef>Target (affected species) of the treatment action.</attrdef>
+        <attrdefs>BLM</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>Juniper</edomv>
+            <edomvd>Juniper</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Duff/Slash</edomv>
+            <edomvd>Duff/Slash</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Cheatgrass</edomv>
+            <edomvd>Cheatgrass</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Shrub</edomv>
+            <edomvd>Shrub</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Bitterbrush</edomv>
+            <edomvd>Bitterbrush</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Big Sagebrush</edomv>
+            <edomvd>Big Sagebrush</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Mixed Sagebrush</edomv>
+            <edomvd>Mixed Sagebrush</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Native Grass</edomv>
+            <edomvd>Native Grass</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Native Grass/Forb</edomv>
+            <edomvd>Native Grass/Forb</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Mixed Grass-Native and Non-native</edomv>
+            <edomvd>Mixed Grass-Native and Non-native</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Grass/Shrub</edomv>
+            <edomvd>Grass/Shrub</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Ponderosa Pine</edomv>
+            <edomvd>Ponderosa Pine</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Douglas Fir</edomv>
+            <edomvd>Douglas Fir</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Pine/Fir Mix</edomv>
+            <edomvd>Pine/Fir Mix</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Conifers-Non Juniper</edomv>
+            <edomvd>Conifers-Non Juniper</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Mixed Tree-Conifer/Hardwood</edomv>
+            <edomvd>Mixed Tree-Conifer/Hardwood</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Hardwood</edomv>
+            <edomvd>Hardwood</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Oak Woodland</edomv>
+            <edomvd>Oak Woodland</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Hardwood/Shrub</edomv>
+            <edomvd>Hardwood/Shrub</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>All Vegetation</edomv>
+            <edomvd>All Vegetation</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Weeds</edomv>
+            <edomvd>Weeds</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Medusahead Rye</edomv>
+            <edomvd>Medusahead Rye</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Crested Wheatgrass</edomv>
+            <edomvd>Crested Wheatgrass</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Biomass</edomv>
+            <edomvd>Biomass</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Livestock</edomv>
+            <edomvd>Livestock</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Rodents</edomv>
+            <edomvd>Rodents</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Big Game</edomv>
+            <edomvd>Big Game</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Herbivore</edomv>
+            <edomvd>Herbivore</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Rust Fungi</edomv>
+            <edomvd>Rust Fungi</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>None</edomv>
+            <edomvd>For contingency or control area</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Unknown</edomv>
+            <edomvd>Unknown</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>BENEFIT</attrlabl>
+        <attrdef>The intended main or primary benefiting entity (resource) from the treatment action.  Only benefits that are officially acknowledged and recognized for a particular treatment should be considered, and BENEFIT will contain only the most important.  A secondary benefit can be listed in BENEFIT2.   Some choices are more general and the most specific choice should be used, e.g., a Sage-grouse rather than Birds-general.  It is expected that specific species of concern will be added as needed.</attrdef>
+        <attrdefs>BLM</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>Riparian Veg</edomv>
+            <edomvd>Improve, restore or protect</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Streambank Stability</edomv>
+            <edomvd>Erosion control</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Wetlands</edomv>
+            <edomvd>Improve, restore or protect</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Rangeland Veg</edomv>
+            <edomvd>Improve, restore or protect</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Slope Stability</edomv>
+            <edomvd>Erosion control</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Forest Stand</edomv>
+            <edomvd>Improve, restore or protect</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Biomass Value</edomv>
+            <edomvd>Commodity production</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Log Value</edomv>
+            <edomvd>Commodity production</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Wildlife-General</edomv>
+            <edomvd>Habitat improve, restore or protect</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Birds-General</edomv>
+            <edomvd>Habitat improve, restore or protect</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Sage-grouse</edomv>
+            <edomvd>Action benefits Sage-grouse</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Bald Eagle</edomv>
+            <edomvd>Action benefits Bald Eagle</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Livestock</edomv>
+            <edomvd>Commodity production</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Wildhorses</edomv>
+            <edomvd>Action benefits Wildhorses</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Water Quality</edomv>
+            <edomvd>Watershed improve, restore or protect</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Water Use</edomv>
+            <edomvd>Water source and flow management</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Fuels Reduction</edomv>
+            <edomvd>Ladder, Surface, Canopy</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Post-Treat Cleanup</edomv>
+            <edomvd>Pile, Burn</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Pre-Treat Prep</edomv>
+            <edomvd>Soil/site preparation</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Human Safety</edomv>
+            <edomvd>Health and safety measures</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Invasives Control</edomv>
+            <edomvd>Remove or contain invasive species</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Recreation Use</edomv>
+            <edomvd>Manage or enhances recreation use</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Wilderness Character</edomv>
+            <edomvd>Protection measure</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Cultural</edomv>
+            <edomvd>Protection of cultural resources</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Unknown</edomv>
+            <edomvd>Benefiting resource not specifically identified</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>WEED_TARG2</attrlabl>
+        <attrdef>Second target species of the mechanical treatment, if any.</attrdef>
+        <attrdefs>BLM</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>WEED_TARG3</attrlabl>
+        <attrdef>Third target species of the mechanical treatment, if any.</attrdef>
+        <attrdefs>BLM</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>BENEFIT2</attrlabl>
+        <attrdef>A secondary benefiting resource (“reason” for the treatment). Only benefits that are officially acknowledged and recognized for a particular treatment should be considered.  Additional benefits (same domain) can be listed in a linked table.  Some choices are more general, and the most specific choice should be used, e.g., Birds-listed rather than Birds-general.</attrdef>
+        <attrdefs>BLM</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>BLM_ORG_CD</attrlabl>
+        <attrdef>Combination of the BLM “State” and Field Office which has administrative responsibility for the treatment.  The OR/WA BLM may have administrative responsibility over some area that is physically located in Nevada, Idaho, and California, and vice versa.  Similarly, the treatment may cross Resource Area or District boundaries and the administrative responsibility is assigned to one or the other.  The unit can be identified only to the district or even state level.</attrdef>
+        <attrdefs>BLM</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>OR000</edomv>
+            <edomvd>Oregon/Washington BLM</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORB00</edomv>
+            <edomvd>Burns District Office</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORB05</edomv>
+            <edomvd>Three Rivers Field Office</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORB06</edomv>
+            <edomvd>Andrews Field Office</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORC00</edomv>
+            <edomvd>Coos Bay District Office</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORC03</edomv>
+            <edomvd>Umpqua Field Office</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORC04</edomv>
+            <edomvd>Myrtlewood Field Office</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORE00</edomv>
+            <edomvd>Eugene District Office</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORE05</edomv>
+            <edomvd>Siuslaw Field Office</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORE06</edomv>
+            <edomvd>Upper Willamette Field Office</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORL00</edomv>
+            <edomvd>Lakeview District Office</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORL04</edomv>
+            <edomvd>Klamath Falls Field Office</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORL05</edomv>
+            <edomvd>Lakeview Field Office</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORM00</edomv>
+            <edomvd>Medford District Office</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORM05</edomv>
+            <edomvd>Butte Falls Field Office</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORM06</edomv>
+            <edomvd>Ashland Field Office</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORM07</edomv>
+            <edomvd>Grants Pass Field Office</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORM08</edomv>
+            <edomvd>Glendale Field Office</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORP00</edomv>
+            <edomvd>Prineville District Office</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORP04</edomv>
+            <edomvd>Central Oregon Field Office</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORP06</edomv>
+            <edomvd>Deschutes Field Office</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORR00</edomv>
+            <edomvd>Roseburg District Office</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORR04</edomv>
+            <edomvd>Swiftwater Field Office</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORR05</edomv>
+            <edomvd>South River Field Office</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORS00</edomv>
+            <edomvd>Salem District Office</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORS04</edomv>
+            <edomvd>Cascades Field Office</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORS05</edomv>
+            <edomvd>Marys Peak Field Office</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORS06</edomv>
+            <edomvd>Tillamook Field Office</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORV00</edomv>
+            <edomvd>Vale District Office</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORV04</edomv>
+            <edomvd>Malheur Field Office</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORV05</edomv>
+            <edomvd>Baker Field Office</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORV06</edomv>
+            <edomvd>Jordan Field Office</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORW00</edomv>
+            <edomvd>Spokane District Office</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORW02</edomv>
+            <edomvd>Wenatchee Field Office</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORW03</edomv>
+            <edomvd>Border Field Office</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>PLANID</attrlabl>
+        <attrdef>The official name/identifier for the plan or project authorizing the action.  Provides link to project or planning area boundary polygon. Too lengthy to list.  Contact the State Data Administrator for a copy.</attrdef>
+        <attrdefs>BLM</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>Too lengthy to list.  Contact the State Data Administrator for a copy.</edomv>
+            <edomvds>BLM</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>BUDGET_CD</attrlabl>
+        <attrdef>Primary funding program activity for a treatment.</attrdef>
+        <attrdefs>BLM</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>INITIATIVE</attrlabl>
+        <attrdef>The initiative, priorities or plan objective the treatment falls under.</attrdef>
+        <attrdefs>BLM</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>HLI</edomv>
+            <edomvd>Healthy Lands Initiative</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>ESR</edomv>
+            <edomvd>Emergency Stabilization and Rehabilitation</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>BARR</edomv>
+            <edomvd>Burned Area Rehabilitation and Restoration</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>HFI</edomv>
+            <edomvd>Healthy Forests Initiative</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>WUI</edomv>
+            <edomvd>Wildland-Urban Interface</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>HFR</edomv>
+            <edomvd>Hazardous Fuels Reduction</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>STEW</edomv>
+            <edomvd>Stewardship Contracting</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>ARRA</edomv>
+            <edomvd>American Recovery and Reinvestment Act of 2009</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>CWPP</edomv>
+            <edomvd>Community Wildfire Protection Plan</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>JFS</edomv>
+            <edomvd>Joint Fire Science</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>CLASSIFIER</attrlabl>
+        <attrdef>Name (mixed case, first and last) of the subject matter specialist most knowledgeable about the treatment (contact).</attrdef>
+        <attrdefs>BLM</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>WORKAGENT</attrlabl>
+        <attrdef>“Who” did the work (or the type of procurement instrument).</attrdef>
+        <attrdefs>BLM</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>Force Account</edomv>
+            <edomvd>Federal labor force</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Service Contract</edomv>
+            <edomvd>Service Contract</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>IDIQ Contract</edomv>
+            <edomvd>IDIQ Contract-non-Stewardship. IDIQ (Indefinite delivery/indefinite quantity)</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Stewardship Contract</edomv>
+            <edomvd>Stewardship Contract</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Permittee</edomv>
+            <edomvd>Permittee</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Coop Agreement</edomv>
+            <edomvd>ODFW, ODA, County, etc.</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Grantee</edomv>
+            <edomvd>Grantee</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Volunteer</edomv>
+            <edomvd>Volunteer</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Timber Sale </edomv>
+            <edomvd>Timber Sale Purchaser</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Landowner</edomv>
+            <edomvd>Landowner</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Unknown</edomv>
+            <edomvd>Unknown</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>LOCAL_LINK</attrlabl>
+        <attrdef>District legacy identifier or database link for a treatment (other than RIPS and NFPORS).</attrdef>
+        <attrdefs>BLM</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>CONTRACTID</attrlabl>
+        <attrdef>Timber sale, stewardship, planting, weed control or other contract number.  Might be the Task Order number if that is more relevant.</attrdef>
+        <attrdefs>BLM</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>CONTRACTNM</attrlabl>
+        <attrdef>Contractor name for the contract identified by CONTRACTID.</attrdef>
+        <attrdefs>BLM</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>NFPORS_TRTID</attrlabl>
+        <attrdef>NFPORS Treatment ID (integer 9).  For existing (completed) and proposed treatments.  This ID together with the NFPORS_PROJID creates unique identifiers that are one to one with TRT_ID.</attrdef>
+        <attrdefs>BLM</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>NFPORS_PROJID</attrlabl>
+        <attrdef>Ties different treatments for the same project together by giving them the same Project ID.</attrdef>
+        <attrdefs>BLM</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>RIPSKEY</attrlabl>
+        <attrdef>RIPS Key.  Currently 6 characters, all digits, but this may change.  Links to RIPS (Range Improvement Project System) database application</attrdef>
+        <attrdefs>BLM</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>GIS_ACRES</attrlabl>
+        <attrdef>GIS polygon acres.  This is necessary in order to compare to TRT_ACRES.  Must be recalculated with every edit submission.  Use the projection for the UTM zone the treatment unit falls in, and datum NAD83 with units meters.  May not be relevant to Biological treatments</attrdef>
+        <attrdefs>BLM</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>TRT_ACRES</attrlabl>
+        <attrdef>These are actual acres treated or estimated acres proposed for treatment.  Not derived from GIS but can be set to GIS_ACRES, if the entire polygon is considered treated. The TRT_ACRES may be substantially less than the total polygon acres, particularly for CHEM_POLY where treated acres (TRT_ACRES) is calculated as total gallons applied (GAL_MIX_AP) divided by MIX_RATE.  May not be relevant to Biological (BIO) or Protection (PROT) treatments.</attrdef>
+        <attrdefs>BLM</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>TRT_MONI</attrlabl>
+        <attrdef>Result as determined from post treatment inspection.  Questions asked will be different for different treatment types.  For prescribed burn (BURN), these might include: 1.	Was consumption of the targeted fuels inadequate, adequate, or excessive? 2.	Were targeted mortality levels inadequate, adequate, or excessive? 3.	Was soil heating acceptable or unacceptable? 4.	Did any unacceptable damage to non-targeted resources or  resource values occur?  For chemical treatment of weeds (CHEM) the question might be “Are there any weeds left?”  For exclosures (PROT), the question might be whether the targeted animals were effectively excluded.  For seedings (REVEG), the questions might include: 1.	What was the germination percentage? 2.	What percent survived 1 year? 3.	What was the coverage?</attrdef>
+        <attrdefs>BLM</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>Acceptable</edomv>
+            <edomvd>Acceptable</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Mixed Result</edomv>
+            <edomvd>Mixed Result</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>Unacceptable</edomv>
+            <edomvd>Unacceptable</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>CURRENT_CD</attrlabl>
+        <attrdef>Only meaningful for existing treatment feature classes, not applicable to proposed treatment.  Whether an entity is considered "Historic” depends on the type of treatment.  Date/age does not determine this, but whether the entity is now removed, obsolete, replaced or erased in some sense.</attrdef>
+        <attrdefs>BLM</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>C</edomv>
+            <edomvd>Entity is still present on the ground</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>H</edomv>
+            <edomvd>Entity is obsolete, obliterated or removed</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>N</edomv>
+            <edomvd>Not applicable, entity is still a proposal</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>ARCH_CLEAR</attrlabl>
+        <attrdef>Date the proposed treatment area received archaeological clearance.</attrdef>
+        <attrdefs>BLM</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>BOT_CLEAR</attrlabl>
+        <attrdef>Date the proposed treatment area received botanical clearance.</attrdef>
+        <attrdefs>BLM</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>WILD_CLEAR</attrlabl>
+        <attrdef>Date the proposed treatment area received wildlife clearance.  YYYYMMDD or YYYYMM or YYYY format.</attrdef>
+        <attrdefs>BLM</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>COORD_SRC</attrlabl>
+        <attrdef>The actual source of the GIS coordinates for the polylines.  If the line is copied from another theme and already has COORD_SRC, it should be reviewed and may need to be changed for use in this dataset.</attrdef>
+        <attrdefs>BLM</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>CFF</edomv>
+            <edomvd>Lines duplicated or buffered from Cartographic Feature Files (USFS)</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>DEM</edomv>
+            <edomvd>Digital Elevation Model (30 m or better accuracy) used for creation of contours</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>DIS</edomv>
+            <edomvd>Lines generated to connect discontinuous features</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>DLG</edomv>
+            <edomvd>Lines duplicated or buffered from (24K scale accuracy) USGS Digital Line Graphs</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>DOQ</edomv>
+            <edomvd>Screen digitized linework over Digital Orthoquad backdrop</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>DRG</edomv>
+            <edomvd>Screen digitized linework over Digital Raster Graphic backdrop</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>GCD</edomv>
+            <edomvd>Lines snapped to Geographic Coordinate Database Points</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>GPS</edomv>
+            <edomvd>Lines obtained from a Global Positioning System device</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>IMG</edomv>
+            <edomvd>Linework derived from interpretation of satellite or other non-photographic imagery</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>MAP</edomv>
+            <edomvd>Digitized linework from hardcopy map</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>MTP</edomv>
+            <edomvd>Lines duplicated from Digital Master Title Plat</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>SOURCEL</edomv>
+            <edomvd>Source Layer from BLM GIS</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>SRV</edomv>
+            <edomvd>Survey methods were used to create the linework (e.g., COGO)</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>TIGER</edomv>
+            <edomvd>Tiger Data</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>TRS</edomv>
+            <edomvd>Coordinates only given as a legal description (township, range, section)</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>UNK</edomv>
+            <edomvd>Unknown coordinate source</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>WODDB</edomv>
+            <edomvd>WODDB Photogrammetric</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>ACCURACY_FT</attrlabl>
+        <attrdef>How close, in feet, the spatial GIS depiction is to the actual location on the ground.  There are several factors to consider in GIS error: scale and accuracy of map-based sources, accuracy of Global Positioning System (GPS) equipment, and the skill level of the data manipulators.  A value of “0” indicates no entry was made.  This is the correct value when the COORD_SRC is another GIS theme (Digital Line Graphs (DLG), Geographic Coordinate Database (GCD), Digital Elevation Model (DEM)) because the accuracy is determined by that theme.  However, if COORD_SRC is MAP (digitized from a paper map) or GPS, a value of “0” indicates a missing value that should be filled in either with a non-zero number or “-1.”  A value of “-1” indicates that the accuracy is unknown and no reliable estimate can be made.</attrdef>
+        <attrdefs>BLM</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>COMMENTS</attrlabl>
+        <attrdef>Free text for comments.</attrdef>
+        <attrdefs>BLM</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>WEED_TARG1</attrlabl>
+        <attrdef>First target species of the mechanical treatment.</attrdef>
+        <attrdefs>BLM</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>SHAPE.AREA</attrlabl>
+      </attr>
+      <attr>
+        <attrlabl>SHAPE.LEN</attrlabl>
+      </attr>
+    </detailed>
+  </eainfo>
+  <distinfo>
+    <distrib>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Bureau of Land Management</cntorg>
+          <cntper>Eric Hiebenthal</cntper>
+        </cntorgp>
+        <cntpos>GIS Data Specialist</cntpos>
+        <cntaddr>
+          <addrtype>mailing</addrtype>
+          <address>P.O. Box 2965</address>
+          <city>Portland</city>
+          <state>OR</state>
+          <postal>97208</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>(503 808-6565</cntvoice>
+        <cntemail>ehiebent@blm.gov</cntemail>
+      </cntinfo>
+    </distrib>
+    <distliab>The BLM assumes no responsibility for errors or omissions. No warranty is made by the BLM as to the accuracy, reliability, or completeness of these data for individual use or aggregate use with other data; nor shall the act of distribution to contractors, partners, or beyond, constitute any such warranty for individual or aggregate data use with other data. Although these data have been processed successfully on computers of BLM, no warranty, expressed or implied, is made by BLM regarding the use of these data on any other system, or for general or scientific purposes, nor does the fact of distribution constitute or imply any such warranty. In no event shall the BLM have any liability whatsoever for payment of any consequential, incidental, indirect, special, or tort damages of any kind, including, but not limited to, any loss of profits arising out of the use or reliance on the geographic data or arising out of the delivery, installation, operation, or support by BLM.</distliab>
+  </distinfo>
+  <metainfo>
+    <metd>20120130</metd>
+    <metc>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Bureau of Land Management, Oregon State Office</cntorg>
+          <cntper>Roger Mills</cntper>
+        </cntorgp>
+        <cntpos>GIS Specialist</cntpos>
+        <cntaddr>
+          <addrtype>mailing</addrtype>
+          <address>P.O. Box 2965</address>
+          <city>Portland</city>
+          <state>OR</state>
+          <postal>97208</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>(503) 808-6340</cntvoice>
+        <cnttdd>tdd/tty phone</cnttdd>
+        <cntfax>(503) 808-6419</cntfax>
+        <cntemail>r2mills@blm.gov</cntemail>
+        <hours>8:00-4:00</hours>
+        <cntinst>None</cntinst>
+      </cntinfo>
+    </metc>
+    <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+    <metstdv>FGDC-STD-001-1998</metstdv>
+    <mettc>local time</mettc>
+  </metainfo>
+</metadata>

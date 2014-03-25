@@ -1,0 +1,833 @@
+﻿<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin>OR/WA BLM</origin>
+        <pubdate>20130516</pubdate>
+        <title>BLM OR Wild and Scenic River Corridor Polygon</title>
+        <geoform>vector digital data</geoform>
+        <onlink>http://www.blm.gov/or/gis/</onlink>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>wsrcorr_poly: This layer is the polygon representation of the Wild and Scenic River Corridors on BLM managed lands within Oregon. The National Wild and Scenic Rivers System was created by Congress in 1968 to preserve certain rivers with outstanding natural, cultural, and recreational values in a free-flowing condition. For more information about the WSR Act, river classification, management, and links to related sites go to http://www.rivers.gov/rivers/.</abstract>
+      <purpose>Resource Management Planning</purpose>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <sngdate>
+          <caldate>20130516</caldate>
+        </sngdate>
+      </timeinfo>
+      <current>publication date</current>
+    </timeperd>
+    <status>
+      <progress>Complete</progress>
+      <update>As needed</update>
+    </status>
+    <spdom>
+      <bounding>
+        <westbc>-123.892935</westbc>
+        <eastbc>-117.026436</eastbc>
+        <northbc>45.998472</northbc>
+        <southbc>42.007332</southbc>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt>Theme</themekt>
+        <themekey>Corridor</themekey>
+        <themekey>Wild and Scenic Rivers</themekey>
+        <themekey>WSR</themekey>
+        <themekey>WSRCORR</themekey>
+      </theme>
+      <theme>
+        <themekt>BLM-Theme</themekt>
+        <themekey>Recreation</themekey>
+        <themekey>Hydrography</themekey>
+      </theme>
+      <theme>
+        <themekt>ISO 19115</themekt>
+        <themekey>inlandWaters</themekey>
+      </theme>
+      <theme>
+        <themekt>ISO 19115 Topic Categories</themekt>
+        <themekey>inlandWaters</themekey>
+      </theme>
+      <place>
+        <placekt>None</placekt>
+        <placekey>Pacific Northwest</placekey>
+      </place>
+      <place>
+        <placekt>BLM-State</placekt>
+        <placekey>Oregon</placekey>
+      </place>
+    </keywords>
+    <accconst>PUBLIC DATA: None, these data are considered public domain.</accconst>
+    <useconst>These data are provided by Bureau of Land Management (BLM) “as is” and may contain errors or omissions. The User assumes the entire risk associated with its use of these data and bears all responsibility in determining whether these data are fit for the User’s intended use. The information contained in these data is dynamic and may change over time. The data are not better than the original sources from which they were derived, and both scale and accuracy may vary across the data set. These data may not have the accuracy, resolution, completeness, timeliness, or other characteristics appropriate for applications that potential users of the data may contemplate. The User is encouraged to carefully consider the content of the metadata file associated with these data. These data are neither legal documents nor land surveys, and must not be used as such. Official records may be referenced at most BLM offices. Please report any errors in the data to the BLM office from which it was obtained. The BLM should be cited as the data source in any products derived from these data. Any Users wishing to modify the data should describe the types of modifications they have performed. The User should not misrepresent the data, nor imply that changes made were approved or endorsed by BLM. This data may be updated by the BLM without notification.</useconst>
+    <ptcontac>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Bureau of Land Management, Oregon State Office</cntorg>
+          <cntper>Chris Dent</cntper>
+        </cntorgp>
+        <cntpos>Outdoor Recreation Planner</cntpos>
+        <cntaddr>
+          <addrtype>mailing</addrtype>
+          <address>P.O. Box 2965</address>
+          <city>Portland</city>
+          <state>OR</state>
+          <postal>97208</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>503-808-6215</cntvoice>
+        <cntfax>503-808-6021</cntfax>
+        <cntemail>cdent@blm.gov</cntemail>
+      </cntinfo>
+    </ptcontac>
+    <native>Microsoft Windows NT Version 4.0 (Build 1381) Service Pack 6; ESRI ArcCatalog 8.3.0.800</native>
+    <crossref>
+      <citeinfo>
+        <pubdate>20080301</pubdate>
+        <title>OR/WA Wild and Scenic River Corridor (Line)</title>
+      </citeinfo>
+    </crossref>
+  </idinfo>
+  <dataqual>
+    <logic>Meet BLM topology rules</logic>
+    <complete>Data is currently available for Oregon</complete>
+    <posacc>
+      <horizpa>
+        <horizpar>Accuracy requirements are generally determined by the required use of the GIS data by individual field offices.</horizpar>
+      </horizpa>
+    </posacc>
+    <lineage>
+      <procstep>
+        <procdesc>Current version of dataset was redesigned and loaded into ArcSDE</procdesc>
+        <procdate>20080301</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>Bureau of Land Management, Oregon State Office</cntorg>
+              <cntper>Stanley Frazier</cntper>
+            </cntorgp>
+            <cntpos>State Data Administrator</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>P.O. Box 2965</address>
+              <city>Portland</city>
+              <state>OR</state>
+              <postal>97208-2965</postal>
+              <country>US</country>
+            </cntaddr>
+            <cntvoice>503-808-6009</cntvoice>
+            <cntfax>503-808-6419</cntfax>
+            <cntemail>sfrazier@blm.gov</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+      <procstep>
+        <procdesc>Converted organization codes from the Oregon/Washington developed codes, to 5-character codes based on the DOI Financial and Business Management System (FBMS) standard.</procdesc>
+        <procdate>20110101</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>Bureau of Land Management, Oregon State Office</cntorg>
+              <cntper>Steve Salas</cntper>
+            </cntorgp>
+            <cntpos>GIS Specialist</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>P.O. Box 2965</address>
+              <city>Portland</city>
+              <state>OR</state>
+              <postal>97208</postal>
+              <country>US</country>
+            </cntaddr>
+            <cntvoice>503 808-6416</cntvoice>
+            <cntemail>ssalas@blm.gov</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+      <procstep>
+        <procdesc>Attributes and domains updated to meet Wild and Scenic Rivers Data Standard Revision 20130430.</procdesc>
+        <procdate>20130430</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>Bureau of Land Management</cntorg>
+              <cntper>Roger Mills</cntper>
+            </cntorgp>
+            <cntpos>GIS Spec.</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>P.O. Box 2965</address>
+              <city>Portland</city>
+              <state>OR</state>
+              <postal>97208</postal>
+              <country>US</country>
+            </cntaddr>
+            <cntvoice>(503) 808-6340</cntvoice>
+            <cntemail>r2mills@blm.gov</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+    </lineage>
+  </dataqual>
+  <spdoinfo>
+    <indspref>Oregon</indspref>
+    <direct>Vector</direct>
+    <ptvctinf>
+      <sdtsterm>
+        <sdtstype>GT-polygon composed of chains</sdtstype>
+        <ptvctcnt>68</ptvctcnt>
+      </sdtsterm>
+    </ptvctinf>
+  </spdoinfo>
+  <spref>
+    <horizsys>
+      <geograph>
+        <latres>2e-008</latres>
+        <longres>2e-008</longres>
+        <geogunit>Decimal Degrees</geogunit>
+      </geograph>
+      <geodetic>
+        <horizdn>D North American 1983</horizdn>
+        <ellips>GRS 1980</ellips>
+        <semiaxis>6378137.0</semiaxis>
+        <denflat>298.257222101</denflat>
+      </geodetic>
+    </horizsys>
+  </spref>
+  <eainfo>
+    <detailed>
+      <enttyp>
+        <enttypl>OSODBA.WSRCORR_POLY_new</enttypl>
+        <enttypd>Wild and Scenic River Corridors attributed for basic information including class, administrative responsibility, and  name of law that established the river designation. </enttypd>
+        <enttypds>Bureau of Land Management</enttypds>
+      </enttyp>
+      <attr>
+        <attrlabl>OBJECTID</attrlabl>
+        <attrdef>Internal feature number.</attrdef>
+        <attrdefs>ESRI</attrdefs>
+        <attrdomv>
+          <udom>Sequential unique whole numbers that are automatically generated.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Shape</attrlabl>
+        <attrdef>Feature geometry.</attrdef>
+        <attrdefs>ESRI</attrdefs>
+        <attrdomv>
+          <udom>Coordinates defining the features.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>WSR_NAME</attrlabl>
+        <attrdef>Official name of the Wild and Scenic River Corridor including the segment (if any) as described in whatever legislation designated the segment.</attrdef>
+        <attrdefs>Bureau of Land Management</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>WSR_CLASS</attrlabl>
+        <attrdef>The classification of designated Wild and Scenic River Corridor segment</attrdef>
+        <attrdefs>Bureau of Land Management</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>WILD</edomv>
+            <edomvd>Wild</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>SCENIC</edomv>
+            <edomvd>Scenic</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>REC</edomv>
+            <edomvd>Recreational</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>ORV</attrlabl>
+        <attrdef>Outstandingly remarkable value(s) found in the WSR Corridor (as defined in BLM Manual 6400).  Only the following codes are allowed: SCEN (Scenic), CULT (Cultural), HIST (Historical), PREH (Prehistoric), REC (Recreational), GEOL (Geologic), FISH, WLDL (Wildlife),  OTHR (Other) and UNK (Unknown ORV).  More than one value can be present and concatenated together with a “/” separator.</attrdef>
+        <attrdefs>Bureau of Land Management</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>FISH</edomv>
+            <edomvd>Fish values may be judged on the relative merits of either fish populations, habitat, or a combination of these river-related conditions.</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>GEOL</edomv>
+            <edomvd>Geological. The river, or the area within the river corridor, contains one or more example of a geologic feature, process or phenomenon that is unique or rare within the region of comparison.</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>HIST</edomv>
+            <edomvd>Historical.  The river or area within the river corridor contains a site(s) or feature(s) associated with a significant event, an important person, or a cultural activity of the past that was rare or one-of-a-kind in the region.</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>OTHR</edomv>
+            <edomvd>Other values. </edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>PREH</edomv>
+            <edomvd>Prehistory.  The river, or area within the river corridor, contains a site(s) where there is evidence of occupation or use by Native Americans.</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>REC</edomv>
+            <edomvd>Recreation.  Recreational opportunities are, or have the potential to be, popular enough to attract visitors from throughout or beyond the region of comparison or are unique or rare within the region. </edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>SCENIC</edomv>
+            <edomvd>Scenery.  The landscape elements of landform, vegetation, water, color, and related factors result in notable or exemplary visual features and/or attractions.</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>WLDL</edomv>
+            <edomvd>Wildlife.  Wildlife values may be judged on the relative merits of either terrestrial or aquatic wildlife populations or habitat or a combination of these conditions. </edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>BLM_ORG_CD</attrlabl>
+        <attrdef>Combination of the BLM "State" and Resource Area which has administrative responsibility for the Special Management Area.</attrdef>
+        <attrdefs>Bureau of Land Management</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>CA000</edomv>
+            <edomvd>California BLM</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>CAN01</edomv>
+            <edomvd>Northern California Field Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>CAN02</edomv>
+            <edomvd>Alturas Field Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>CAN03</edomv>
+            <edomvd>Arcata Field Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>CAN06</edomv>
+            <edomvd>Redding Field Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>CAN07</edomv>
+            <edomvd>Surprise Field Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>ID000</edomv>
+            <edomvd>Idaho BLM</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>IDB00</edomv>
+            <edomvd>Boise District Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>IDB01</edomv>
+            <edomvd>Four Rivers Field Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>IDB03</edomv>
+            <edomvd>Owyhee Field Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>IDC00</edomv>
+            <edomvd>Coeur d'Alene District Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>IDC01</edomv>
+            <edomvd>Coeur d'Alene Field Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>IDC02</edomv>
+            <edomvd>Cottonwood Field Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>NV000</edomv>
+            <edomvd>Nevada BLM</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>NVE00</edomv>
+            <edomvd>Elko District Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>NVE02</edomv>
+            <edomvd>Tuscarora Field Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>NVW00</edomv>
+            <edomvd>Winnemucca District Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>NVW01</edomv>
+            <edomvd>Humboldt River Field Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>OR000</edomv>
+            <edomvd>Oregon/Washington BLM</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORB00</edomv>
+            <edomvd>Burns District Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORB05</edomv>
+            <edomvd>Three Rivers Field Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORB06</edomv>
+            <edomvd>Andrews Field Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORC00</edomv>
+            <edomvd>Coos Bay District Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORC03</edomv>
+            <edomvd>Umpqua Field Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORC04</edomv>
+            <edomvd>Myrtlewood Field Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORE00</edomv>
+            <edomvd>Eugene District Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORE05</edomv>
+            <edomvd>Siuslaw Field Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORE06</edomv>
+            <edomvd>Upper Willamette Field Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORL00</edomv>
+            <edomvd>Lakeview District Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORL04</edomv>
+            <edomvd>Klamath Falls Field Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORL05</edomv>
+            <edomvd>Lakeview Field Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORM00</edomv>
+            <edomvd>Medford District Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORM05</edomv>
+            <edomvd>Butte Falls Field Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORM06</edomv>
+            <edomvd>Ashland Field Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORM07</edomv>
+            <edomvd>Grants Pass Field Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORM08</edomv>
+            <edomvd>Glendale Field Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORP00</edomv>
+            <edomvd>Prineville District Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORP04</edomv>
+            <edomvd>Central Oregon Field Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORP06</edomv>
+            <edomvd>Deschutes Field Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORR00</edomv>
+            <edomvd>Roseburg District Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORR04</edomv>
+            <edomvd>Swiftwater Field Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORR05</edomv>
+            <edomvd>South River Field Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORS00</edomv>
+            <edomvd>Salem District Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORS04</edomv>
+            <edomvd>Cascades Field Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORS05</edomv>
+            <edomvd>Marys Peak Field Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORS06</edomv>
+            <edomvd>Tillamook Field Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORV00</edomv>
+            <edomvd>Vale District Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORV04</edomv>
+            <edomvd>Malheur Field Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORV05</edomv>
+            <edomvd>Baker Field Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORV06</edomv>
+            <edomvd>Jordan Field Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORW00</edomv>
+            <edomvd>Spokane District Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORW02</edomv>
+            <edomvd>Wenatchee Field Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>ORW03</edomv>
+            <edomvd>Border Field Office</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>JURIS_CODE</attrlabl>
+        <attrdef>Broad governmental organization with administrative responsibility for the Wild and Scenic River</attrdef>
+        <attrdefs>Bureau of Land Management</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>BL</edomv>
+            <edomvd>Bureau of Land Management</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>BP</edomv>
+            <edomvd>Bonneville Power Administration</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>BR</edomv>
+            <edomvd>Bureau of Reclamation</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomvds>Bureau of Land Management</edomvds>
+            <edomv>CE</edomv>
+            <edomvd>Corps of Engineers</edomvd>
+          </edom>
+          <edom>
+            <edomv>CG</edomv>
+            <edomvd>U.S. Coast Guard</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>DA</edomv>
+            <edomvd>U.S. Dept. of Agriculture (except the Forest Service)</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>DD</edomv>
+            <edomvd>U.S. Dept of Defense (except the Corps of Engineers)</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>FS</edomv>
+            <edomvd>U.S. Forest Service</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>FA</edomv>
+            <edomvd>Federal Aviation Administration</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>FC</edomv>
+            <edomvd>Federal Energy Regulatory Commission</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>FW</edomv>
+            <edomvd>U.S. Fish and Wildlife Service</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>GS</edomv>
+            <edomvd>General Services Administration</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>IA</edomv>
+            <edomvd>Bureau of Indian Affairs and Tribal units</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>LG</edomv>
+            <edomvd>Local Government</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>NP</edomv>
+            <edomvd>National Park Service</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>PV</edomv>
+            <edomvd>Private lands</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>PVI</edomv>
+            <edomvd>Private, Industrial</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>PVML</edomv>
+            <edomvd>Private within meander lines</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>PVN</edomv>
+            <edomvd>Private, Nonindustrial</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomvds>Bureau of Land Management</edomvds>
+            <edomv>PVU</edomv>
+            <edomvd>Private, Urban</edomvd>
+          </edom>
+          <edom>
+            <edomv>ST</edomv>
+            <edomvd>State managed lands</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>STF</edomv>
+            <edomvd>State Forests</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>STL</edomv>
+            <edomvd>State Division of Lands</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>STP</edomv>
+            <edomvd>State Parks</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>STW</edomv>
+            <edomvd>State Wildlife Refuges</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>UN</edomv>
+            <edomvd>Undetermined</edomvd>
+            <edomvds>Bureau of Land Management</edomvds>
+          </edom>
+          <edom>
+            <edomv>GSA</edomv>
+            <edomvd>GSA-General Services Administration</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>CASEFILE</attrlabl>
+        <attrdef>The serialized case file number for each Wild &amp; Scenic River.  Inholding polygons or non-BLM Wild &amp; Scenic Rivers should not be given a casefile number.  This number must match exactly with the serial numbers in LR2000 including any spacing in the number (see the examples below)</attrdef>
+        <attrdefs>BLM</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>DSG_AC</attrlabl>
+        <attrdef>The official designated acres of the Wild &amp; Scenic River Corridor or Corridor Segment as recorded in the designation document. This is not the GIS derived acres and does not change.</attrdef>
+        <attrdefs>BLM</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>GIS_ACRES</attrlabl>
+        <attrdef>The area of a polygon as calculated by GIS in acres.  Must be recalculated with every edit submission.  The acres will be automatically calculated when the feature classes are published.  The BLM_ORG_CD will be used to determine the appropriate projection.</attrdef>
+        <attrdefs>BLM</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>AUTH_NAME</attrlabl>
+        <attrdef>Public Law or Order that established the designation</attrdef>
+        <attrdefs>Bureau of Land Management</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>100-557</edomv>
+            <edomvd>Omnibus Oregon Wild and Scenic Rivers Act of 1988</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>104-333</edomv>
+            <edomvd>Omnibus Parks and Public Lands Management Act of 1996</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>106-399</edomv>
+            <edomvd>Steens Mountain Cooperative Management and Protection Act of 2000</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>90-542</edomv>
+            <edomvd>Wild and Scenic Rivers Act of 1968</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>AUTH_DATE</attrlabl>
+        <attrdef>Date the area was legally established (YYYYMMDD)</attrdef>
+        <attrdefs>Bureau of Land Management</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>SHAPE.AREA</attrlabl>
+      </attr>
+      <attr>
+        <attrlabl>SHAPE.LEN</attrlabl>
+      </attr>
+    </detailed>
+    <overview>
+      <eaover>Attributes are provided that give basic information about source, type, and accuracy of the line data.</eaover>
+    </overview>
+  </eainfo>
+  <distinfo>
+    <distrib>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Bureau of Land Management</cntorg>
+          <cntper>Eric Hiebenthal</cntper>
+        </cntorgp>
+        <cntpos>GIS Data Management Specialist</cntpos>
+        <cntaddr>
+          <addrtype>mailing</addrtype>
+          <address>P.O Box 2965</address>
+          <city>Portland</city>
+          <state>OR</state>
+          <postal>97208</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>503-808-6340</cntvoice>
+        <cntfax>503-808-6419</cntfax>
+        <cntemail>ehiebent@blm.gov</cntemail>
+        <cntinst>contact instructions</cntinst>
+      </cntinfo>
+    </distrib>
+    <distliab>The BLM assumes no responsibility for errors or omissions. No warranty is made by the BLM as to the accuracy, reliability, or completeness of these data for individual use or aggregate use with other data; nor shall the act of distribution to contractors, partners, or beyond, constitute any such warranty for individual or aggregate data use with other data. Although these data have been processed successfully on computers of BLM, no warranty, expressed or implied, is made by BLM regarding the use of these data on any other system, or for general or scientific purposes, nor does the fact of distribution constitute or imply any such warranty. In no event shall the BLM have any liability whatsoever for payment of any consequential, incidental, indirect, special, or tort damages of any kind, including, but not limited to, any loss of profits arising out of the use or reliance on the geographic data or arising out of the delivery, installation, operation, or support by BLM.</distliab>
+    <stdorder>
+      <fees>Contact distributor.</fees>
+      <ordering>Data are only available through the Oregon/Washington State office of the Bureau of Land Management.</ordering>
+    </stdorder>
+  </distinfo>
+  <metainfo>
+    <metd>20090731</metd>
+    <metrd>20130515</metrd>
+    <metc>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Bureau of Land Management, Oregon State Office</cntorg>
+          <cntper>Roger Mills</cntper>
+        </cntorgp>
+        <cntpos>GIS Specialist</cntpos>
+        <cntaddr>
+          <addrtype>mailing</addrtype>
+          <address>P.O. Box 2965</address>
+          <city>Portland</city>
+          <state>OR</state>
+          <postal>97208</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>(503) 808-6340</cntvoice>
+        <cnttdd>tdd/tty phone</cnttdd>
+        <cntfax>(503) 808-6419</cntfax>
+        <cntemail>r2mills@blm.gov</cntemail>
+        <hours>8:00-4:00</hours>
+        <cntinst>None</cntinst>
+      </cntinfo>
+    </metc>
+    <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+    <metstdv>FGDC-STD-001-1998</metstdv>
+    <mettc>local time</mettc>
+    <metsi>
+      <metscs>Not Classified</metscs>
+      <metsc>Unclassified</metsc>
+    </metsi>
+  </metainfo>
+</metadata>

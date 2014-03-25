@@ -1,0 +1,582 @@
+﻿<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin>OR/WA BLM</origin>
+        <pubdate>20130411</pubdate>
+        <title>BLM OR Designated Wilderness Polygon</title>
+        <geoform>vector digital data</geoform>
+        <pubinfo>
+          <pubplace>Portland, OR</pubplace>
+          <publish>OR BLM</publish>
+        </pubinfo>
+        <onlink>http://www.blm.gov/or/gis/data.php</onlink>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>WLD_POLY: This theme shows the Congressionally designated BLM Wilderness areas. Inholdings are identified.</abstract>
+      <purpose>Resource Management Planning</purpose>
+      <supplinf>BLM - Bureau of Land Management</supplinf>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <sngdate>
+          <caldate>20130411</caldate>
+        </sngdate>
+      </timeinfo>
+      <current>publication date</current>
+    </timeperd>
+    <status>
+      <progress>Complete</progress>
+      <update>As needed</update>
+    </status>
+    <spdom>
+      <bounding>
+        <westbc>-123.930708</westbc>
+        <eastbc>-116.772752</eastbc>
+        <northbc>46.427750</northbc>
+        <southbc>42.006554</southbc>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt>ISO 19115</themekt>
+        <themekey>environment</themekey>
+      </theme>
+      <theme>
+        <themekt>Theme</themekt>
+        <themekey>Roadless Area</themekey>
+        <themekey>Recreation</themekey>
+        <themekey>Designated Wilderness</themekey>
+      </theme>
+      <theme>
+        <themekt>BLM-Theme</themekt>
+        <themekey>Special Management Areas</themekey>
+      </theme>
+      <place>
+        <placekt>None</placekt>
+        <placekey>Pacific Northwest</placekey>
+      </place>
+      <place>
+        <placekt>BLM-State</placekt>
+        <placekey>Oregon</placekey>
+        <placekey>Washington</placekey>
+      </place>
+    </keywords>
+    <accconst>PUBLIC DATA: None, these data are considered public domain.</accconst>
+    <useconst>These data are provided by Bureau of Land Management (BLM) “as is” and may contain errors or omissions. The User assumes the entire risk associated with its use of these data and bears all responsibility in determining whether these data are fit for the User’s intended use. The information contained in these data is dynamic and may change over time. The data are not better than the original sources from which they were derived, and both scale and accuracy may vary across the data set. These data may not have the accuracy, resolution, completeness, timeliness, or other characteristics appropriate for applications that potential users of the data may contemplate. The User is encouraged to carefully consider the content of the metadata file associated with these data. These data are neither legal documents nor land surveys, and must not be used as such. Official records may be referenced at most BLM offices. Please report any errors in the data to the BLM office from which it was obtained. The BLM should be cited as the data source in any products derived from these data. Any Users wishing to modify the data should describe the types of modifications they have performed. The User should not misrepresent the data, nor imply that changes made were approved or endorsed by BLM. This data may be updated by the BLM without notification.</useconst>
+    <ptcontac>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Bureau of Land Management, OR/WA State Office</cntorg>
+          <cntper>Jerry Magee</cntper>
+        </cntorgp>
+        <cntpos>Natural Resource Specialist</cntpos>
+        <cntaddr>
+          <addrtype>mailing</addrtype>
+          <address>P. O. Box 2965</address>
+          <city>Portland</city>
+          <state>OR</state>
+          <postal>97208-2965</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>(503)808-6086</cntvoice>
+        <cntemail>gmagee@blm.gov</cntemail>
+      </cntinfo>
+    </ptcontac>
+    <native>Microsoft Windows XP Version 5.1 (Build 2600) Service Pack 3; ESRI ArcGIS 10.0.2.3229</native>
+    <crossref>
+      <citeinfo>
+        <origin>OR/WA BLM</origin>
+        <title>BLM OR Designated Wilderness Line</title>
+        <geoform>vector digital data</geoform>
+      </citeinfo>
+    </crossref>
+  </idinfo>
+  <dataqual>
+    <logic>Meets BLM toplogy rules</logic>
+    <complete>Data is currently available for Oregon and Washington</complete>
+    <posacc>
+      <horizpa>
+        <horizpar>Accuracy requirements are generally determined by the required use of the GIS data by individual field offices.</horizpar>
+      </horizpa>
+    </posacc>
+    <lineage>
+      <procstep>
+        <procdesc>Current version of dataset was redesigned and loaded into ArcSDE.</procdesc>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>Bureau of Land Management, Oregon State Office</cntorg>
+              <cntper>Stanley Frazier</cntper>
+            </cntorgp>
+            <cntpos>State Data Administrator</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>P.O. Box 2965</address>
+              <city>Portland</city>
+              <state>OR</state>
+              <postal>97208-2965</postal>
+              <country>US</country>
+            </cntaddr>
+            <cntvoice>503-808-6009</cntvoice>
+            <cntfax>503-808-6419</cntfax>
+            <cntemail>sfrazier@blm.gov</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+      <procstep>
+        <procdesc>Add 5 acres to Wilderness in T 36S R33E section 17 (Marshall acquisition) in accordance with Steens Act of 2000.</procdesc>
+        <procdate>20101102</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>Bureau of Land Management, Burns District</cntorg>
+              <cntper>Pam Keller</cntper>
+            </cntorgp>
+            <cntpos>GIS Coordinator</cntpos>
+            <cntaddr>
+              <addrtype>mailing and physical</addrtype>
+              <address>28910 Hwy 20 Wes</address>
+              <city>Hines</city>
+              <state>OR</state>
+              <postal>97738</postal>
+              <country>US</country>
+            </cntaddr>
+            <cntvoice>(541) 573-4486</cntvoice>
+            <cntemail>pkeller@blm.gov</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+      <procstep>
+        <procdesc>Replaced Juniper Dunes Wilderness boundary lines with updated ownership (LandLines Legal_Description_Arc) per Mike Fallon.</procdesc>
+        <procdate>20110331</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>Bureau of Land Management, Burns District</cntorg>
+              <cntper>Pam Keller</cntper>
+            </cntorgp>
+            <cntpos>GIS Coordinator</cntpos>
+            <cntaddr>
+              <addrtype>mailing and physical</addrtype>
+              <address>28910 Hwy 20 West</address>
+              <city>Hines</city>
+              <state>OR</state>
+              <postal>97738</postal>
+              <country>US</country>
+            </cntaddr>
+            <cntvoice>(541) 573-4486</cntvoice>
+            <cntemail>pkeller@blm.gov</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+      <procstep>
+        <procdesc>Per Gavin Hoban, adjusted Oregon Badlands north-central boundary in T18S R14E Sec. 16 and 17 for acquired Clarno exchange lands, using existing GCD points for some subdivision and GPSed monuments along fence for others. The monument points will become subdivision when input into GCD.</procdesc>
+        <procdate>20111011</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>Bureau of Land Management, Burns District</cntorg>
+              <cntper>Pam Keller</cntper>
+            </cntorgp>
+            <cntpos>GIS Coordinator</cntpos>
+            <cntaddr>
+              <addrtype>mailing and physical</addrtype>
+              <address>28910 Hwy 20 West</address>
+              <city>Hines</city>
+              <state>OR</state>
+              <postal>97738</postal>
+              <country>US</country>
+            </cntaddr>
+            <cntvoice>(541) 573-4486</cntvoice>
+            <cntemail>pkeller@blm.gov</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+      <procstep>
+        <procdesc>Attribute JURIS_CODE was added with domains.</procdesc>
+        <procdate>20111104</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>Bureau of Land Management, Oregon State Office</cntorg>
+              <cntper>Steve Salas</cntper>
+            </cntorgp>
+            <cntpos>GIS Specialist</cntpos>
+            <cntaddr>
+              <addrtype>mailing</addrtype>
+              <address>P.O. Box 2965</address>
+              <city>Portland</city>
+              <state>OR</state>
+              <postal>97208</postal>
+              <country>US</country>
+            </cntaddr>
+            <cntvoice>503 808-6416</cntvoice>
+            <cntemail>ssalas@blm.gov</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+      <procstep>
+        <procdesc>Snapped Wilderness boundary to updated WSA boundary in NE along Kiger Ridge way.</procdesc>
+        <procdate>20120606</procdate>
+        <proccont>
+          <cntinfo>
+            <cntorgp>
+              <cntorg>Bureau of Land Management, Burns District</cntorg>
+              <cntper>Pam Keller</cntper>
+            </cntorgp>
+            <cntpos>GIS Coordinator</cntpos>
+            <cntaddr>
+              <addrtype>mailing and physical</addrtype>
+              <address>28910 Hwy 20 Wes</address>
+              <city>Hines</city>
+              <state>OR</state>
+              <postal>97738</postal>
+              <country>US</country>
+            </cntaddr>
+            <cntvoice>(541) 573-4486</cntvoice>
+            <cntemail>pkeller@blm.gov</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+    </lineage>
+  </dataqual>
+  <spdoinfo>
+    <direct>Vector</direct>
+    <ptvctinf>
+      <sdtsterm>
+        <sdtstype>GT-polygon composed of chains</sdtstype>
+        <ptvctcnt>56</ptvctcnt>
+      </sdtsterm>
+    </ptvctinf>
+  </spdoinfo>
+  <spref>
+    <horizsys>
+      <geograph>
+        <latres>2e-008</latres>
+        <longres>2e-008</longres>
+        <geogunit>Decimal Degrees</geogunit>
+      </geograph>
+      <geodetic>
+        <horizdn>D North American 1983</horizdn>
+        <ellips>GRS 1980</ellips>
+        <semiaxis>6378137.0</semiaxis>
+        <denflat>298.257222101</denflat>
+      </geodetic>
+    </horizsys>
+  </spref>
+  <eainfo>
+    <detailed>
+      <enttyp>
+        <enttypl>WLD_POLY</enttypl>
+        <enttypd>Congressionally designated BLM Wilderness areas</enttypd>
+        <enttypds>Bureau of Land Management</enttypds>
+      </enttyp>
+      <attr>
+        <attrlabl>OBJECTID</attrlabl>
+        <attrdef>Internal feature number.</attrdef>
+        <attrdefs>ESRI</attrdefs>
+        <attrdomv>
+          <udom>Sequential unique whole numbers that are automatically generated.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Shape</attrlabl>
+        <attrdef>Feature geometry.</attrdef>
+        <attrdefs>ESRI</attrdefs>
+        <attrdomv>
+          <udom>Coordinates defining the features.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>WLD_NAME</attrlabl>
+        <attrdef>The official name of the wilderness.  </attrdef>
+        <attrdefs>BLM</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>CASEFILE</attrlabl>
+        <attrdef>The serialized case file number for each wilderness area.  </attrdef>
+        <attrdefs>BLM</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>AUTH_NAME</attrlabl>
+        <attrdef>Public Law or Order that established the designation.</attrdef>
+        <attrdefs>Bureau of Land Management</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>100-557</edomv>
+            <edomvd>Omnibus Oregon Wild and Scenic Rivers Act of 1988</edomvd>
+          </edom>
+          <edom>
+            <edomv>104-208</edomv>
+            <edomvd>Oregon Resource Conservation Act of 1996</edomvd>
+          </edom>
+          <edom>
+            <edomv>104-333</edomv>
+            <edomvd>Omnibus Parks and Public Lands Management Act of 1996</edomvd>
+          </edom>
+          <edom>
+            <edomv>106-399</edomv>
+            <edomvd>Steens Mountain Cooperative Management and Protection Act of 2000</edomvd>
+          </edom>
+          <edom>
+            <edomv>111-011</edomv>
+            <edomvd>Omnibus Public Land Management Act of 2009</edomvd>
+          </edom>
+          <edom>
+            <edomv>7318</edomv>
+            <edomvd>Presidential Proclamation Cascade-Siskiyou National Monument</edomvd>
+          </edom>
+          <edom>
+            <edomv>90-542</edomv>
+            <edomvd>Wild and Scenic Rivers Act of 1968</edomvd>
+          </edom>
+          <edom>
+            <edomv>95-200</edomv>
+            <edomvd>Bull Run Act</edomvd>
+          </edom>
+          <edom>
+            <edomv>95-327</edomv>
+            <edomvd>Endangered American Wilderness Act</edomvd>
+          </edom>
+          <edom>
+            <edomv>96-199</edomv>
+            <edomvd>Channel Islands National Park and Other Purposes</edomvd>
+          </edom>
+          <edom>
+            <edomv>98-328</edomv>
+            <edomvd>Oregon Wilderness Act of 1984</edomvd>
+          </edom>
+          <edom>
+            <edomv>98-339</edomv>
+            <edomvd>Washington State Wilderness Act of 1984</edomvd>
+          </edom>
+          <edom>
+            <edomv>98-494</edomv>
+            <edomvd>Amendment to Wild and Scenic Rivers Act</edomvd>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>AUTH_DATE</attrlabl>
+        <attrdef>Date the area was legally established (YYYYMMDD) it is allowable to enter only YEAR or YEAR and MONTH.</attrdef>
+        <attrdefs>BLM</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>ADMIN_ST</attrlabl>
+        <attrdef>The two-character abbreviation for the State with administrative responsibilities.  Some BLM State Offices have administrative responsibilities for more than one State.  For instance, the administrative state of Oregon is responsible for both Oregon and Washington. </attrdef>
+        <attrdefs>BLM</attrdefs>
+      </attr>
+      <attr>
+        <attrlabl>JURIS_CODE</attrlabl>
+        <attrdef>Broad governmental organization with administrative responsibility for the WLD area.  In general, this will be BLM, but there may be adjoining WLD of a different jurisdiction.</attrdef>
+        <attrdefs>BLM</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>BL</edomv>
+            <edomvd>BUREAU OF LAND MANAGEMENT</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>BP</edomv>
+            <edomvd>BONNEVILLE POWER ADMINISTRATION</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>BR</edomv>
+            <edomvd>BUREAU OF RECLAMATION</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>CE</edomv>
+            <edomvd>CORPS OF ENGINEERS</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>CG</edomv>
+            <edomvd>COAST GUARD</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>DA</edomv>
+            <edomvd>U.S. DEPT. OF AGRICULTURE (EXCEPT THE FOREST SERVICE)</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>DD</edomv>
+            <edomvd>U.S. DEPT. OF DEFENSE (EXCEPT THE CORPS OF ENGINEERS)</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>FA</edomv>
+            <edomvd>FEDERAL AVIATION ADMINISTRATION</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>FC</edomv>
+            <edomvd>FEDERAL ENERGY REGULATORY COMMISSION</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>FS</edomv>
+            <edomvd>U.S. FOREST SERVICE</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>FW</edomv>
+            <edomvd>U.S. FISH AND WILDLIFE SERVICE</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>GS</edomv>
+            <edomvd>U.S. GEOLOGICAL SURVEY</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomv>GSA</edomv>
+            <edomvd>GENERAL SERVICES ADMINISTRATION</edomvd>
+            <edomvds>BLM</edomvds>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>IA</edomv>
+            <edomvd>BUREAU OF INDIAN AFFAIRS AND TRIBAL UNITS</edomvd>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>LG</edomv>
+            <edomvd>LOCAL GOVERNMENT</edomvd>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>NP</edomv>
+            <edomvd>NATIONAL PARK SERVICE</edomvd>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>PV</edomv>
+            <edomvd>PRIVATE LANDS</edomvd>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>PVI</edomv>
+            <edomvd>PRIVATE, INDUSTRIAL</edomvd>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>PVN</edomv>
+            <edomvd>PRIVATE, NONINDUSTRIAL</edomvd>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>PVU</edomv>
+            <edomvd>PRIVATE, URBAN</edomvd>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>STD</edomv>
+            <edomvd>STATE TRANSPORTATON DEPARTMENT</edomvd>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>ST</edomv>
+            <edomvd>STATE MANAGED LANDS</edomvd>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>STF</edomv>
+            <edomvd>STATE FORESTS</edomvd>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>STL</edomv>
+            <edomvd>STATE DIVISION OF LANDS</edomvd>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>STP</edomv>
+            <edomvd>STATE PARKS</edomvd>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>STW</edomv>
+            <edomvd>STATE WILDLIFE REFUGES</edomvd>
+          </edom>
+          <edom>
+            <edomvds>BLM</edomvds>
+            <edomv>UN</edomv>
+            <edomvd>UNDETERMINED</edomvd>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>SHAPE.AREA</attrlabl>
+      </attr>
+      <attr>
+        <attrlabl>SHAPE.LEN</attrlabl>
+      </attr>
+    </detailed>
+  </eainfo>
+  <distinfo>
+    <distrib>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Bureau of Land Management</cntorg>
+          <cntper>Eric Hiebenthal</cntper>
+        </cntorgp>
+        <cntpos>GIS Data Management Specialist</cntpos>
+        <cntaddr>
+          <addrtype>mailing</addrtype>
+          <address>P.O Box 2965</address>
+          <city>Portland</city>
+          <state>OR</state>
+          <postal>97208</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>503-808-6340</cntvoice>
+        <cntfax>503-808-6419</cntfax>
+        <cntemail>ehiebent@blm.gov</cntemail>
+        <cntinst>contact instructions</cntinst>
+      </cntinfo>
+    </distrib>
+    <distliab>The BLM assumes no responsibility for errors or omissions. No warranty is made by the BLM as to the accuracy, reliability, or completeness of these data for individual use or aggregate use with other data; nor shall the act of distribution to contractors, partners, or beyond, constitute any such warranty for individual or aggregate data use with other data. Although these data have been processed successfully on computers of BLM, no warranty, expressed or implied, is made by BLM regarding the use of these data on any other system, or for general or scientific purposes, nor does the fact of distribution constitute or imply any such warranty. In no event shall the BLM have any liability whatsoever for payment of any consequential, incidental, indirect, special, or tort damages of any kind, including, but not limited to, any loss of profits arising out of the use or reliance on the geographic data or arising out of the delivery, installation, operation, or support by BLM.</distliab>
+    <stdorder>
+      <fees>Contact distributor.</fees>
+      <ordering>Data are only available through the Oregon/Washington State office of the Bureau of Land Management.</ordering>
+    </stdorder>
+  </distinfo>
+  <metainfo>
+    <metd>20111108</metd>
+    <metrd>20120822</metrd>
+    <metc>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Bureau of Land Management, Oregon State Office</cntorg>
+          <cntper>Roger Mills</cntper>
+        </cntorgp>
+        <cntpos>GIS Specialist</cntpos>
+        <cntaddr>
+          <addrtype>mailing</addrtype>
+          <address>P.O. Box 2965</address>
+          <city>Portland</city>
+          <state>OR</state>
+          <postal>97208</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>(503) 808-6340</cntvoice>
+        <cnttdd>tdd/tty phone</cnttdd>
+        <cntfax>(503) 808-6419</cntfax>
+        <cntemail>r2mills@blm.gov</cntemail>
+        <hours>8:00-4:00</hours>
+        <cntinst>None</cntinst>
+      </cntinfo>
+    </metc>
+    <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+    <metstdv>FGDC-STD-001-1998</metstdv>
+    <mettc>local time</mettc>
+    <metsi>
+      <metscs>Not Classified</metscs>
+    </metsi>
+  </metainfo>
+</metadata>
