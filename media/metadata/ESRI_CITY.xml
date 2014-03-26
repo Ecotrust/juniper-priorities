@@ -1,0 +1,383 @@
+﻿<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin>National Atlas of the United States and the United States Geological Survey</origin>
+        <title>U.S. National Atlas Cities</title>
+        <edition>2012</edition>
+        <geoform>vector digital data</geoform>
+        <serinfo>
+          <sername>Data &amp; Maps for ArcGIS®</sername>
+          <issue>2012 - World, Europe, and United States</issue>
+        </serinfo>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>U.S. National Atlas Cities represents cities and towns in the United States.</abstract>
+      <purpose>U.S. National Atlas Cities provides information about the locations, names, and populations of cities and towns for conducting geographic analysis on national and large regional scales.</purpose>
+    </descript>
+    <status>
+      <update>Annually</update>
+    </status>
+    <spdom>
+      <bounding>
+        <westbc>-124.628023</westbc>
+        <eastbc>-109.198059</eastbc>
+        <northbc>49.000131</northbc>
+        <southbc>38.670686</southbc>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt>ISO 19115 Topic Categories</themekt>
+        <themekey>location</themekey>
+      </theme>
+    </keywords>
+    <accconst>The data are provided by multiple, third party data vendors under license to Esri for inclusion on Data &amp; Maps for ArcGIS® for use with Esri® software.  Each data vendor has its own data licensing policies and may grant varying redistribution rights to end users. Please consult the redistribution rights below for this data set provided on Data &amp; Maps. As used herein, “Geodata” shall mean any digital data set consisting of geographic data coordinates and associated attributes.
+
+The redistribution rights for this data set: Public domain data from U.S. government is freely redistributable with proper metadata and source attribution.
+
+The terms and conditions below apply to all the data sets provided on Data &amp; Maps.
+
+Proprietary Rights and Copyright: Licensee acknowledges that the Data and Related Materials contain proprietary and confidential property of Esri and its licensor(s). The Data and Related Materials are owned by Esri and its licensor(s) and are protected by United States copyright laws and applicable international copyright treaties and/or conventions.
+
+Limited Warranty and Disclaimer: Esri warrants that the media upon which the Data and Related Materials are provided will be free from defects in materials and workmanship under normal use and service for a period of ninety (90) days from the date of receipt.
+
+THE DATA AND RELATED MATERIALS ARE EXCLUDED FROM THE LIMITED WARRANTY, AND THE LICENSEE EXPRESSLY ACKNOWLEDGES THAT THE DATA CONTAINS SOME NONCONFORMITIES, DEFECTS, OR ERRORS. Esri DOES NOT WARRANT THAT THE DATA WILL MEET LICENSEE'S NEEDS OR EXPECTATIONS; THAT THE USE OF THE DATA WILL BE UNINTERRUPTED; OR THAT ALL NONCONFORMITIES, DEFECTS, OR ERRORS CAN OR WILL BE CORRECTED. Esri IS NOT INVITING RELIANCE ON THIS DATA, AND THE LICENSEE SHOULD ALWAYS VERIFY ACTUAL DATA.
+
+EXCEPT FOR THE LIMITED WARRANTY SET FORTH ABOVE, THE DATA AND RELATED MATERIALS CONTAINED THEREIN ARE PROVIDED "AS-IS," WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
+HIGH RISK ACTIVITIES: 
+(A) THE DATA AND RELATED MATERIALS ARE NOT FAULT-TOLERANT AND ARE NOT DESIGNED, MANUFACTURED, OR INTENDED FOR USE OR RESALE FOR INSURANCE UNDERWRITING OR WITH CRITICAL HEALTH AND SAFETY OR ONLINE CONTROL EQUIPMENT IN HAZARDOUS ENVIRONMENTS THAT REQUIRE FAIL-SAFE PERFORMANCE, INCLUDING, BUT NOT LIMITED TO THE OPERATION OF NUCLEAR FACILITIES, NAVIGATION OR GUIDANCE (I.E., AIRCRAFT, NAUTICAL VEHICLE, ETC.), OR COMMUNICATION SYSTEMS, AIR TRAFFIC CONTROL, EMERGENCY RESPONSE, TERRORISM PREVENTION OR RESPONSE, LIFE SUPPORT, OR WEAPONS SYSTEMS ("HIGH RISK ACTIVITIES"). Esri SPECIFICALLY DISCLAIMS ANY EXPRESS OR IMPLIED WARRANTY OF FITNESS FOR HIGH RISK ACTIVITIES.
+
+(B) TO THE EXTENT PERMITTED BY LAW, LICENSEE AGREES TO INDEMNIFY, DEFEND, AND HOLD Esri, ITS OFFICERS, DIRECTORS, EMPLOYEES, AGENTS, SUBCONTRACTORS, LICENSORS, SUCCESSORS, AND ASSIGNS HARMLESS FROM AND AGAINST ANY AND ALL LIABILITY, LOSSES, CLAIMS, EXPENSES (INCLUDING ATTORNEYS' FEES), DEMANDS, OR DAMAGES OF ANY KIND, INCLUDING DIRECT, INDIRECT, SPECIAL, PUNITIVE, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, ARISING OUT OF OR IN ANY WAY CONNECTED WITH LICENSEE'S USE OR PERMITTING THE USE BY OTHERS OF THE DATA, AND VENDOR'S HARDWARE OR SOFTWARE FOR HIGH RISK ACTIVITIES. DELIVERY OF THE DATA, AND VENDOR'S HARDWARE OR SOFTWARE DOES NOT CONSTITUTE A WAIVER OF THE RIGHTS AND OBLIGATIONS SET FORTH IN THIS ARTICLE.
+
+Exclusive Remedy and Limitation of Liability: The entire liability of Esri or its licensor(s) and Licensee's exclusive remedy shall be to terminate the Agreement upon Licensee returning the Data and Related Materials to Esri with a copy of Licensee's invoice/receipt and Esri returning the license fees paid to Licensee.
+
+IN NO EVENT SHALL Esri AND/OR ITS LICENSOR(S) BE LIABLE FOR COSTS OF PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOST PROFITS, LOST SALES, OR BUSINESS EXPENDITURES, INVESTMENTS, OR COMMITMENTS IN CONNECTION WITH ANY BUSINESS; LOSS OF ANY GOODWILL; OR FOR ANY INDIRECT, SPECIAL, INCIDENTAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THIS AGREEMENT OR USE OF THE DATA AND RELATED MATERIALS, HOWEVER CAUSED, ON ANY THEORY OF LIABILITY, AND WHETHER OR NOT Esri OR ITS LICENSOR(S) HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. THESE LIMITATIONS SHALL APPLY NOTWITHSTANDING ANY FAILURE OF ESSENTIAL PURPOSE OF ANY EXCLUSIVE REMEDY.
+
+Third Party Beneficiary: Esri's licensor(s) has (have) authorized Esri to (sub)distribute and (sub)license its (their) data as incorporated into the Data and Related Materials. As an intended third party beneficiary to this Agreement, the Esri licensor(s) is (are) entitled to directly enforce, in its own name, the rights and obligations undertaken by the Licensee and to seek all legal and equitable remedies as are afforded to Esri.
+
+In the event that the data vendor(s) has (have) granted the end user permission to redistribute the Geodata, please use proper proprietary or copyright attribution for the various data vendor(s), and provide the associated metadata file(s) with the Geodata. In compliance with FGDC metadata standards, Esri has attempted to practice proper metadata methodologies by providing any data source information, descriptions, and file names to assist in this effort.</accconst>
+    <useconst>See legal constraints.</useconst>
+    <ptcontac>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Esri</cntorg>
+          <cntper>ArcGIS Content Team</cntper>
+        </cntorgp>
+        <cntpos>ArcGIS Content Team</cntpos>
+        <cntaddr>
+          <addrtype>unknown</addrtype>
+          <address>380 New York Street</address>
+          <city>Redlands</city>
+          <state>California</state>
+          <postal>92373-8100</postal>
+          <country>us</country>
+        </cntaddr>
+        <cntvoice>909-793-2853</cntvoice>
+        <cntfax>909-793-5953</cntfax>
+        <cntemail>info@esri.com</cntemail>
+      </cntinfo>
+    </ptcontac>
+    <ptcontac>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Esri</cntorg>
+          <cntper>ArcGIS Content Team</cntper>
+        </cntorgp>
+        <cntpos>ArcGIS Content Team</cntpos>
+        <cntaddr>
+          <addrtype>unknown</addrtype>
+          <address>380 New York Street</address>
+          <city>Redlands</city>
+          <state>California</state>
+          <postal>92373-8100</postal>
+          <country>us</country>
+        </cntaddr>
+        <cntvoice>909-793-2853</cntvoice>
+        <cntfax>909-793-5953</cntfax>
+        <cntemail>info@esri.com</cntemail>
+      </cntinfo>
+    </ptcontac>
+    <native>Microsoft Windows 7 Version 6.1 (Build 7601) Service Pack 1; Esri ArcGIS 10.2.0.3348</native>
+  </idinfo>
+  <spdoinfo>
+    <direct>Vector</direct>
+    <ptvctinf>
+      <sdtsterm>
+        <sdtstype>Entity point</sdtstype>
+        <ptvctcnt>1118</ptvctcnt>
+      </sdtsterm>
+    </ptvctinf>
+  </spdoinfo>
+  <spref>
+    <horizsys>
+      <planar>
+        <mapproj>
+          <mapprojn>WGS 1984 Web Mercator Auxiliary Sphere</mapprojn>
+          <mapprojp>
+            <otherprj>PROJCS["WGS_1984_Web_Mercator_Auxiliary_Sphere",GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]],PROJECTION["Mercator_Auxiliary_Sphere"],PARAMETER["False_Easting",0.0],PARAMETER["False_Northing",0.0],PARAMETER["Central_Meridian",0.0],PARAMETER["Standard_Parallel_1",0.0],PARAMETER["Auxiliary_Sphere_Type",0.0],UNIT["Meter",1.0],AUTHORITY["EPSG",3857]]-20037700-30241100148923141.92838538-10000010000-100000100000.0010.0010.001true1021003857</otherprj>
+          </mapprojp>
+        </mapproj>
+        <planci>
+          <plance>coordinate pair</plance>
+          <coordrep>
+            <absres>0.000000006714873101998366</absres>
+            <ordres>0.000000006714873101998366</ordres>
+          </coordrep>
+          <plandu>meter</plandu>
+        </planci>
+      </planar>
+      <geodetic>
+        <horizdn>D WGS 1984</horizdn>
+        <ellips>WGS 1984</ellips>
+        <semiaxis>6378137.0</semiaxis>
+        <denflat>298.257223563</denflat>
+      </geodetic>
+    </horizsys>
+  </spref>
+  <eainfo>
+    <detailed>
+      <enttyp>
+        <enttypl>esri_cityl_sel_wm</enttypl>
+        <enttypd>The points represent cities and towns in the United States.</enttypd>
+        <enttypds>National Atlas of the United States and the United States Geological Survey</enttypds>
+      </enttyp>
+      <attr>
+        <attrlabl>FID</attrlabl>
+        <attrdef>Internal feature number.</attrdef>
+        <attrdefs>Esri</attrdefs>
+        <attrdomv>
+          <udom>Sequential unique whole numbers that are automatically generated.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>ObjectID</attrlabl>
+        <attrdef>Internal feature number.</attrdef>
+        <attrdefs>Esri</attrdefs>
+        <attrdomv>
+          <udom>Sequential unique whole numbers that are automatically generated.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Shape</attrlabl>
+        <attrdef>Feature geometry.</attrdef>
+        <attrdefs>Esri</attrdefs>
+        <attrdomv>
+          <udom>Coordinates defining the features.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>FEATURE</attrlabl>
+        <attrdef>The categorized population of the city or town.</attrdef>
+        <attrdefs>National Atlas of the United States and the United States Geological Survey</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>less than 10,000</edomv>
+            <edomvd>The population of the city or town is less than 10,000.</edomvd>
+            <edomvds>National Atlas of the United States and the United States Geological Survey</edomvds>
+          </edom>
+          <edom>
+            <edomv>10,000 - 49,999</edomv>
+            <edomvds>National Atlas of the United States and the United States Geological Survey</edomvds>
+            <edomvd>The population of the city or town is at least 10,000 but not greater than 49,999.</edomvd>
+          </edom>
+          <edom>
+            <edomv>50,000 - 99,999</edomv>
+            <edomvds>National Atlas of the United States and the United States Geological Survey</edomvds>
+            <edomvd>The population of the city or town is at least 50,000 but not greater than 99,999.</edomvd>
+          </edom>
+          <edom>
+            <edomv>100,000 - 249,999</edomv>
+            <edomvds>National Atlas of the United States and the United States Geological Survey</edomvds>
+            <edomvd>The population of the city or town is at least 100,000 but not greater than 249,999.</edomvd>
+          </edom>
+          <edom>
+            <edomv>250,000 - 499,999</edomv>
+            <edomvds>National Atlas of the United States and the United States Geological Survey</edomvds>
+            <edomvd>The population of the city or town is at least 250,000 but not greater than 499,999.</edomvd>
+          </edom>
+          <edom>
+            <edomv>500,000 - 999,999</edomv>
+            <edomvds>National Atlas of the United States and the United States Geological Survey</edomvds>
+            <edomvd>The population of the city or town is at least 500,000 but not greater than 999,999.</edomvd>
+          </edom>
+          <edom>
+            <edomv>1,000,000 - 9,999,999</edomv>
+            <edomvd>The population of the city or town is at least 1,000,000 but not greater than 9,999,999.</edomvd>
+            <edomvds>National Atlas of the United States and the United States Geological Survey</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>NAME</attrlabl>
+        <attrdef>The name of the city or town.</attrdef>
+        <attrdefs>National Atlas of the United States and the United States Geological Survey</attrdefs>
+        <attrdomv>
+          <codesetd>
+            <codesetn>Geographic Names Information System</codesetn>
+            <codesets>United States Geological Survey</codesets>
+          </codesetd>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>ST_ABBREV</attrlabl>
+        <attrdef>The two-letter abbreviation for the state.</attrdef>
+        <attrdefs>Department of Commerce, National Institute of Standards and Technology </attrdefs>
+        <attrdomv>
+          <codesetd>
+            <codesetn>Federal Information Processing Standards 5–2</codesetn>
+            <codesets>National Institute of Standards and Technology</codesets>
+          </codesetd>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>FIPS</attrlabl>
+        <attrdef>The combined state and county FIPS code (five-digit number). The combined code uniquely identifies the county in which the city or town is located.</attrdef>
+        <attrdefs>Department of Commerce, National Institute of Standards and Technology</attrdefs>
+        <attrdomv>
+          <codesetd>
+            <codesetn>Federal Information Processing Standards</codesetn>
+            <codesets>National Institute of Standards and Technology</codesets>
+          </codesetd>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>PLACE_FIPS</attrlabl>
+        <attrdef>The FIPS code (five-digit number) for named populated places (city or town).</attrdef>
+        <attrdefs>Department of Commerce, National Institute of Standards and Technology</attrdefs>
+        <attrdomv>
+          <codesetd>
+            <codesetn>Federal Information Processing Standards PUB 55-DC3</codesetn>
+            <codesets>National Institute of Standards and Technology</codesets>
+          </codesetd>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>POP_2000</attrlabl>
+        <attrdef>The 2000 population of the city or town.</attrdef>
+        <attrdefs>National Atlas of the United States and the United States Geological Survey</attrdefs>
+        <attrdomv>
+          <udom>Populations for the features.</udom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomvd>The population is unknown.</edomvd>
+            <edomv>-99999</edomv>
+            <edomvds>Esri</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>POP2007</attrlabl>
+        <attrdef>The 2007 population of the city or town.</attrdef>
+        <attrdefs>Esri</attrdefs>
+        <attrdomv>
+          <udom>Populations for the features.</udom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>-99999</edomv>
+            <edomvd>The population is unknown.</edomvd>
+            <edomvds>Esri</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>STATUS</attrlabl>
+        <attrdef>The status of the city or town.</attrdef>
+        <attrdefs>Esri</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>National Capital</edomv>
+            <edomvd>City is the national capital.</edomvd>
+          </edom>
+          <edom>
+            <edomv>State Capital</edomv>
+            <edomvd>City is a state capital.</edomvd>
+          </edom>
+          <edom>
+            <edomv>State Capital County Seat</edomv>
+            <edomvd>City is a state capital and county seat.</edomvd>
+          </edom>
+          <edom>
+            <edomv>County Seat</edomv>
+            <edomvd>City is a county seat.</edomvd>
+          </edom>
+        </attrdomv>
+      </attr>
+    </detailed>
+  </eainfo>
+  <distinfo>
+    <distrib>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Esri; Esri Offices</cntorg>
+        </cntorgp>
+        <cntaddr>
+          <addrtype>unknown</addrtype>
+          <address>380 New York Street</address>
+          <city>Redlands</city>
+          <state>California</state>
+          <postal>92373-8100</postal>
+          <country>us</country>
+        </cntaddr>
+        <cntvoice>800-447-9778</cntvoice>
+      </cntinfo>
+    </distrib>
+    <distliab>See access and use constraints information.</distliab>
+    <stdorder>
+      <digform>
+        <digtinfo>
+          <formname>SDC Feature Database</formname>
+          <transize>1.061</transize>
+        </digtinfo>
+        <digtopt>
+          <onlinopt>
+            <computer>
+              <networka>
+                <networkr>http://www.ArcGIS.com</networkr>
+              </networka>
+            </computer>
+          </onlinopt>
+          <offoptn>
+            <offmedia>dvdRom</offmedia>
+          </offoptn>
+        </digtopt>
+      </digform>
+      <fees>Software purchase price. Data &amp; Maps is available only as part of Esri® software. To use this data requires software that supports SDC files.</fees>
+      <ordering>Data &amp; Maps is available only as part of Esri® software.
+
+In the United States, contact the Esri Telebusiness staff at 800-447-9778 for more information about our software and data.
+
+Outside the United States, please direct all inquiries to your local Esri Office.  This information can be found at http://www.esri.com/about-esri/locations.html.</ordering>
+    </stdorder>
+  </distinfo>
+  <metainfo>
+    <metd>20140326</metd>
+    <metc>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Esri</cntorg>
+          <cntper>ArcGIS Content Team</cntper>
+        </cntorgp>
+        <cntpos>ArcGIS Content Team</cntpos>
+        <cntaddr>
+          <addrtype>unknown</addrtype>
+          <address>380 New York Street</address>
+          <city>Redlands</city>
+          <state>California</state>
+          <postal>92373-8100</postal>
+          <country>us</country>
+        </cntaddr>
+        <cntvoice>909-793-2853</cntvoice>
+        <cntfax>909-793-5953</cntfax>
+        <cntemail>info@esri.com</cntemail>
+      </cntinfo>
+    </metc>
+    <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+    <metstdv>FGDC-STD-001-1998</metstdv>
+    <mettc>local time</mettc>
+  </metainfo>
+</metadata>
