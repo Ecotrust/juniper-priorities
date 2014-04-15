@@ -11,7 +11,6 @@ from django.views.decorators.cache import cache_page, cache_control
 from django.conf import settings
 from django.template import RequestContext
 from seak.models import PlanningUnit
-from models import PuVsCost
 import TileStache 
 import os
 import json
@@ -79,11 +78,11 @@ def about(request, template_name='news/about.html', extra_context=None):
 def watershed_shapefile(request, instances):
     from seak.models import PlanningUnitShapes, Scenario, PuVsAux, PuVsCf, PuVsCost
     wshds = PlanningUnit.objects.all()
-    wshd_fids = [x.fid for x in PlanningUnit.objects.all()]
+    wshd_fids = [x.fid for x in wshds]
     results = {}
 
-    for fid in wshd_fids:
-        w = wshds.get(fid=fid)
+    for w in wshds:
+        fid = w.fid
         p = w.geometry
         if p.geom_type == 'Polygon':
             p = MultiPolygon(p)
@@ -120,61 +119,62 @@ def watershed_shapefile(request, instances):
             if best:
                 results[fid]['bests'] += 1
 
-    readme = "Prioritization Scenario Array\n\
-contact: mperry@ecotrust.org\n\
-\n\
-Includes scenarios:\n\
-    %s\n\
-\n\
-    'pu' contains the name of the Planning Unit\n\
-    'bests' contains the number of scenarios in which the subbasin was included in the best run\n\
-    'hits' contains the number of times the subbasin was included in any run, cumulative across scenarios.\n\
-    'name' contains the name of the Planning Unit\n\
-    'ACEC' contains the acres of ACEC (Areas of Critical Environmental Concern) lands within the HUC5 planning unit\n\
-    'BLM_WCHAR' contains the acres of BLM designated Wilderness Characteristics Areas within the HUC5 planning unit\n\
-    'BLM_WILD' contains the acres of BLM designated Wilderness land within the HUC5 planning unit\n\
-    'BLM_WSA' contains the acres of BLM designated Study Areas within the HUC5 planning unit\n\
-    'BLMLAND' contains the acres of BLM land within the HUC5 planning unit\n\
-    'C_ACEC' contains the acres of land unavailable to BLM remediation\n\
-    'C_BLM_WCHAR' contains the acres of land unavailable to BLM remediation\n\
-    'C_BLM_WILD' contains the acres of land unavailable to BLM remediation\n\
-    'C_BLM_WSA' contains the acres of land unavailable to BLM remediation\n\
-    'C_GT20PERC' contains the acres of slope greater than 20 percent in the HUC5 planning unit\n\
-    'C_WETLAND' contains the wetland acreage within the HUC5 planning unit\n\
-    'GRZ_ALLOT' contains the BLM Grazing Allotment acreage within the HUC5 planning unit\n\
-    'HIST_JUNPR' contains the acres of historic juniper within the HUC5 planning unit\n\
-    'INV_WEED' contains the acreage of noxious and invasive weeds identified on BLM Lands within the HUC5 planning unit\n\
-    'JUNP1' contains the acreage of Juniper Phase 1 \n\
-    'JUNP2' contains the acreage of Juniper Phase 2 \n\
-    'JUNP3' contains the acreage of Juniper Phase 3 \n\
-    'P_RABBIT' contains the acreage of pygmy rabbit habitat within the HUC5 planning unit\n\
-    'PR_JP1' contains the acreage of overlap between phase 1 juniper and pygmy rabbits within the HUC5 planning unit\n\
-    'PR_JP2' contains the acreage of overlap between phase 2 juniper and pygmy rabbits within the HUC5 planning unit\n\
-    'PR_JP3' contains the acreage of overlap between phase 3 juniper and pygmy rabbits within the HUC5 planning unit\n\
-    'PROT_BLM' contains the acres of BLM owned land with protected status. Includes BLM Designated Wilderness, Study Areas and lands with wilderness characteristics.\n\
-    'PROT_OTH' contains the acres of non-BLM owned land with protected status. Includes Federal, State and Private Conservation Lands.\n\
-    'PRIV_MILE' contains the miles of perennial rivers, streams, or creeks within the HUC5 planning unit.  Serves as proxy to riparian coverage, until better data is supplied.\n\
-    'SG_ALL' contains the acreage of combined sage grouse habitat (PPH&PGH) within the HUC5 planning unit\n\
-    'SGPGH' contains the acreage of sage grouse preliminary general habitat within the HUC5 planning unit\n\
-    'SGPGH_JP1' contains the acreage of overlap between phase 1 juniper and sage grouse preliminary general habitat within the HUC5 planning unit\n\
-    'SGPGH_JP2' contains the acreage of overlap between phase 2 juniper and sage grouse preliminary general habitat within the HUC5 planning unit\n\
-    'SGPGH_JP3' contains the acreage of overlap between phase 3 juniper and sage grouse preliminary general habitat within the HUC5 planning unit\n\
-    'SGPPH' contains the acreage of sage grouse preliminary priority habitat within the HUC5 planning unit\n\
-    'SGPPH_JP1' contains the acreage of overlap between phase 1 juniper and sage grouse preliminary priority habitat within the HUC5 planning unit\n\
-    'SGPPH_JP2' contains the acreage of overlap between phase 2 juniper and sage grouse preliminary priority habitat within the HUC5 planning unit\n\
-    'SGPPH_JP3' contains the acreage of overlap between phase 3 juniper and sage grouse preliminary priority habitat within the HUC5 planning unit\n\
-    'TRT_REVEG' contains the acreage of BLM Revegetation Treatments within the HUC5 planning unit\n\
-    'TRTBURNJUN' contains the acreage of BLM Prescribed Fire Treatments on Juniper within the HUC5 planning unit\n\
-    'TRTHARVJUN' contains the acreage of BLM Harvest Treatments on Juniper within the HUC5 planning unit\n\
-    'TRTMECHJ' contains the acreage of BLM Mechanical Treatments on Juniper within the HUC5 planning unit\n\
-    'WETLAND' contains the acreage of wetland within the HUC5 planning unit\n\
+    readme = "Prioritization Scenario Array\r\n\
+contact: rhodges@ecotrust.org\r\n\
+\r\n\
+Includes scenarios:\r\n\
+    %s\r\n\
+\r\n\
+    'pu' contains the name of the Planning Unit\r\n\
+    'bests' contains the number of scenarios in which the subbasin was included in the best run\r\n\
+    'hits' contains the number of times the subbasin was included in any run, cumulative across scenarios.\r\n\
+    'name' contains the name of the Planning Unit\r\n\
+    'ACEC' contains the acres of ACEC (Areas of Critical Environmental Concern) lands within the HUC5 planning unit\r\n\
+    'BLM_WCHAR' contains the acres of BLM designated Wilderness Characteristics Areas within the HUC5 planning unit\r\n\
+    'BLM_WILD' contains the acres of BLM designated Wilderness land within the HUC5 planning unit\r\n\
+    'BLM_WSA' contains the acres of BLM designated Study Areas within the HUC5 planning unit\r\n\
+    'BLMLAND' contains the acres of BLM land within the HUC5 planning unit\r\n\
+    'C_ACEC' contains the acres of land unavailable to BLM remediation\r\n\
+    'C_BLM_WCHAR' contains the acres of land unavailable to BLM remediation\r\n\
+    'C_BLM_WILD' contains the acres of land unavailable to BLM remediation\r\n\
+    'C_BLM_WSA' contains the acres of land unavailable to BLM remediation\r\n\
+    'C_GT20PERC' contains the acres of slope greater than 20 percent in the HUC5 planning unit\r\n\
+    'C_WETLAND' contains the wetland acreage within the HUC5 planning unit\r\n\
+    'GRZ_ALLOT' contains the BLM Grazing Allotment acreage within the HUC5 planning unit\r\n\
+    'HIST_JUNPR' contains the acres of historic juniper within the HUC5 planning unit\r\n\
+    'INV_WEED' contains the acreage of noxious and invasive weeds identified on BLM Lands within the HUC5 planning unit\r\n\
+    'JUNP1' contains the acreage of Juniper Phase 1 \r\n\
+    'JUNP2' contains the acreage of Juniper Phase 2 \r\n\
+    'JUNP3' contains the acreage of Juniper Phase 3 \r\n\
+    'P_RABBIT' contains the acreage of pygmy rabbit habitat within the HUC5 planning unit\r\n\
+    'PR_JP1' contains the acreage of overlap between phase 1 juniper and pygmy rabbits within the HUC5 planning unit\r\n\
+    'PR_JP2' contains the acreage of overlap between phase 2 juniper and pygmy rabbits within the HUC5 planning unit\r\n\
+    'PR_JP3' contains the acreage of overlap between phase 3 juniper and pygmy rabbits within the HUC5 planning unit\r\n\
+    'PROT_BLM' contains the acres of BLM owned land with protected status. Includes BLM Designated Wilderness, Study Areas and lands with wilderness characteristics.\r\n\
+    'PROT_OTH' contains the acres of non-BLM owned land with protected status. Includes Federal, State and Private Conservation Lands.\r\n\
+    'PRIV_MILE' contains the miles of perennial rivers, streams, or creeks within the HUC5 planning unit.  Serves as proxy to riparian coverage, until better data is supplied.\r\n\
+    'SG_ALL' contains the acreage of combined sage grouse habitat (PPH&PGH) within the HUC5 planning unit\r\n\
+    'SGPGH' contains the acreage of sage grouse preliminary general habitat within the HUC5 planning unit\r\n\
+    'SGPGH_JP1' contains the acreage of overlap between phase 1 juniper and sage grouse preliminary general habitat within the HUC5 planning unit\r\n\
+    'SGPGH_JP2' contains the acreage of overlap between phase 2 juniper and sage grouse preliminary general habitat within the HUC5 planning unit\r\n\
+    'SGPGH_JP3' contains the acreage of overlap between phase 3 juniper and sage grouse preliminary general habitat within the HUC5 planning unit\r\n\
+    'SGPPH' contains the acreage of sage grouse preliminary priority habitat within the HUC5 planning unit\r\n\
+    'SGPPH_JP1' contains the acreage of overlap between phase 1 juniper and sage grouse preliminary priority habitat within the HUC5 planning unit\r\n\
+    'SGPPH_JP2' contains the acreage of overlap between phase 2 juniper and sage grouse preliminary priority habitat within the HUC5 planning unit\r\n\
+    'SGPPH_JP3' contains the acreage of overlap between phase 3 juniper and sage grouse preliminary priority habitat within the HUC5 planning unit\r\n\
+    'TRT_REVEG' contains the acreage of BLM Revegetation Treatments within the HUC5 planning unit\r\n\
+    'TRTBURNJUN' contains the acreage of BLM Prescribed Fire Treatments on Juniper within the HUC5 planning unit\r\n\
+    'TRTHARVJUN' contains the acreage of BLM Harvest Treatments on Juniper within the HUC5 planning unit\r\n\
+    'TRTMECHJ' contains the acreage of BLM Mechanical Treatments on Juniper within the HUC5 planning unit\r\n\
+    'WETLAND' contains the acreage of wetland within the HUC5 planning unit\r\n\
     'WS_RIV' contains the acreage of Wild and Scenic Rivers within the HUC5 planning unit" % ('\n    '.join([i.name for i in instances]), )
 
+    pu_list = []
     for fid in results.keys():
         r = results[fid]
-        # PlanningUnitShapes.objects.create(stamp=stamp, fid=fid, **r)
-        PlanningUnitShapes.objects.create(stamp=stamp, fid=fid, geometry=r['geometry'], bests=r['bests'], hits=r['hits'], pu=r['pu'], name=r['name'])
-        
+        pu_list.append(PlanningUnitShapes(stamp=stamp, fid=fid, geometry=r['geometry'], bests=r['bests'], hits=r['hits'], pu=r['pu'], name=r['name']))
+
+    PlanningUnitShapes.objects.bulk_create(pu_list)
 
     allpus = PlanningUnitShapes.objects.filter(stamp=stamp)
     for newPu in allpus:
