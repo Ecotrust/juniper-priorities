@@ -153,6 +153,7 @@ div.tab-content-show {
     width: 252px;
     margin: 6px;
     margin-left: 46px;
+    padding: 12px 12px 5px 12px;
     background: rgba(162,205,181,0.8); /* Works on all modern browsers */
 }
 #vector-attributes {
