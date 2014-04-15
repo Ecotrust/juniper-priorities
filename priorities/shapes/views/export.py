@@ -32,7 +32,7 @@ class ShpResponder(object):
         """
         """
 
-        fields = self.queryset.model._meta.fields
+        fields = self.queryset.model._meta.fields[:]#[RDH] - make a copy, don't alter original
         for col in addl_cols: #[RDH]
             float_field = models.FloatField(name=col) #[RDH]
             fields.append(float_field) #[RDH]
