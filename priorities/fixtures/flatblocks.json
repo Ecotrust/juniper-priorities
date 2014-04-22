@@ -1,5 +1,68 @@
 [
   {
+    "pk": 30, 
+    "model": "flatblocks.flatblock", 
+    "fields": {
+      "content": "All planning units", 
+      "header": "", 
+      "slug": "legend-allpus"
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "flatblocks.flatblock", 
+    "fields": {
+      "content": ".spruce", 
+      "header": "", 
+      "slug": "theme"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "flatblocks.flatblock", 
+    "fields": {
+      "content": "Oregon Juniper Management Tool", 
+      "header": "", 
+      "slug": "title"
+    }
+  }, 
+  {
+    "pk": 33, 
+    "model": "flatblocks.flatblock", 
+    "fields": {
+      "content": "Target", 
+      "header": "", 
+      "slug": "target"
+    }
+  }, 
+  {
+    "pk": 34, 
+    "model": "flatblocks.flatblock", 
+    "fields": {
+      "content": "Penalty", 
+      "header": "", 
+      "slug": "penalty"
+    }
+  }, 
+  {
+    "pk": 60, 
+    "model": "flatblocks.flatblock", 
+    "fields": {
+      "content": "<h3>Purpose</h3>\r\n<p>To assist BLM to meet these challenges, Ecotrust has created the Oregon Juniper Management Tool using the Madrona framework, a software platform developed by Ecotrust to create web-based spatial management tools.  This tool allows land managers to review a suite of juniper-related spatial data layers such as juniper canopy, sage grouse habitat, hydrology, and public ownership in an interactive web map viewer, and then build personalized scenarios for juniper removal by defining specific objectives such as how many acres of juniper to remove or whether or not to prioritize removal in sage grouse habitat.</p>", 
+      "header": "Purpose", 
+      "slug": "purpose-content"
+    }
+  }, 
+  {
+    "pk": 36, 
+    "model": "flatblocks.flatblock", 
+    "fields": {
+      "content": "high", 
+      "header": "", 
+      "slug": "target-high"
+    }
+  }, 
+  {
     "pk": 59, 
     "model": "flatblocks.flatblock", 
     "fields": {
@@ -63,75 +126,12 @@
     }
   }, 
   {
-    "pk": 60, 
-    "model": "flatblocks.flatblock", 
-    "fields": {
-      "content": "<h3>Purpose</h3>\r\n<p>To assist BLM to meet these challenges, Ecotrust has created the Oregon Juniper Management Tool using the Madrona framework, a software platform developed by Ecotrust to create web-based spatial management tools.  This tool allows land managers to review a suite of juniper-related spatial data layers such as juniper canopy, sage grouse habitat, hydrology, and public ownership in an interactive web map viewer, and then build personalized scenarios for juniper removal by defining specific objectives such as how many acres of juniper to remove or whether or not to prioritize removal in sage grouse habitat.</p>", 
-      "header": "Purpose", 
-      "slug": "purpose-content"
-    }
-  }, 
-  {
     "pk": 2, 
     "model": "flatblocks.flatblock", 
     "fields": {
       "content": "Ecotrust and the BLM have partnered to develop a conservation decision support system for Juniper management in Oregon.\r\n\r\nThis system will enable stakeholders to engage in strategic landscape-scale planning for Juniper management and sage grouse habitat conservation priorities for Oregon BLM lands.", 
       "header": "", 
       "slug": "home_text"
-    }
-  }, 
-  {
-    "pk": 30, 
-    "model": "flatblocks.flatblock", 
-    "fields": {
-      "content": "All planning units", 
-      "header": "", 
-      "slug": "legend-allpus"
-    }
-  }, 
-  {
-    "pk": 7, 
-    "model": "flatblocks.flatblock", 
-    "fields": {
-      "content": ".spruce", 
-      "header": "", 
-      "slug": "theme"
-    }
-  }, 
-  {
-    "pk": 1, 
-    "model": "flatblocks.flatblock", 
-    "fields": {
-      "content": "Oregon Juniper Management Tool", 
-      "header": "", 
-      "slug": "title"
-    }
-  }, 
-  {
-    "pk": 33, 
-    "model": "flatblocks.flatblock", 
-    "fields": {
-      "content": "Target", 
-      "header": "", 
-      "slug": "target"
-    }
-  }, 
-  {
-    "pk": 34, 
-    "model": "flatblocks.flatblock", 
-    "fields": {
-      "content": "Penalty", 
-      "header": "", 
-      "slug": "penalty"
-    }
-  }, 
-  {
-    "pk": 36, 
-    "model": "flatblocks.flatblock", 
-    "fields": {
-      "content": "high", 
-      "header": "", 
-      "slug": "target-high"
     }
   }, 
   {
@@ -315,15 +315,6 @@
     }
   }, 
   {
-    "pk": 5, 
-    "model": "flatblocks.flatblock", 
-    "fields": {
-      "content": "Access the data and learn about the methodology used to create this tool.", 
-      "header": "", 
-      "slug": "about-intro"
-    }
-  }, 
-  {
     "pk": 51, 
     "model": "flatblocks.flatblock", 
     "fields": {
@@ -432,6 +423,24 @@
     }
   }, 
   {
+    "pk": 57, 
+    "model": "flatblocks.flatblock", 
+    "fields": {
+      "content": "<h3>Data and Methods</h3>\r\n<p>\r\nThis tool allows land managers and other stakeholders to review a suite of juniper-related spatial data layers such as juniper canopy, sage grouse habitat, hydrology, and public ownership in an interactive web map viewer, and then build personalized scenarios for juniper removal.  This is done by defining specific objectives, such as how many acres of juniper to remove or whether or not to prioritize removal in sage grouse habitat. The tool includes a wide array of spatially explicit data pertaining to juniper, management and wildlife species including data on sage grouse and pygmy rabbit habitat. Users can explore these raw data sets as well as the data summarized to level 5 Hydro 1-k watersheds (a geographic database produced by the USGS providing comprehensive and consistent global coverage of topographically derived basin boundaries). Please see the detailed metadata under the \"Data\" header to learn more about each data layer that was included in the tool, the source, publication date and other relevant information.  \r\n</p>\r\n\r\n<h4>Prioritization process</h4>\r\n<p>\r\nWe used a multi-objective decision support model based on computational heuristics to identify regional priorities at the 5th field, sub-basin scale. The heuristic draws on a simulated annealing algorithm to approximate an optimal configuration (or prioritization schematic) given a mathematically defined set of objectives (referred to as an objective function). This target based approach allows for the selection of a set of priority planning units based on avoiding those areas  places that are environmentally vulnerable or potentially could be more costly (i.e. steep slopes), subject to the condition that targets for juniper treatment included in the analysis are met. Please see the detailed <a href=\"/media/metadata/JuniperPrioritiesApproach.pdf\">documentation </a> of the prioritization process for additional information.\r\n</p>\r\n", 
+      "header": "Methodology Content", 
+      "slug": "methodology-content"
+    }
+  }, 
+  {
+    "pk": 58, 
+    "model": "flatblocks.flatblock", 
+    "fields": {
+      "content": "<h3>Data</h3>\r\n<p>\r\nThe data that inform the tool's inputs are described below. Hover your mouse over the data layer's name to see a description of the data, or click on the \"View Metadata\" link to see and download the full metadata for each data layer. \r\n</p>", 
+      "header": "Dataset Content", 
+      "slug": "dataset-content"
+    }
+  }, 
+  {
     "pk": 56, 
     "model": "flatblocks.flatblock", 
     "fields": {
@@ -441,12 +450,12 @@
     }
   }, 
   {
-    "pk": 57, 
+    "pk": 49, 
     "model": "flatblocks.flatblock", 
     "fields": {
-      "content": "<h3>Methodology</h3>\r\n<p>\r\nInformation about the methodology used in creating this tool goes here.\r\n</p>", 
-      "header": "Methodology Content", 
-      "slug": "methodology-content"
+      "content": "Help & Tutorials", 
+      "header": "", 
+      "slug": "get-help-title"
     }
   }, 
   {
@@ -504,30 +513,21 @@
     }
   }, 
   {
+    "pk": 5, 
+    "model": "flatblocks.flatblock", 
+    "fields": {
+      "content": "The Oregon Juniper Management tool presented here is a result of over a year of work that included an extensive data collection, standardization and analysis process, as well as development of the tool itself. The inputs into the tool and the prioritization modeling process include: compilation of existing spatial data specific to juniper management; review of existing juniper research pertaining to expansion; review of current mapped juniper data; review of costs associated with harvest and treatment and varying modeling approaches; implementation of a decision support model, coupled with the development of the online tool. At the time of this tool's launch, in 2013, all data present in the tool was the current and regarded as the best available.  As new data becomes available however the Oregon Juniper Management Tool team will work, within budgetary confines, to ensure that the most up to date and relevant data is imported into the tool.  Please contact afenix@ecotrust.org and share what insights you may have pertaining to the data we are currently using (or other data sets that we should be aware of) or to simply let us know what your experiences are with the tool.  Together we can make it better.  To learn more about the data showcased in the tool and the methodologies used see below. ", 
+      "header": "", 
+      "slug": "about-intro"
+    }
+  }, 
+  {
     "pk": 53, 
     "model": "flatblocks.flatblock", 
     "fields": {
       "content": "<h3>Requirements</h3> <p>The tool itself is an open source, online mapping application that allows users to zoom in, pan and query a wide variety of mapped data. At its core is the intuitive and easy to use mapping interface that will work on any modern (past 5 years) browser or hardware. Firefox and Chrome web browsers are preferred due to stability, but Safari and Internet Explorer (versions 9+) web browsers are also compatible.  Please be forewarned that Internet Explorer versions 7 and 8, while technically functional, are extremely inefficient, slow and unpredictable.  You are therefore strongly advised to avoid using older versions of Internet Explorer whenever possible. </p>\r\n", 
       "header": "Requirements Content", 
       "slug": "requirements-content"
-    }
-  }, 
-  {
-    "pk": 58, 
-    "model": "flatblocks.flatblock", 
-    "fields": {
-      "content": "<h3>Datasets</h3>\r\n<p>\r\nInformation about the datasets and links to the actual data (in XML form) will go here.\r\n</p>", 
-      "header": "Dataset Content", 
-      "slug": "dataset-content"
-    }
-  }, 
-  {
-    "pk": 49, 
-    "model": "flatblocks.flatblock", 
-    "fields": {
-      "content": "Help", 
-      "header": "", 
-      "slug": "get-help-title"
     }
   }, 
   {
