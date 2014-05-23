@@ -73,7 +73,39 @@ def about(request, template_name='news/about.html', extra_context=None):
         'themes': themes
         })
     context.update(extra_context)
-    return render_to_response(template_name, context)    
+    return render_to_response(template_name, context)  
+
+def export_pu_csv(request):
+    from seak.models import PlanningUnitShapes, Scenario, PuVsAux, PuVsCf, PuVsCost
+    wshds = PlanningUnit.objects.all()
+    wshd_fids = [x.fid for x in wshds]
+    results = {}
+
+    for w in wshds:
+        fid = w.fid
+        p = w.geometry
+        if p.geom_type == 'Polygon':
+            p = MultiPolygon(p)
+        results[fid] = {'pu': w, 'name': w.name, 'hits': 0, 'bests': 0} 
+
+        #.name is a decent header, but not descriptive
+        #.desc is a good description, but too long to be a header
+        # create a list of names and descs and either attach it to
+        #    the bottom of the csv or make another csv and zip them
+        #    together.
+
+        for puCf in PuVsCf.objects.filter(pu=w):
+            results[fid][puCf.cf.name] = puCf.amount
+        for puAux in PuVsAux.objects.filter(pu=w):
+            results[fid][puAux.aux.name] = puAux.amount
+        for puCost in PuVsCost.objects.filter(pu=w):
+            results[fid]['Cost: ' + puCost.cost.name] = puCost.amount
+
+    import ipdb
+    ipdb.set_trace()
+
+    return True
+
 
 def watershed_shapefile(request, instances):
     from seak.models import PlanningUnitShapes, Scenario, PuVsAux, PuVsCf, PuVsCost
@@ -320,6 +352,10 @@ def field_lookup(request):
         if c.units:
             units_txt = " (%s)" % c.units
         flut[c.dbf_fieldname] = "%s%s" % (c.name, units_txt)
+
+    import ipdb
+    ipdb.set_trace()
+
     return HttpResponse(json.dumps(flut), content_type='application/json')
 
 @cache_page(settings.CACHE_TIMEOUT)
