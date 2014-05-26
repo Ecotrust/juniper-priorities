@@ -75,7 +75,113 @@ def about(request, template_name='news/about.html', extra_context=None):
     context.update(extra_context)
     return render_to_response(template_name, context)  
 
+def download_stream_generator(request, data, descriptions):
+    yield ' ' # yield something immediately to start the download
+
+    header = []
+    for key in descriptions.keys():
+        header.append(key)
+
+    header.sort()
+
+    # filter_json = request.GET.get('filter', False)
+    pretty_headers = request.GET.get('pprint', False)
+
+    # if filter_json:
+    #     filters = simplejson.loads(filter_json)
+    #     qs = Event.filter(filters)
+    # else:
+    #     filters = None
+    #     qs = Event.objects.all()
+
+    # if not settings.DEMO:
+    #     qs = qs.filter(transaction__status = "accepted")
+        
+    # data = []
+    # all_fieldnames = Set([])
+    # for event in qs: 
+    #     d = event.toEventsDict
+    #     evd = event.toValuesDict()
+    #     d['field_values'] = evd
+    #     all_fieldnames = Set(evd.keys()) | all_fieldnames
+        # # data.append(d)
+
+    # ordered_fieldnames = list(all_fieldnames)
+    # ordered_fieldnames.sort()
+    # header = [
+    #         'id', 
+    #         'date',
+    #         'project_name',
+    #         'site_name',
+    #         'site_state',
+    #         'site_county',
+    #         'site_lon',
+    #         'site_lat',
+    #         'event_type',
+    #         'datasheet',
+    #         'organization',
+    # ]
+
+    # if pretty_headers:
+    #     header = [x.replace('_',' ').title() for x in header]
+    #     for x in ordered_fieldnames:
+    #         clean_head = re.sub(r',', '', x[1])
+    #         if x[2]: # if units are defined
+    #             header.append("%s (%s)" % (clean_head, x[2]))
+    #         else:
+    #             header.append("%s" % clean_head)
+    # else:
+    #     header.extend([x[0] for x in ordered_fieldnames])
+
+    row = ','.join(header)
+    row += "\n"
+    yield row
+
+    # for d in data:
+    for pu in data: 
+        # d = pu.toEventsDict
+        # evd = pu.toValuesDict()
+        # d['field_values'] = evd
+        row_data = [ ]
+        #         d['id'],
+        #         d['date'],
+        #         d['project']['name'],
+        #         d['site']['name'],
+        #         d['site']['state'],
+        #         d['site']['county'],
+        #         d['site']['lon'],
+        #         d['site']['lat'],
+        #         d['datasheet']['event_type'],
+        #         d['datasheet']['name'],
+        #         d['organization']['name'],
+        # ]
+        for key in header:
+            try:
+                v = pu[key]
+            except KeyError:
+                v = ''
+            if v is None:
+                v = ''
+            row_data.append(v)
+
+        row = ','.join(('"%s"' % x for x in row_data))
+        row += "\n"
+        yield row
+
+        row = "\n"
+        yield row
+
+        row = ','.join(('"%s"' % x for x in header))
+        yield row
+
+        row = ','.join(('"%s"' % descriptions[x] for x in header))
+        yield row
+    
+
 def export_pu_csv(request):
+    import csv
+    from django.test.client import RequestFactory
+    from django.core.files.base import ContentFile
     from seak.models import PlanningUnitShapes, Scenario, PuVsAux, PuVsCf, PuVsCost
     wshds = PlanningUnit.objects.all()
     wshd_fids = [x.fid for x in wshds]
@@ -87,6 +193,8 @@ def export_pu_csv(request):
         if p.geom_type == 'Polygon':
             p = MultiPolygon(p)
         results[fid] = {'pu': w, 'name': w.name, 'hits': 0, 'bests': 0} 
+        headers = []
+        descriptions = {}
 
         #.name is a decent header, but not descriptive
         #.desc is a good description, but too long to be a header
@@ -96,13 +204,37 @@ def export_pu_csv(request):
 
         for puCf in PuVsCf.objects.filter(pu=w):
             results[fid][puCf.cf.name] = puCf.amount
+            if not puCf.cf.name in headers:
+                headers.append(puCf.cf.name)
+                descriptions[puCf.cf.name] = puCf.cf.desc
         for puAux in PuVsAux.objects.filter(pu=w):
             results[fid][puAux.aux.name] = puAux.amount
+            if not puAux.aux.name in headers:
+                headers.append(puAux.aux.name)
+                descriptions[puAux.aux.name] = puAux.aux.desc
         for puCost in PuVsCost.objects.filter(pu=w):
-            results[fid]['Cost: ' + puCost.cost.name] = puCost.amount
+            header = 'Cost: ' + puCost.cost.name
+            results[fid][header] = puCost.amount
+            if not (header) in headers:
+                headers.append(header)
+                descriptions[header] = puCost.cost.desc
 
-    import ipdb
-    ipdb.set_trace()
+        # headers.sort()
+
+
+    # import ipdb
+    # ipdb.set_trace()
+    res = HttpResponse(download_stream_generator(request, results, descriptions), content_type="text/csv")
+    filename = 'Oregon_Juniper_Priority_Units.csv'
+    res['Content-Disposition'] = 'attachment; filename=%s"' % filename
+    myFile = ContentFiles(res.content)
+    file = open(filename, 'w+')
+    file.save(filename ,myfile)
+
+    """
+    #request = RequestFactory().get(???URL???)
+    #return res
+    """
 
     return True
 
