@@ -75,87 +75,23 @@ def about(request, template_name='news/about.html', extra_context=None):
     context.update(extra_context)
     return render_to_response(template_name, context)  
 
-def download_stream_generator(request, data, descriptions):
-    yield ' ' # yield something immediately to start the download
+def create_csv(data, headers, descriptions, filename):
 
-    header = []
-    for key in descriptions.keys():
-        header.append(key)
+    file = open(filename, 'w')
 
-    header.sort()
-
-    # filter_json = request.GET.get('filter', False)
-    pretty_headers = request.GET.get('pprint', False)
-
-    # if filter_json:
-    #     filters = simplejson.loads(filter_json)
-    #     qs = Event.filter(filters)
-    # else:
-    #     filters = None
-    #     qs = Event.objects.all()
-
-    # if not settings.DEMO:
-    #     qs = qs.filter(transaction__status = "accepted")
-        
-    # data = []
-    # all_fieldnames = Set([])
-    # for event in qs: 
-    #     d = event.toEventsDict
-    #     evd = event.toValuesDict()
-    #     d['field_values'] = evd
-    #     all_fieldnames = Set(evd.keys()) | all_fieldnames
-        # # data.append(d)
-
-    # ordered_fieldnames = list(all_fieldnames)
-    # ordered_fieldnames.sort()
-    # header = [
-    #         'id', 
-    #         'date',
-    #         'project_name',
-    #         'site_name',
-    #         'site_state',
-    #         'site_county',
-    #         'site_lon',
-    #         'site_lat',
-    #         'event_type',
-    #         'datasheet',
-    #         'organization',
-    # ]
-
-    # if pretty_headers:
-    #     header = [x.replace('_',' ').title() for x in header]
-    #     for x in ordered_fieldnames:
-    #         clean_head = re.sub(r',', '', x[1])
-    #         if x[2]: # if units are defined
-    #             header.append("%s (%s)" % (clean_head, x[2]))
-    #         else:
-    #             header.append("%s" % clean_head)
-    # else:
-    #     header.extend([x[0] for x in ordered_fieldnames])
-
-    row = ','.join(header)
+    row = ','.join(headers)
     row += "\n"
-    yield row
+    
+    file.write(row)
 
-    # for d in data:
-    for pu in data: 
-        # d = pu.toEventsDict
-        # evd = pu.toValuesDict()
-        # d['field_values'] = evd
-        row_data = [ ]
-        #         d['id'],
-        #         d['date'],
-        #         d['project']['name'],
-        #         d['site']['name'],
-        #         d['site']['state'],
-        #         d['site']['county'],
-        #         d['site']['lon'],
-        #         d['site']['lat'],
-        #         d['datasheet']['event_type'],
-        #         d['datasheet']['name'],
-        #         d['organization']['name'],
-        # ]
-        for key in header:
+    ordered_list = sorted(data.iteritems(), key=lambda x: x[1]['name'])
+
+    for pu_tuple in ordered_list: 
+        pu_id = pu_tuple[0]
+        pu = data[pu_id]
+        # same as pu_tuple[1]?
+        row_data = []
+        for key in headers:
             try:
                 v = pu[key]
             except KeyError:
@@ -166,17 +102,24 @@ def download_stream_generator(request, data, descriptions):
 
         row = ','.join(('"%s"' % x for x in row_data))
         row += "\n"
-        yield row
+        file.write(row)
 
-        row = "\n"
-        yield row
+    row = "\n"
+    file.write(row)
 
-        row = ','.join(('"%s"' % x for x in header))
-        yield row
+    prepend_count = len(headers) - len(descriptions.keys())
 
-        row = ','.join(('"%s"' % descriptions[x] for x in header))
-        yield row
-    
+    headers = headers[prepend_count:]
+
+    row = ','.join(('"%s"' % x for x in headers))
+    row += "\n"
+    file.write(row)
+
+
+    row = ','.join(('"%s"' % descriptions[x] for x in headers))
+    file.write(row)
+
+    file.close()
 
 def export_pu_csv(request):
     import csv
@@ -192,15 +135,9 @@ def export_pu_csv(request):
         p = w.geometry
         if p.geom_type == 'Polygon':
             p = MultiPolygon(p)
-        results[fid] = {'pu': w, 'name': w.name, 'hits': 0, 'bests': 0} 
+        results[fid] = {'pu': w, 'name': w.name} 
         headers = []
         descriptions = {}
-
-        #.name is a decent header, but not descriptive
-        #.desc is a good description, but too long to be a header
-        # create a list of names and descs and either attach it to
-        #    the bottom of the csv or make another csv and zip them
-        #    together.
 
         for puCf in PuVsCf.objects.filter(pu=w):
             results[fid][puCf.cf.name] = puCf.amount
@@ -219,24 +156,23 @@ def export_pu_csv(request):
                 headers.append(header)
                 descriptions[header] = puCost.cost.desc
 
-        # headers.sort()
-
-
-    # import ipdb
-    # ipdb.set_trace()
-    res = HttpResponse(download_stream_generator(request, results, descriptions), content_type="text/csv")
+    headers.sort()
+    headers.insert(0,'name')
+    # headers.insert(1,'pu')
     filename = 'Oregon_Juniper_Priority_Units.csv'
-    res['Content-Disposition'] = 'attachment; filename=%s"' % filename
-    myFile = ContentFiles(res.content)
-    file = open(filename, 'w+')
-    file.save(filename ,myfile)
+    create_csv(results, headers, descriptions, filename)
 
-    """
-    #request = RequestFactory().get(???URL???)
-    #return res
-    """
+    csv_file = open(filename, 'rb')
+    csv_content = csv_file.read()
+    csv_file.close()
 
-    return True
+    res = HttpResponse()
+    res.write(csv_content)
+    res['Content-Type'] = 'text/csv'
+    res['Content-Disposition'] = 'attachment; filename=%s' % filename
+    os.remove(filename)
+
+    return res
 
 
 def watershed_shapefile(request, instances):
