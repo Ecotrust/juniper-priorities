@@ -152,7 +152,7 @@ def export_pu_csv(request):
     headers.sort()
     headers.insert(0,'name')
     # headers.insert(1,'pu')
-    filename = 'Oregon_Juniper_Priority_Units.csv'
+    filename = '../media/seak/tmp/Oregon_Juniper_Planning_Units.csv'
     create_csv(results, headers, descriptions, filename)
     csv_file = open(filename, 'rb')
     csv_content = csv_file.read()
