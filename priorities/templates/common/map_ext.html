@@ -146,7 +146,7 @@
                                                 <i class="icon-edit"></i> Edit </a>
                                                 <a href="#" class="btn btn-mini" data-bind="click: $parent.copyScenario" title="Creates a copy of your current scenario.">
                                                 <i class="icon-tags"></i> Copy </a>
-                                                <a href="/csv/" class="btn btn-mini" title="Download all Planning Unit information as a CSV Spreadsheet.">
+                                                <a href="#" class="btn btn-mini" data-bind="click: $parent.showDownloadCSVDialog" title="Download all Planning Unit information as a CSV Spreadsheet.">
                                                 <i class="icon-download-alt"></i> Download</a>
                                                 <a href="#" class="btn btn-mini" data-bind="click: $parent.showDownloadDialog" title="Download the current scenario results as a zipped shapefile for use in GIS software.">
                                                 <i class="icon-globe"></i> Download .shp</a>
@@ -158,8 +158,10 @@
                                             <div class="btn-group pull-right" data-bind="if: $parent.dataMode() == 'shared'">
                                                 <a href="#" class="btn btn-mini" data-bind="click: $parent.copyScenario">
                                                 <i class="icon-tags"></i> Copy </a>
-                                                <a href="#" class="btn btn-mini" data-bind="click: $parent.showDownloadDialog">
+                                                <a href="#" class="btn btn-mini" data-bind="click: $parent.showDownloadCSVDialog" title="Download all Planning Unit information as a CSV Spreadsheet.">
                                                 <i class="icon-download-alt"></i> Download</a>
+                                                <a href="#" class="btn btn-mini" data-bind="click: $parent.showDownloadDialog" title="Download the current scenario results as a zipped shapefile for use in GIS software.">
+                                                <i class="icon-globe"></i> Download .shp</a>
                                             </div>
                                             </div>
                                             <div class="row-fluid">

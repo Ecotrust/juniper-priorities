@@ -76,20 +76,15 @@ def about(request, template_name='news/about.html', extra_context=None):
     return render_to_response(template_name, context)  
 
 def create_csv(data, headers, descriptions, filename):
-
     file = open(filename, 'w')
 
-    row = ','.join(headers)
+    row = ','.join([headers[0].capitalize()] + headers[1:])
     row += "\n"
-    
     file.write(row)
-
     ordered_list = sorted(data.iteritems(), key=lambda x: x[1]['name'])
-
     for pu_tuple in ordered_list: 
         pu_id = pu_tuple[0]
         pu = data[pu_id]
-        # same as pu_tuple[1]?
         row_data = []
         for key in headers:
             try:
@@ -99,23 +94,17 @@ def create_csv(data, headers, descriptions, filename):
             if v is None:
                 v = ''
             row_data.append(v)
-
         row = ','.join(('"%s"' % x for x in row_data))
         row += "\n"
         file.write(row)
-
     row = "\n"
     file.write(row)
-
+    #Descriptions don't exist for columns that were prepended like 'Name'
     prepend_count = len(headers) - len(descriptions.keys())
-
     headers = headers[prepend_count:]
-
     row = ','.join(('"%s"' % x for x in headers))
     row += "\n"
     file.write(row)
-
-
     row = ','.join(('"%s"' % descriptions[x] for x in headers))
     file.write(row)
 
@@ -126,10 +115,16 @@ def export_pu_csv(request):
     from django.test.client import RequestFactory
     from django.core.files.base import ContentFile
     from seak.models import PlanningUnitShapes, Scenario, PuVsAux, PuVsCf, PuVsCost
-    wshds = PlanningUnit.objects.all()
+    wshds = PlanningUnit.objects.prefetch_related(
+        'puvsaux_set',   
+        'puvsaux_set__aux', 
+        'puvscf_set', 
+        'puvscf_set__cf', 
+        'puvscost_set', 
+        'puvscost_set__cost'
+        )
     wshd_fids = [x.fid for x in wshds]
     results = {}
-
     for w in wshds:
         fid = w.fid
         p = w.geometry
@@ -138,42 +133,36 @@ def export_pu_csv(request):
         results[fid] = {'pu': w, 'name': w.name} 
         headers = []
         descriptions = {}
-
-        for puCf in PuVsCf.objects.filter(pu=w):
+        for puCf in w.puvscf_set.all():
             results[fid][puCf.cf.name] = puCf.amount
             if not puCf.cf.name in headers:
                 headers.append(puCf.cf.name)
                 descriptions[puCf.cf.name] = puCf.cf.desc
-        for puAux in PuVsAux.objects.filter(pu=w):
+        for puAux in w.puvsaux_set.all():
             results[fid][puAux.aux.name] = puAux.amount
             if not puAux.aux.name in headers:
                 headers.append(puAux.aux.name)
                 descriptions[puAux.aux.name] = puAux.aux.desc
-        for puCost in PuVsCost.objects.filter(pu=w):
+        for puCost in w.puvscost_set.all():
             header = 'Cost: ' + puCost.cost.name
             results[fid][header] = puCost.amount
             if not (header) in headers:
                 headers.append(header)
                 descriptions[header] = puCost.cost.desc
-
     headers.sort()
     headers.insert(0,'name')
     # headers.insert(1,'pu')
     filename = 'Oregon_Juniper_Priority_Units.csv'
     create_csv(results, headers, descriptions, filename)
-
     csv_file = open(filename, 'rb')
     csv_content = csv_file.read()
     csv_file.close()
-
     res = HttpResponse()
     res.write(csv_content)
     res['Content-Type'] = 'text/csv'
     res['Content-Disposition'] = 'attachment; filename=%s' % filename
     os.remove(filename)
-
     return res
-
 
 def watershed_shapefile(request, instances):
     from seak.models import PlanningUnitShapes, Scenario, PuVsAux, PuVsCf, PuVsCost

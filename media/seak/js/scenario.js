@@ -472,6 +472,11 @@ function scenariosViewModel() {
     $("#scenario-delete-dialog").modal("show");
   };
 
+  self.showDownloadCSVDialog = function() {
+    var url = "/csv/";
+    $('#download-iframe').attr('src', url);
+  };
+
   self.showDownloadDialog = function () {
     $("#scenario-download-dialog").modal("show");
   };
