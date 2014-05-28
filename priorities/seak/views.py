@@ -152,16 +152,17 @@ def export_pu_csv(request):
     headers.sort()
     headers.insert(0,'name')
     # headers.insert(1,'pu')
-    filename = '../media/seak/tmp/Oregon_Juniper_Planning_Units.csv'
-    create_csv(results, headers, descriptions, filename)
-    csv_file = open(filename, 'rb')
+    filename = 'Oregon_Juniper_Planning_Units.csv'
+    abs_filename = os.path.join(settings.MEDIA_ROOT, filename)
+    create_csv(results, headers, descriptions, abs_filename)
+    csv_file = open(abs_filename, 'rb')
     csv_content = csv_file.read()
     csv_file.close()
     res = HttpResponse()
     res.write(csv_content)
     res['Content-Type'] = 'text/csv'
     res['Content-Disposition'] = 'attachment; filename=%s' % filename
-    os.remove(filename)
+    os.remove(abs_filename)
     return res
 
 def watershed_shapefile(request, instances):
