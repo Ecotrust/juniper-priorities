@@ -80,17 +80,20 @@ def create_csv(planningUnitInfo, filename):
     headers = planningUnitInfo['headers']
     descriptions = planningUnitInfo['descriptions']
     file = open(filename, 'w')
-    prepend_count = len(headers) - len(descriptions.keys())
 
     row = ''
     for loop_count, head in enumerate(headers):
-        if loop_count < prepend_count:
+        if loop_count < planningUnitInfo['prepend_count']:
             row += "%s," % head.capitalize()
         else:
             row += "%s," % head
 
     row += "\n"
     file.write(row)
+    row = ','.join(('"%s"' % descriptions[x] for x in headers))
+    row += "\n"
+    file.write(row)
+
     ordered_list = sorted(data.iteritems(), key=lambda x: x[1]['name'])
     for pu_tuple in ordered_list: 
         pu_id = pu_tuple[0]
@@ -108,13 +111,6 @@ def create_csv(planningUnitInfo, filename):
         row += "\n"
         file.write(row)
     row = "\n"
-    file.write(row)
-    #Descriptions don't exist for columns that were prepended like 'Name'
-    headers = headers[prepend_count:]
-    row = ','.join(('"%s"' % x for x in headers))
-    row += "\n"
-    file.write(row)
-    row = ','.join(('"%s"' % descriptions[x] for x in headers))
     file.write(row)
 
     file.close()
@@ -164,12 +160,16 @@ def get_planning_unit_info(cost_prefix='Cost: ') :
         'wshd_fids': wshd_fids, 
         'headers': headers, 
         'descriptions': descriptions, 
-        'results': results
+        'results': results,
+        'prepend_count': 0
     }
 
 def export_pu_csv(request):
     planningUnitInfo = get_planning_unit_info()
     planningUnitInfo['headers'].insert(0,'name')
+    planningUnitInfo['descriptions']['name'] = 'The name of the Planning Unit'
+    planningUnitInfo['prepend_count'] = 1
+
     filename = 'Oregon_Juniper_Planning_Units.csv'
     abs_filename = os.path.join(settings.MEDIA_ROOT, filename)
     create_csv(planningUnitInfo, abs_filename)
@@ -186,8 +186,13 @@ def export_pu_csv(request):
 def scenario_csv(request, instance):
     planningUnitInfo = get_planning_unit_info()
     planningUnitInfo['headers'].insert(0,'name')
+    planningUnitInfo['descriptions']['name'] = 'The name of the Planning Unit'
     planningUnitInfo['headers'].insert(1,'bests')
+    planningUnitInfo['descriptions']['bests'] = "The number of scenarios in which the subbasin was included in the best run"
     planningUnitInfo['headers'].insert(2,'hits')
+    planningUnitInfo['descriptions']['hits'] = "The number of times the subbasin was included in any run, cumulative across scenarios."
+    planningUnitInfo['prepend_count'] = 3
+
     ob = json.loads(instance.output_best)
     wids = [int(x.strip()) for x in ob['best']]
     puc = json.loads(instance.output_pu_count)
