@@ -887,6 +887,11 @@ class Scenario(Analysis):
                 select='single',
                 type='application/zip',
             ),
+            alternate('CSV',
+                'seak.views.scenario_csv',
+                select='single',
+                type='application/csv',
+            ),
         )
 
 # Post-delete hooks to remove the marxan files

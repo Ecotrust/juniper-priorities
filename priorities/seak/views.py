@@ -75,10 +75,20 @@ def about(request, template_name='news/about.html', extra_context=None):
     context.update(extra_context)
     return render_to_response(template_name, context)  
 
-def create_csv(data, headers, descriptions, filename):
+def create_csv(planningUnitInfo, filename):
+    data = planningUnitInfo['results']
+    headers = planningUnitInfo['headers']
+    descriptions = planningUnitInfo['descriptions']
     file = open(filename, 'w')
+    prepend_count = len(headers) - len(descriptions.keys())
 
-    row = ','.join([headers[0].capitalize()] + headers[1:])
+    row = ''
+    for loop_count, head in enumerate(headers):
+        if loop_count < prepend_count:
+            row += "%s," % head.capitalize()
+        else:
+            row += "%s," % head
+
     row += "\n"
     file.write(row)
     ordered_list = sorted(data.iteritems(), key=lambda x: x[1]['name'])
@@ -100,7 +110,6 @@ def create_csv(data, headers, descriptions, filename):
     row = "\n"
     file.write(row)
     #Descriptions don't exist for columns that were prepended like 'Name'
-    prepend_count = len(headers) - len(descriptions.keys())
     headers = headers[prepend_count:]
     row = ','.join(('"%s"' % x for x in headers))
     row += "\n"
@@ -110,11 +119,8 @@ def create_csv(data, headers, descriptions, filename):
 
     file.close()
 
-def export_pu_csv(request):
-    import csv
-    from django.test.client import RequestFactory
-    from django.core.files.base import ContentFile
-    from seak.models import PlanningUnitShapes, Scenario, PuVsAux, PuVsCf, PuVsCost
+def get_planning_unit_info(cost_prefix='Cost: ') :
+    from seak.models import Scenario, PuVsAux, PuVsCf, PuVsCost
     wshds = PlanningUnit.objects.prefetch_related(
         'puvsaux_set',   
         'puvsaux_set__aux', 
@@ -124,15 +130,18 @@ def export_pu_csv(request):
         'puvscost_set__cost'
         )
     wshd_fids = [x.fid for x in wshds]
+
     results = {}
-    for w in wshds:
+
+    for loopcount, w in enumerate(wshds):
         fid = w.fid
         p = w.geometry
         if p.geom_type == 'Polygon':
             p = MultiPolygon(p)
-        results[fid] = {'pu': w, 'name': w.name} 
-        headers = []
-        descriptions = {}
+        results[fid] = {'pu': w, 'name': w.name, 'hits':0, 'bests': 0} 
+        if loopcount == 0:
+            headers = []
+            descriptions = {}
         for puCf in w.puvscf_set.all():
             results[fid][puCf.cf.name] = puCf.amount
             if not puCf.cf.name in headers:
@@ -144,17 +153,59 @@ def export_pu_csv(request):
                 headers.append(puAux.aux.name)
                 descriptions[puAux.aux.name] = puAux.aux.desc
         for puCost in w.puvscost_set.all():
-            header = 'Cost: ' + puCost.cost.name
+            header = cost_prefix + puCost.cost.name
             results[fid][header] = puCost.amount
-            if not (header) in headers:
+            if not header in headers:
                 headers.append(header)
                 descriptions[header] = puCost.cost.desc
     headers.sort()
-    headers.insert(0,'name')
-    # headers.insert(1,'pu')
+
+    return {
+        'wshd_fids': wshd_fids, 
+        'headers': headers, 
+        'descriptions': descriptions, 
+        'results': results
+    }
+
+def export_pu_csv(request):
+    planningUnitInfo = get_planning_unit_info()
+    planningUnitInfo['headers'].insert(0,'name')
     filename = 'Oregon_Juniper_Planning_Units.csv'
     abs_filename = os.path.join(settings.MEDIA_ROOT, filename)
-    create_csv(results, headers, descriptions, abs_filename)
+    create_csv(planningUnitInfo, abs_filename)
+    csv_file = open(abs_filename, 'rb')
+    csv_content = csv_file.read()
+    csv_file.close()
+    res = HttpResponse()
+    res.write(csv_content)
+    res['Content-Type'] = 'text/csv'
+    res['Content-Disposition'] = 'attachment; filename=%s' % filename
+    os.remove(abs_filename)
+    return res
+    
+def scenario_csv(request, instance):
+    planningUnitInfo = get_planning_unit_info()
+    planningUnitInfo['headers'].insert(0,'name')
+    planningUnitInfo['headers'].insert(1,'bests')
+    planningUnitInfo['headers'].insert(2,'hits')
+    ob = json.loads(instance.output_best)
+    wids = [int(x.strip()) for x in ob['best']]
+    puc = json.loads(instance.output_pu_count)
+
+    for fid in planningUnitInfo['wshd_fids']:
+        # Calculate hits and best
+        try:
+            hits = puc[str(fid)] 
+        except KeyError:
+            hits = 0
+        best = fid in wids
+        planningUnitInfo['results'][fid]['hits'] += hits
+        if best:
+            planningUnitInfo['results'][fid]['bests'] += 1
+
+    filename = 'Oregon_Juniper_Planning_Units_%s.csv' % instance.name
+    abs_filename = os.path.join(settings.MEDIA_ROOT, filename)
+    create_csv(planningUnitInfo, abs_filename)
     csv_file = open(abs_filename, 'rb')
     csv_content = csv_file.read()
     csv_file.close()
@@ -167,7 +218,14 @@ def export_pu_csv(request):
 
 def watershed_shapefile(request, instances):
     from seak.models import PlanningUnitShapes, Scenario, PuVsAux, PuVsCf, PuVsCost
-    wshds = PlanningUnit.objects.all()
+    wshds = PlanningUnit.objects.prefetch_related(
+        'puvsaux_set',   
+        'puvsaux_set__aux', 
+        'puvscf_set', 
+        'puvscf_set__cf', 
+        'puvscost_set', 
+        'puvscost_set__cost'
+        )
     wshd_fids = [x.fid for x in wshds]
     results = {}
 

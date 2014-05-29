@@ -682,10 +682,20 @@ function scenariosViewModel() {
         }
     });
     var shpTemplate = app.workspaceUtil.actions.getByTitle("Shapefile")[0];
-    var shpUrl = shpTemplate.getUrl(uids);
+    var shpUrl = shpTemplate.getUrl(uids);  
     $('#download-iframe').attr('src', shpUrl);
     $("#scenario-download-dialog").modal("hide");
   };
+
+
+  self.downloadScenarioCSV = function (scenario_uid) {
+    var uid = [self.selectedFeature().uid()];    
+    var shpTemplate = app.workspaceUtil.actions.getByTitle("CSV")[0];
+    var shpUrl = shpTemplate.getUrl(uid);
+    $('#download-iframe').attr('src', shpUrl);
+    $("#scenario-download-dialog").modal("hide");
+  }
+
 
   self.copyScenario = function() {
     var uids = [self.selectedFeature().uid()];
