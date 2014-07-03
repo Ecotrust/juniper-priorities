@@ -143,36 +143,40 @@
         </div>
 
         <div id="aux" class="tab-pane">
-            <table class="table interactive-table" id="aux-table">
-                <thead>
-                    <tr>
-                        <th> {% flatblock 'show-planning-units' 3600 %} </th> 
-                        {%for k,v in results.units.1.auxs.items %}
-                            {% if v > 0 %}<th>{{k|deslug}}</th> {% endif %}
-                        {%endfor%}
-                    </tr>
-                </thead>
-                <tbody id="best-pus">
-                    {% for w in results.units %}
-                    <tr>
-                        <td>
-                            <span title="{{w.name}}"></span>
-                            {{w.name}}
-                            <span class="hide centroid-x" data-coord="{{w.centroidx}}"></span>
-                            <span class="hide centroid-y" data-coord="{{w.centroidy}}"></span>
-                        </td>
-                        {% for k,v in w.auxs.items %}
-                        <td>
-                            <span class="hide" title="{{v}}"></span>
-                            <span>
-                                {{v|floatformat:1}}
-                            </span>
-                        </td>
-                        {% endfor %}
-                    </tr>
-                    {% endfor %}
-                </tbody>
-            </table>
+            <div class="row-fluid">
+                <div id="report-table" class="span12" style="overflow:scroll; height=244px">
+                    <table class="table interactive-table" id="aux-table">
+                        <thead>
+                            <tr>
+                                <th> {% flatblock 'show-planning-units' 3600 %} </th> 
+                                {%for k,v in results.units.1.auxs.items %}
+                                    {% if v > 0 %}<th>{{k|deslug}}</th> {% endif %}
+                                {%endfor%}
+                            </tr>
+                        </thead>
+                        <tbody id="best-pus">
+                            {% for w in results.units %}
+                            <tr>
+                                <td>
+                                    <span title="{{w.name}}"></span>
+                                    {{w.name}}
+                                    <span class="hide centroid-x" data-coord="{{w.centroidx}}"></span>
+                                    <span class="hide centroid-y" data-coord="{{w.centroidy}}"></span>
+                                </td>
+                                {% for k,v in w.auxs.items %}
+                                <td>
+                                    <span class="hide" title="{{v}}"></span>
+                                    <span>
+                                        {{v|floatformat:1}}
+                                    </span>
+                                </td>
+                                {% endfor %}
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
             <!-- 
             <div class="box">
                 <dl>
@@ -296,8 +300,8 @@
                 "bInfo": true,
                 "bAutoWidth": true,
                 "bPaginate": false,
-                "sScrollY": divHeight + "px",
-                "bScrollCollapse": true,
+                // "sScrollY": divHeight + "px",
+                "bScrollCollapse": false,
                 "sType": "title-numeric",
                 "sType": "title-numeric",
                 "aoColumnDefs": [
@@ -337,6 +341,9 @@
                         break;
                 }
             });
+            $('#report-table').css({
+                'height':divHeight + 'px'
+            })
 
         });
     </script>

@@ -243,6 +243,9 @@ a.show_members img {border:none;margin-right:5px;margin-bottom:-3px;}
 td.scenario-name {
     color: #317EAC !important;
 }
+#report-table {
+    overflow: scroll;
+}
 select#layer-select {
     width: 195px !important;
     height: 22px;
