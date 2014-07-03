@@ -150,11 +150,20 @@
                             <tr>
                                 <th> {% flatblock 'show-planning-units' 3600 %} </th> 
                                 {%for k,v in results.units.1.auxs.items %}
-                                    {% if v > 0 %}<th>{{k|deslug}}</th> {% endif %}
+                                    {% if v > 0 %}<th class='{{k.1}}'>{{k.0|deslug}}</th> {% endif %}
                                 {%endfor%}
                             </tr>
                         </thead>
                         <tbody id="best-pus">
+                            <!-- Conservation Features (CFs):
+                                [u'JUNP2', u'JUNP3', u'JUNP1']
+                            -->
+                            <!-- COSTs:
+                                [u'WETLAND', u'ACEC', u'BLM_WSA', u'BLM_WCHAR', u'BLM_WILD', u'SLOPE_GT20']
+                            -->
+                            <!-- AUXs:
+                                [u'SGPPH_JP1', u'SGPPH_JP2', u'SGPPH_JP3', u'P_RABBIT', u'ACEC', u'HIST_JUNPR', u'GRZ_ALLOT', u'TRT_REVEG', u'SGPGH', u'INV_WEED', u'PR_JP3', u'PR_JP2', u'PR_JP1', u'PROT_BLM', u'WETLAND', u'PROT_OTH', u'BLMLAND', u'SGPGH_JP1', u'TRTMECHJ', u'SGPGH_JP3', u'SGPGH_JP2', u'SGPPH', u'TRTHARVJUN', u'SG_ALL', u'WS_RIV', u'PRIV_MILE', u'TRTBURNJUN', u'BLM_WSA', u'BLM_WCHAR', u'BLM_WILD']
+                            -->
                             {% for w in results.units %}
                             <tr>
                                 <td>
@@ -164,7 +173,7 @@
                                     <span class="hide centroid-y" data-coord="{{w.centroidy}}"></span>
                                 </td>
                                 {% for k,v in w.auxs.items %}
-                                <td>
+                                <td class="{{k.1}}">
                                     <span class="hide" title="{{v}}"></span>
                                     <span>
                                         {{v|floatformat:1}}

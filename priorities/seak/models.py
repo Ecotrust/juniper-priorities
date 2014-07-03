@@ -565,7 +565,7 @@ class Scenario(Analysis):
                     theclass = 'med cover' 
                 costs[cname] = {'raw': raw_costs[cname],'scaled': thecost, 'class': theclass}
 
-            auxs = dict([(x.aux.name, x.value) for x in pu.puvsaux_set.all()])
+            auxs = dict([((x.aux.name, x.aux.dbf_fieldname), x.value) for x in pu.puvsaux_set.all()])
 
             best.append({'name': pu.name, 
                          'fid': pu.fid, 
