@@ -144,6 +144,43 @@
 
         <div id="aux" class="tab-pane">
             <div class="row-fluid">
+                <div class="span12">
+                    <p>Show me:</p>
+                    <div class="row-fluid">
+                        <div class="span2">
+                            <label data-bind="click: checkConsFeatTable">
+                                <input type="checkbox" name="category" value="cfs" data-bind="checked: reportChk">
+                                Juniper Phase
+                            </label>
+                        </div>
+                        <div class="span2">
+                            <label data-bind="click: checkCostTable">
+                                <input type="checkbox" name="category" value="costs" data-bind="checked: reportChk">
+                                Costs
+                            </label>
+                        </div>
+                        <div class="span2">
+                            <label data-bind="click: checkGrouseTable">
+                                <input type="checkbox" name="category" value="sgs" data-bind="checked: reportChk">
+                                Sage Grouse
+                            </label>
+                        </div>
+                        <div class="span2">
+                            <label data-bind="click: checkRabbitTable">
+                                <input type="checkbox" name="category" value="prs" data-bind="checked: reportChk">
+                                Pygmy Rabbit
+                            </label>
+                        </div>
+                        <div class="span2">
+                            <label data-bind="click: checkOtherTable">
+                                <input type="checkbox" name="category" value="other" data-bind="checked: reportChk">
+                                Other
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
                 <div id="report-table" class="span12">
                     <table class="table interactive-table" id="aux-table">
                         <thead>
@@ -160,6 +197,18 @@
                             -->
                             <!-- COSTs:
                                 [u'WETLAND', u'ACEC', u'BLM_WSA', u'BLM_WCHAR', u'BLM_WILD', u'SLOPE_GT20']
+                            -->
+                            <!--
+                                Sage Grouse
+                                [u'SGPPH_JP1', u'SGPPH_JP2', u'SGPPH_JP3', u'SGPGH', u'SGPGH_JP1', u'SGPGH_JP3', u'SGPGH_JP2', u'SGPPH', u'SG_ALL']
+                            -->
+                            <!--
+                                Pygmy Rabbit
+                                [u'P_RABBIT', u'PR_JP3', u'PR_JP2', u'PR_JP1', u'PROT_BLM', u'PROT_OTH']
+                            -->
+                            <!--
+                                Remaining
+                                [u'HIST_JUNPR', u'GRZ_ALLOT', u'TRT_REVEG', u'INV_WEED', u'BLMLAND', u'TRTMECHJ', u'TRTHARVJUN',u'WS_RIV', u'PRIV_MILE', u'TRTBURNJUN']
                             -->
                             <!-- AUXs:
                                 [u'SGPPH_JP1', u'SGPPH_JP2', u'SGPPH_JP3', u'P_RABBIT', u'ACEC', u'HIST_JUNPR', u'GRZ_ALLOT', u'TRT_REVEG', u'SGPGH', u'INV_WEED', u'PR_JP3', u'PR_JP2', u'PR_JP1', u'PROT_BLM', u'WETLAND', u'PROT_OTH', u'BLMLAND', u'SGPGH_JP1', u'TRTMECHJ', u'SGPGH_JP3', u'SGPGH_JP2', u'SGPPH', u'TRTHARVJUN', u'SG_ALL', u'WS_RIV', u'PRIV_MILE', u'TRTBURNJUN', u'BLM_WSA', u'BLM_WCHAR', u'BLM_WILD']

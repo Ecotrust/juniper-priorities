@@ -5,6 +5,69 @@ function progressViewModel() {
   self.done = ko.observable(false);
   self.error = ko.observable(false);
   self.progressBarWidth = ko.observable("0%");
+
+  self.reportChk = ko.observableArray(['cfs','costs','sgs','prs','other']);
+
+  self.checkConsFeatTable = function(model) {
+    var cf_fields = ['JUNP2', 'JUNP3', 'JUNP1'];
+    for (var i = 0; i < cf_fields.length; i++) {
+        if ($.inArray('cfs',self.reportChk()) > -1) {
+            $("."+ cf_fields[i] ).show();
+        } else {
+            $("."+ cf_fields[i] ).hide();
+        }
+    }
+    return true;
+  };
+
+  self.checkCostTable = function(model) {
+    var cost_fields = ['WETLAND', 'ACEC', 'BLM_WSA', 'BLM_WCHAR', 'BLM_WILD', 'SLOPE_GT20'];
+    for (var i = 0; i < cost_fields.length; i++) {
+        if ($.inArray('costs',self.reportChk()) > -1) {
+            $("."+ cost_fields[i] ).show();
+        } else {
+            $("."+ cost_fields[i] ).hide();
+        }
+    }
+    return true;
+  };
+
+  self.checkGrouseTable = function(model) {
+    var grouse_fields = ['SGPPH_JP1', 'SGPPH_JP2', 'SGPPH_JP3', 'SGPGH', 'SGPGH_JP1', 'SGPGH_JP3', 'SGPGH_JP2', 'SGPPH', 'SG_ALL'];
+    for (var i = 0; i < grouse_fields.length; i++) {
+        if ($.inArray('sgs',self.reportChk()) > -1) {
+            $("."+ grouse_fields[i] ).show();
+        } else {
+            $("."+ grouse_fields[i] ).hide();
+        }
+    }
+    return true;
+  };
+
+  self.checkRabbitTable = function(model) {
+    var rabbit_fields = ['P_RABBIT', 'PR_JP3', 'PR_JP2', 'PR_JP1', 'PROT_BLM', 'PROT_OTH'];
+    for (var i = 0; i < rabbit_fields.length; i++) {
+        if ($.inArray('prs',self.reportChk()) > -1) {
+            $("."+ rabbit_fields[i] ).show();
+        } else {
+            $("."+ rabbit_fields[i] ).hide();
+        }
+    }
+    return true;
+  };
+
+  self.checkOtherTable = function(model) {
+    var other_fields = ['HIST_JUNPR', 'GRZ_ALLOT', 'TRT_REVEG', 'INV_WEED', 'BLMLAND', 'TRTMECHJ', 'TRTHARVJUN','WS_RIV', 'PRIV_MILE', 'TRTBURNJUN'];
+    for (var i = 0; i < other_fields.length; i++) {
+        if ($.inArray('other',self.reportChk()) > -1) {
+            $("."+ other_fields[i] ).show();
+        } else {
+            $("."+ other_fields[i] ).hide();
+        }
+    }
+    return true;
+  };
+
   self.triggerDone = function(scenario_uid) {
     clearInterval(app.timer);
     app.timer = null;
@@ -53,8 +116,7 @@ function progressViewModel() {
     } else {
         console.log("Warning: app.timer is set and checkTimer was called!");
     }
- };
-  
+ };  
   return self;
 }
 
