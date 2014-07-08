@@ -474,9 +474,6 @@ def field_lookup(request):
             units_txt = " (%s)" % c.units
         flut[c.dbf_fieldname] = "%s%s" % (c.name, units_txt)
 
-    import ipdb
-    ipdb.set_trace()
-
     return HttpResponse(json.dumps(flut), content_type='application/json')
 
 @cache_page(settings.CACHE_TIMEOUT)
