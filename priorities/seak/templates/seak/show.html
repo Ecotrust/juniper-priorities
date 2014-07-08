@@ -148,27 +148,27 @@
                     <p>Show me:</p>
                     <div class="row-fluid">
                         <div class="span2">
-                            <label data-bind="click: checkConsFeatTable">
-                                <input type="checkbox" name="category" value="cfs" data-bind="checked: reportChk">
-                                Juniper Phase
-                            </label>
-                        </div>
-                        <div class="span2">
                             <label data-bind="click: checkCostTable">
                                 <input type="checkbox" name="category" value="costs" data-bind="checked: reportChk">
                                 Costs
                             </label>
                         </div>
-                        <div class="span2">
+                        <div class="span3">
                             <label data-bind="click: checkGrouseTable">
                                 <input type="checkbox" name="category" value="sgs" data-bind="checked: reportChk">
                                 Sage Grouse
                             </label>
                         </div>
-                        <div class="span2">
+                        <div class="span3">
                             <label data-bind="click: checkRabbitTable">
                                 <input type="checkbox" name="category" value="prs" data-bind="checked: reportChk">
                                 Pygmy Rabbit
+                            </label>
+                        </div>
+                        <div class="span2">
+                            <label data-bind="click: checkBlmTable">
+                                <input type="checkbox" name="category" value="blm" data-bind="checked: reportChk">
+                                BLM Data
                             </label>
                         </div>
                         <div class="span2">
@@ -401,8 +401,7 @@
             });
             $('#report-table').css({
                 'height':divHeight + 'px'
-            })
-
+            });
         });
     </script>
 

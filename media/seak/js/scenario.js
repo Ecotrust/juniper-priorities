@@ -6,19 +6,7 @@ function progressViewModel() {
   self.error = ko.observable(false);
   self.progressBarWidth = ko.observable("0%");
 
-  self.reportChk = ko.observableArray(['cfs','costs','sgs','prs','other']);
-
-  self.checkConsFeatTable = function(model) {
-    var cf_fields = ['JUNP2', 'JUNP3', 'JUNP1'];
-    for (var i = 0; i < cf_fields.length; i++) {
-        if ($.inArray('cfs',self.reportChk()) > -1) {
-            $("."+ cf_fields[i] ).show();
-        } else {
-            $("."+ cf_fields[i] ).hide();
-        }
-    }
-    return true;
-  };
+  self.reportChk = ko.observableArray(['costs','sgs','prs','blm','other']);
 
   self.checkCostTable = function(model) {
     var cost_fields = ['WETLAND', 'ACEC', 'BLM_WSA', 'BLM_WCHAR', 'BLM_WILD', 'SLOPE_GT20'];
@@ -45,7 +33,7 @@ function progressViewModel() {
   };
 
   self.checkRabbitTable = function(model) {
-    var rabbit_fields = ['P_RABBIT', 'PR_JP3', 'PR_JP2', 'PR_JP1', 'PROT_BLM', 'PROT_OTH'];
+    var rabbit_fields = ['P_RABBIT', 'PR_JP3', 'PR_JP2', 'PR_JP1'];
     for (var i = 0; i < rabbit_fields.length; i++) {
         if ($.inArray('prs',self.reportChk()) > -1) {
             $("."+ rabbit_fields[i] ).show();
@@ -56,8 +44,20 @@ function progressViewModel() {
     return true;
   };
 
+  self.checkBlmTable = function(model) {
+    var blm_fields = ['TRT_REVEG', 'BLMLAND', 'TRTMECHJ', 'TRTHARVJUN', 'INV_WEED', 'TRTBURNJUN'];
+    for (var i = 0; i < blm_fields.length; i++) {
+        if ($.inArray('blm',self.reportChk()) > -1) {
+            $("."+ blm_fields[i] ).show();
+        } else {
+            $("."+ blm_fields[i] ).hide();
+        }
+    }
+    return true;
+  };
+
   self.checkOtherTable = function(model) {
-    var other_fields = ['HIST_JUNPR', 'GRZ_ALLOT', 'TRT_REVEG', 'INV_WEED', 'BLMLAND', 'TRTMECHJ', 'TRTHARVJUN','WS_RIV', 'PRIV_MILE', 'TRTBURNJUN'];
+    var other_fields = ['PROT_BLM', 'PROT_OTH', 'HIST_JUNPR', 'GRZ_ALLOT', 'WS_RIV', 'PRIV_MILE'];
     for (var i = 0; i < other_fields.length; i++) {
         if ($.inArray('other',self.reportChk()) > -1) {
             $("."+ other_fields[i] ).show();
@@ -613,7 +613,14 @@ function scenariosViewModel() {
           app.viewModel.progress.checkTimer();
         })
         .error(function() { self.reportLoadError(true); })
-        .complete(function() { self.reportLoadComplete(true); });
+        .complete(function() { 
+            self.reportLoadComplete(true); 
+            $("#aux-table_filter").find("input").keyup(app.viewModel.progress.checkCostTable);
+            $("#aux-table_filter").find("input").keyup(app.viewModel.progress.checkGrouseTable);
+            $("#aux-table_filter").find("input").keyup(app.viewModel.progress.checkRabbitTable);
+            $("#aux-table_filter").find("input").keyup(app.viewModel.progress.checkBlmTable);
+            $("#aux-table_filter").find("input").keyup(app.viewModel.progress.checkOtherTable);
+        });
         
         selectGeographyControl.unselectAll();
         selectFeatureControl.unselectAll();
