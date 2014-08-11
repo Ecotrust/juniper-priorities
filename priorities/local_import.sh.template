@@ -1,0 +1,9 @@
+DATA_DIR=data/xxxxxxxx
+DETAILED_SHAPEFILE=xxxxxxx.shp
+SIMPLIFIED_SHAPEFILE=xxxxxx.shp
+METRICS_FILE=xxxxxxx.xls
+
+python manage.py import_planning_units \
+    $DATA_DIR/SIMPLIFIED_SHAPEFILE \
+    $DATA_DIR/$METRICS_FILE \
+    $DATA_DIR/$DETAILED_SHAPEFILE
