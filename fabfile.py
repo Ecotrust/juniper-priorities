@@ -90,6 +90,10 @@ def _load_fixtures():
     run('cd %(app_dir)s && %(venv)s/bin/python manage.py loaddata fixtures/flatblocks.json && \
                            %(venv)s/bin/python manage.py loaddata fixtures/project_base_layers.json' % vars)
 
+def dump_fixtures():
+    run('cd %(app_dir)s && %(venv)s/bin/python manage.py dumpdata --indent=2 layer_manager > fixtures/layer_manager_juniper.json && \
+                           %(venv)s/bin/python manage.py dumpdata --indent=2 flatblocks > fixtures/flatblocks.json' % vars)
+
 # TODO
 # figure out line b/t puppet and fabric duties
 # run test suite
