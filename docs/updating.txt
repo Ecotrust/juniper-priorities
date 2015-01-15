@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Local
 sh local_import.sh
 python manage.py clear_cache

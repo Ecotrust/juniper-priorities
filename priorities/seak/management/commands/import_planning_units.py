@@ -292,6 +292,9 @@ class Command(BaseCommand):
 </Map>""" 
         xml = xml_template % {'shppath': os.path.abspath(fullres_shp), 'extra_rules': ''}
 
+        import shutil
+        shutil.rmtree(settings.TILE_CONFIG_DIR)
+
         if not os.path.exists(settings.TILE_CONFIG_DIR):
             os.makedirs(settings.TILE_CONFIG_DIR)
 
