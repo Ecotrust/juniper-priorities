@@ -366,6 +366,10 @@ function scenariosViewModel() {
                     selectGeographyControl.deactivate();
                     keyboardControl.deactivate();
                     break;
+                case "scenario-tab":
+                    self.backToScenarioList();
+                    self.cancelAddScenario();
+                    break;
                 case "tab-costs":
                     break;
                 case "tab-species":
