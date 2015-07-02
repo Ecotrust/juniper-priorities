@@ -1,6 +1,6 @@
 SECRET_KEY = '1234567'
 MEDIA_URL = 'http://hestia.ecotrust.org:8012/media/'
-MEDIA_ROOT = '/usr/local/src/juniper-blm/mediaroot'
+MEDIA_ROOT = '/usr/local/src/juniper-priorities/mediaroot'
 WSGI_USER = 'mperry'
 SITE_ID = 1
 LOGIN_REDIRECT_URL = '/'

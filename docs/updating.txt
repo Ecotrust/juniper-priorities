@@ -12,7 +12,7 @@ sudo supervisorctl restart celeryd
 source juniper.sh
 touch ../MAINTENANCE_MODE
 git fetch 
-git merge origin/juniper-blm --ff-only
+git merge origin/juniper-priorities --ff-only
 python manage.py migrate
 python manage.py install_media
 sh local_import.sh
@@ -23,5 +23,5 @@ python manage.py precache
 chmod -R 775 /tmp/oregon-juniper-management-tool-stache
 chown -R mperry:www-data /tmp/oregon-juniper-management-tool-stache/
 touch ../deploy/wsgi.py
-sudo service celeryd_juniper-blm restart
+sudo service celeryd_juniper-priorities restart
 rm ../MAINTENANCE_MODE

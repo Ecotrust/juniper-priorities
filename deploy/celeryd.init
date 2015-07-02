@@ -21,7 +21,7 @@ DEFAULT_CELERYD="/usr/bin/celeryd"
 # /etc/init.d/ssh: start and stop the celery task worker daemon.
 
 ######################## EDITABLE OPTIONS
-PROJDIR="/usr/local/apps/juniper-blm"
+PROJDIR="/usr/local/apps/juniper-priorities"
 VIRTUAL_ENV="$PROJDIR/env"
 CELERYD_PID_FILE="/var/run/celeryd_juniper.pid"
 #################################
