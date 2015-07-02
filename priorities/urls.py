@@ -42,4 +42,5 @@ urlpatterns += patterns('',
 urlpatterns += patterns('',
     (r'^media(.*)/upload/', 'madrona.common.views.forbidden'),
     (r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT, 'show_indexes': True }),
+    (r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT, 'show_indexes': True }),
 )

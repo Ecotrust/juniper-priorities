@@ -80,6 +80,9 @@ TEMPLATE_DEBUG = False
 LOGIN_REDIRECT_URL = '/'
 HELP_EMAIL = 'ksdev@ecotrust.org'
 
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.realpath(os.path.join(os.path.dirname(__file__), '..', 'staticroot'))
+
 CACHES = {
     'default': {
         'BACKEND': 'redis_cache.cache.RedisCache',
