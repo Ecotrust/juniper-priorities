@@ -42,7 +42,7 @@ sudo ldconfig
 # Install requirements
 ```
 # Note - Postgresql and PostGIS are covered earlier. If using django 1.5 or later you can use apt to get them by adding them to the list below.
-sudo apt-get install libpq-dev python-dev git  python-setuptools python-gdal  libcurl4-gnutls-dev libxml2-dev libxslt1-dev libfreetype6-dev
+sudo apt-get install libpq-dev python-dev git  python-setuptools python-gdal  libcurl4-gnutls-dev libxml2-dev libxslt1-dev libfreetype6-dev apache2 redis-server libapache2-mod-wsgi
 ```
 
 # If a fresh Ubuntu Server
