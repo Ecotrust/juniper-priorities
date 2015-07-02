@@ -24,6 +24,7 @@ TEMPLATE_DIRS = ( os.path.realpath(os.path.join(os.path.dirname(__file__), 'temp
 
 INSTALLED_APPS += ( 'seak', 
                     'djkombu',
+                    'django.contrib.staticfiles',
                     'madrona.analysistools',
                     'madrona.layer_manager',
                     'django.contrib.humanize',) 
@@ -41,6 +42,10 @@ COMPRESS_JS['application']['source_filenames'] = (
     'features/js/workspace.js',
     'seak/js/seak.js',
     'seak/js/scenario.js',
+)
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'django.core.context_processors.static'
 )
 
 # The following is used to assign a name to the default folder under My Shapes 
