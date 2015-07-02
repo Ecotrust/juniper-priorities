@@ -45,7 +45,8 @@ COMPRESS_JS['application']['source_filenames'] = (
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
-    'django.core.context_processors.static'
+    'django.core.context_processors.static',
+    'django.contrib.auth.context_processors.auth'
 )
 
 # The following is used to assign a name to the default folder under My Shapes 
