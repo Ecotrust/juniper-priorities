@@ -20,8 +20,10 @@ python manage.py clear_cache
 # TODO confirm appname
 rm -rf /tmp/oregon-juniper-management-tool-stache
 python manage.py precache
+# If failure like 'no zip encoding' check out http://askubuntu.com/questions/156484/how-do-i-install-python-imaging-library-pil#answer-272095 
+# If problems with libfreetype header file, remove its symlink
 chmod -R 775 /tmp/oregon-juniper-management-tool-stache
-chown -R mperry:www-data /tmp/oregon-juniper-management-tool-stache/
+chown -R ubuntu:www-data /tmp/oregon-juniper-management-tool-stache/
 touch ../deploy/wsgi.py
 sudo service celeryd_juniper-priorities restart
 rm ../MAINTENANCE_MODE
