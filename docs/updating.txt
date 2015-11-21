@@ -20,7 +20,10 @@ python manage.py clear_cache
 # TODO confirm appname
 rm -rf /tmp/oregon-juniper-management-tool-stache
 python manage.py precache
-# If failure like 'no zip encoding' check out http://askubuntu.com/questions/156484/how-do-i-install-python-imaging-library-pil#answer-272095 
+# If failure like 'failed to initialize projection with: '&google_mercator;'
+#     run `perl -p -i -e 's/&google_mercator;/+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over/g' /usr/local/apps/juniper-priorities/tile_config/*`
+# If failure like 'no zip encoding' 
+#     check out http://askubuntu.com/questions/156484/how-do-i-install-python-imaging-library-pil#answer-272095 
 # If problems with libfreetype header file, remove its symlink
 chmod -R 775 /tmp/oregon-juniper-management-tool-stache
 chown -R ubuntu:www-data /tmp/oregon-juniper-management-tool-stache/
