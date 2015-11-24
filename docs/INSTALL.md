@@ -132,7 +132,8 @@ python manage.py loaddata fixtures/project_base_data.json
 sed 's/APPNAME/<PROJECT_NAME>/' deploy/default.apache > /etc/apache2/sites-available/<PROJECT_NAME>.labs.ecotrust.org
 touch MAINTENANCE_MODE
 sudo a2ensite <PROJECT_NAME>.labs.ecotrust.org
-sudo /etc/init.d/apache2 reload
+sudo a2enmod rewrite
+sudo /etc/init.d/apache2 restart
 ```
 * Create a `logs/celery.log` file, `chmod 775` it and put it in the `www-data` group.
 * Install the `celeryd.init` script according to the instructions in the header
